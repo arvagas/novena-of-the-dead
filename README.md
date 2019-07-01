@@ -7,4 +7,5 @@ Coming from a Filipino, Catholic household, it's not unusual that I attend noven
 1. Recreate the format of a long structure, then make an abridged version of it.
 
 I did a bit of research, and I didn't really see any responsive sites/apps that were related to this project so..
+
 2. Make a responsive site that fits on all screens (save the trees!)
