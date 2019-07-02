@@ -219,3 +219,67 @@ a {
   border-radius: 0 0 15px 15px;
   border-top: none;
 }
+.novena-container .prayer-each-day {
+  max-width: 800px;
+}
+@media (max-width: 800px) {
+  .novena-container .prayer-each-day {
+    margin: 0 10%;
+  }
+}
+@media (max-width: 500px) {
+  .novena-container .prayer-each-day {
+    margin: 0 5%;
+  }
+}
+.novena-container .prayer-each-day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: rgba(118, 54, 148, 0.2);
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 2rem;
+}
+.novena-container .prayer-each-day-header:first-child {
+  margin-top: 0;
+}
+.novena-container .prayer-each-day-header:hover {
+  border: 1px solid purple;
+  padding: 9px;
+}
+.novena-container .prayer-each-day-header .accordion-title {
+  font-size: 2.4rem;
+}
+@media (max-width: 800px) {
+  .novena-container .prayer-each-day-header .accordion-title {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .novena-container .prayer-each-day-header .accordion-title {
+    font-size: 2rem;
+  }
+}
+.novena-container .prayer-each-day-header .expand-btn {
+  padding-left: 10px;
+}
+.novena-container .prayer-each-day-header .collapse-btn {
+  padding-left: 10px;
+}
+.novena-container .prayer-each-day-header .hidden-btn {
+  display: none;
+}
+.novena-container .active-header {
+  border: 1px solid purple;
+  padding: 9px;
+}
+.novena-container .prayer-each-day-content {
+  display: none;
+  padding: 10px;
+  margin: 0 2%;
+  border: 0.5px solid purple;
+  border-radius: 0 0 15px 15px;
+  border-top: none;
+}

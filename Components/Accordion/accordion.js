@@ -20,3 +20,8 @@ let prayerAccHeader = '.accordion-header'
 $('.accordion').on('click', '.accordion-header', function(){
     Accordion(this, prayerAccHeader)
 })
+
+let accPrayerForEachDay = '.prayer-each-day-header'
+$('.prayer-each-day').on('click', '.prayer-each-day-header', function(){
+    Accordion(this, accPrayerForEachDay)
+})
