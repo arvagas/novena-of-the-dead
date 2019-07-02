@@ -1,33 +1,22 @@
-const expandBtn = document.querySelectorAll('.expand-btn')
-const collapseBtn = document.querySelectorAll('.collapse-btn')
-
-$('.accordion').on('click', '.accordion-header', function() {
+function Accordion(headerName, reset) {
     // if border is highlighted when clicked, close the panel and do nothing else
-    if ($(this).hasClass('active-header')) {
-        $(this).toggleClass('active-header').next().slideToggle()
-        $(this).find('.expand-btn').toggleClass('hidden-btn')
-        $(this).find('.collapse-btn').toggleClass('hidden-btn')
+    if ($(headerName).hasClass('active-header')) {
+        $(headerName).toggleClass('active-header').next().slideToggle()
+        $(headerName).find('.expand-btn').toggleClass('hidden-btn')
+        $(headerName).find('.collapse-btn').toggleClass('hidden-btn')
     } else { // otherwise, reset the other panels (collapse all) and then open clicked panel
         // resets all panels
-        $('.accordion-header').removeClass('active-header').next().slideUp()
-        expandBtn.forEach(item => item.classList.remove('hidden-btn'))
-        collapseBtn.forEach(item => item.classList.add('hidden-btn'))
+        $(reset).removeClass('active-header').next().slideUp()
+        $(reset).find('.expand-btn').removeClass('hidden-btn')
+        $(reset).find('.collapse-btn').addClass('hidden-btn')
         // turn on panel
-        $(this).toggleClass('active-header').next().slideToggle()
-        $(this).find('.expand-btn').toggleClass('hidden-btn')
-        $(this).find('.collapse-btn').toggleClass('hidden-btn')
+        $(headerName).toggleClass('active-header').next().slideToggle()
+        $(headerName).find('.expand-btn').toggleClass('hidden-btn')
+        $(headerName).find('.collapse-btn').toggleClass('hidden-btn')
     }
-})
+}
 
-document.addEventListener('click', event => {
-    if ((event.target.closest('.accordion-header')) || (event.target.closest('.accordion-content'))) return
-    $('.accordion-header').removeClass('active-header').next().slideUp()
-    expandBtn.forEach(item => item.classList.remove('hidden-btn'))
-    collapseBtn.forEach(item => item.classList.add('hidden-btn'))
-})
-
-window.addEventListener('resize', () => {
-    $('.accordion-header').removeClass('active-header').next().slideUp()
-    expandBtn.forEach(item => item.classList.remove('hidden-btn'))
-    collapseBtn.forEach(item => item.classList.add('hidden-btn'))
+let prayerAccHeader = '.accordion-header'
+$('.accordion').on('click', '.accordion-header', function(){
+    Accordion(this, prayerAccHeader)
 })
