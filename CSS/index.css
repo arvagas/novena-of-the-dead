@@ -155,3 +155,59 @@ a {
   max-width: 100vw;
   height: 100vh;
 }
+@media (max-width: 500px) {
+  .accordion {
+    margin: 0 5%;
+  }
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: rgba(118, 54, 148, 0.2);
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 2rem;
+}
+.accordion-header:first-child {
+  margin-top: 0;
+}
+.accordion-header:hover {
+  border: 1px solid purple;
+  padding: 9px;
+}
+.accordion-header .accordion-title {
+  font-size: 2.4rem;
+}
+@media (max-width: 800px) {
+  .accordion-header .accordion-title {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .accordion-header .accordion-title {
+    font-size: 2rem;
+  }
+}
+.accordion-header .expand-btn {
+  padding-left: 10px;
+}
+.accordion-header .collapse-btn {
+  padding-left: 10px;
+}
+.accordion-header .hidden-btn {
+  display: none;
+}
+.active-header {
+  border: 1px solid purple;
+  padding: 9px;
+}
+.accordion-content {
+  display: none;
+  padding: 10px;
+  margin: 0 2%;
+  border: 0.5px solid purple;
+  border-radius: 0 0 15px 15px;
+  border-top: none;
+}
