@@ -23,7 +23,7 @@ h2 {
 	font-size: 2rem;
 }
 
-p,a {
+p,a,td,tr {
 	font-size: 1.6rem;
 }
 
@@ -34,6 +34,14 @@ i {
 b {
 	font-weight: bold;
 }
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	text-align: left;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;} // Move this code to novena.less
 
 .container {
 	margin: 0 auto;

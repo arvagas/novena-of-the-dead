@@ -147,7 +147,9 @@ h2 {
   font-size: 2rem;
 }
 p,
-a {
+a,
+td,
+tr {
   font-size: 1.6rem;
 }
 i {
@@ -156,10 +158,21 @@ i {
 b {
   font-weight: bold;
 }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 .container {
   margin: 0 auto;
   max-width: 100vw;
   height: 100vh;
+}
+footer {
+  text-align: center;
 }
 .accordion {
   max-width: 800px;
