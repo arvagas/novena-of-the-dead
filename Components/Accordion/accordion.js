@@ -18,10 +18,10 @@ function Accordion(headerName, reset) {
 
 let prayerAccHeader = '.accordion-header'
 $('.accordion').on('click', '.accordion-header', function(){
-    Accordion(this, prayerAccHeader)
+    if (window.innerWidth <= 800) Accordion(this, prayerAccHeader)
 })
 
 let accPrayerForEachDay = '.prayer-each-day-header'
 $('.prayer-each-day').on('click', '.prayer-each-day-header', function(){
-    Accordion(this, accPrayerForEachDay)
+    if (window.innerWidth <= 800) Accordion(this, accPrayerForEachDay)
 })
