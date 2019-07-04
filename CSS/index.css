@@ -167,23 +167,27 @@ footer {
   text-align: center;
   margin: 2rem;
 }
+.rosary-prayers,
 .prayer-each-day,
 .pope-st-gregory {
   max-width: 800px;
 }
 @media (max-width: 800px) {
+  .rosary-prayers,
   .prayer-each-day,
   .pope-st-gregory {
     margin: 0 10%;
   }
 }
 @media (max-width: 500px) {
+  .rosary-prayers,
   .prayer-each-day,
   .pope-st-gregory {
     margin: 0 5%;
   }
 }
 @media (max-width: 800px) {
+  .rosary-prayers-header,
   .prayer-each-day-header,
   .pope-st-gregory-header {
     display: flex;
@@ -195,27 +199,32 @@ footer {
     border-radius: 15px;
     margin-top: 2rem;
   }
+  .rosary-prayers-header:hover,
   .prayer-each-day-header:hover,
   .pope-st-gregory-header:hover {
     border: 1px solid purple;
     padding: 9px;
   }
 }
+.rosary-prayers-header .expand-btn,
 .prayer-each-day-header .expand-btn,
 .pope-st-gregory-header .expand-btn {
   display: none;
   padding-left: 10px;
 }
 @media (max-width: 800px) {
+  .rosary-prayers-header .expand-btn,
   .prayer-each-day-header .expand-btn,
   .pope-st-gregory-header .expand-btn {
     display: block;
   }
 }
+.rosary-prayers-header .collapse-btn,
 .prayer-each-day-header .collapse-btn,
 .pope-st-gregory-header .collapse-btn {
   padding-left: 10px;
 }
+.rosary-prayers-header .hidden-btn,
 .prayer-each-day-header .hidden-btn,
 .pope-st-gregory-header .hidden-btn {
   display: none;
@@ -224,7 +233,13 @@ footer {
   border: 1px solid purple;
   padding: 9px;
 }
+.rosary-prayers-content,
+.prayer-each-day-content,
+.pope-st-gregory-content {
+  display: block;
+}
 @media (max-width: 800px) {
+  .rosary-prayers-content,
   .prayer-each-day-content,
   .pope-st-gregory-content {
     display: none;

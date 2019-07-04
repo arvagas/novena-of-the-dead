@@ -16,9 +16,9 @@ function Accordion(headerName, reset) {
     }
 }
 
-let prayerAccHeader = '.accordion-header'
-$('.accordion').on('click', '.accordion-header', function(){
-    if (window.innerWidth <= 800) Accordion(this, prayerAccHeader)
+let accRosaryPrayers = '.rosary-prayers-header'
+$('.rosary-prayers').on('click', '.rosary-prayers-header', function(){
+    if (window.innerWidth <= 800) Accordion(this, accRosaryPrayers)
 })
 
 let accPrayerForEachDay = '.prayer-each-day-header'
