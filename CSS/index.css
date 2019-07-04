@@ -195,10 +195,6 @@ footer {
     border-radius: 15px;
     margin-top: 2rem;
   }
-  .prayer-each-day-header:first-child,
-  .pope-st-gregory-header:first-child {
-    margin-top: 0;
-  }
   .prayer-each-day-header:hover,
   .pope-st-gregory-header:hover {
     border: 1px solid purple;
