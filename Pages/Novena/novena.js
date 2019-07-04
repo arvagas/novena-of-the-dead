@@ -1,3 +1,20 @@
+// @@@@@@@@@@@@@@@@@@@@ Length Selection @@@@@@@@@@@@@@@@@@@@
+$(document).ready(function(){
+    $('.novena-length').on('change', function() {
+        let currValue = this.value
+        switch (currValue) {
+            case "novena-length-extended":
+                document.querySelectorAll('.novena-length-extended').forEach(item => item.style.display = 'block')
+                break;
+
+            case "novena-length-abridged":
+                document.querySelectorAll('.novena-length-extended').forEach(item => item.style.display = 'none')
+                break;
+        }
+    })
+})
+
+// @@@@@@@@@@@@@@@@@@@@ Day Selection @@@@@@@@@@@@@@@@@@@@
 $(document).ready(function(){
     $('.novena-day').on('change', function() {
         let currValue = this.value
@@ -359,7 +376,7 @@ $(document).ready(function(){
                     }
                 })
                 break;
-                
+
         }
     })
 })
