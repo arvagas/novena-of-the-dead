@@ -11,4 +11,5 @@ I did a bit of research, and I didn't really see any responsive sites/apps that 
 2. Make a responsive site that fits on all screens (save the trees!)
 
 Click on the following link to be taken to the project:
-https://htmlpreview.github.io/?https://github.com/arvagas/novena-of-the-dead/blob/master/novena.html
+
+[Link to Project](https://htmlpreview.github.io/?https://github.com/arvagas/novena-of-the-dead/blob/master/novena.html)
