@@ -25,3 +25,8 @@ let accPrayerForEachDay = '.prayer-each-day-header'
 $('.prayer-each-day').on('click', '.prayer-each-day-header', function(){
     if (window.innerWidth <= 800) Accordion(this, accPrayerForEachDay)
 })
+
+let accPopeStGregory = '.pope-st-gregory-header'
+$('.pope-st-gregory').on('click', '.pope-st-gregory-header', function(){
+    if (window.innerWidth <= 800) Accordion(this, accPopeStGregory)
+})

@@ -158,14 +158,6 @@ i {
 b {
   font-weight: bold;
 }
-table {
-  border-collapse: collapse;
-  width: 100%;
-  text-align: left;
-}
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
 .container {
   margin: 0 auto;
   max-width: 100vw;
@@ -173,132 +165,89 @@ tr:nth-child(even) {
 }
 footer {
   text-align: center;
+  margin: 2rem;
 }
-.accordion {
+.prayer-each-day,
+.pope-st-gregory {
   max-width: 800px;
 }
 @media (max-width: 800px) {
-  .accordion {
+  .prayer-each-day,
+  .pope-st-gregory {
     margin: 0 10%;
   }
 }
 @media (max-width: 500px) {
-  .accordion {
+  .prayer-each-day,
+  .pope-st-gregory {
     margin: 0 5%;
   }
 }
-.accordion-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  background: rgba(118, 54, 148, 0.2);
-  padding: 10px;
-  border-radius: 15px;
-  margin-top: 2rem;
+@media (max-width: 800px) {
+  .prayer-each-day-header,
+  .pope-st-gregory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: rgba(118, 54, 148, 0.2);
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 2rem;
+  }
+  .prayer-each-day-header:first-child,
+  .pope-st-gregory-header:first-child {
+    margin-top: 0;
+  }
+  .prayer-each-day-header:hover,
+  .pope-st-gregory-header:hover {
+    border: 1px solid purple;
+    padding: 9px;
+  }
 }
-.accordion-header:first-child {
-  margin-top: 0;
-}
-.accordion-header:hover {
-  border: 1px solid purple;
-  padding: 9px;
-}
-.accordion-header .accordion-title {
-  font-size: 2.4rem;
+.prayer-each-day-header .expand-btn,
+.pope-st-gregory-header .expand-btn {
+  display: none;
+  padding-left: 10px;
 }
 @media (max-width: 800px) {
-  .accordion-header .accordion-title {
-    font-size: 2.2rem;
+  .prayer-each-day-header .expand-btn,
+  .pope-st-gregory-header .expand-btn {
+    display: block;
   }
 }
-@media (max-width: 500px) {
-  .accordion-header .accordion-title {
-    font-size: 2rem;
-  }
-}
-.accordion-header .expand-btn {
+.prayer-each-day-header .collapse-btn,
+.pope-st-gregory-header .collapse-btn {
   padding-left: 10px;
 }
-.accordion-header .collapse-btn {
-  padding-left: 10px;
-}
-.accordion-header .hidden-btn {
+.prayer-each-day-header .hidden-btn,
+.pope-st-gregory-header .hidden-btn {
   display: none;
 }
 .active-header {
   border: 1px solid purple;
   padding: 9px;
 }
-.accordion-content {
-  display: none;
-  padding: 10px;
-  margin: 0 2%;
-  border: 0.5px solid purple;
-  border-radius: 0 0 15px 15px;
-  border-top: none;
-}
-.novena-container .prayer-each-day {
-  max-width: 800px;
-}
 @media (max-width: 800px) {
-  .novena-container .prayer-each-day {
-    margin: 0 10%;
+  .prayer-each-day-content,
+  .pope-st-gregory-content {
+    display: none;
+    padding: 10px;
+    margin: 0 2%;
+    border: 0.5px solid purple;
+    border-radius: 0 0 15px 15px;
+    border-top: none;
   }
 }
-@media (max-width: 500px) {
-  .novena-container .prayer-each-day {
-    margin: 0 5%;
-  }
+.novena-container table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
 }
-.novena-container .prayer-each-day-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  background: rgba(118, 54, 148, 0.2);
-  padding: 10px;
-  border-radius: 15px;
-  margin-top: 2rem;
+.novena-container tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
-.novena-container .prayer-each-day-header:first-child {
-  margin-top: 0;
-}
-.novena-container .prayer-each-day-header:hover {
-  border: 1px solid purple;
-  padding: 9px;
-}
-.novena-container .prayer-each-day-header .accordion-title {
-  font-size: 2.4rem;
-}
-@media (max-width: 800px) {
-  .novena-container .prayer-each-day-header .accordion-title {
-    font-size: 2.2rem;
-  }
-}
-@media (max-width: 500px) {
-  .novena-container .prayer-each-day-header .accordion-title {
-    font-size: 2rem;
-  }
-}
-.novena-container .prayer-each-day-header .expand-btn {
-  padding-left: 10px;
-}
-.novena-container .prayer-each-day-header .collapse-btn {
-  padding-left: 10px;
-}
-.novena-container .prayer-each-day-header .hidden-btn {
-  display: none;
-}
-.novena-container .active-header {
-  border: 1px solid purple;
-  padding: 9px;
-}
-.novena-container .prayer-each-day-content {
-  display: none;
-  padding: 10px;
-  margin: 0 2%;
-  border: 0.5px solid purple;
-  border-radius: 0 0 15px 15px;
-  border-top: none;
+.novena-container td {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
 }

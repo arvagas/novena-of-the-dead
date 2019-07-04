@@ -1,4 +1,4 @@
-.accordion {
+.prayer-each-day, .pope-st-gregory {
     max-width: 800px;
 
     @media @tablet {
@@ -10,39 +10,35 @@
     }
 }
 
-.accordion-header {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    cursor: pointer;
-    background: rgba(118, 54, 148, 0.2);
-    padding: 10px;
-    border-radius: 15px;
-    margin-top: 2rem;
+.prayer-each-day-header, .pope-st-gregory-header {
 
-    &:first-child {
-        margin-top: 0;
-    }
+    @media @tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        cursor: pointer;
+        background: rgba(118, 54, 148, 0.2);
+        padding: 10px;
+        border-radius: 15px;
+        margin-top: 2rem;
 
-    &:hover {
-        border: 1px solid purple;
-        padding: 9px;
-    }
-
-    .accordion-title {
-        font-size: 2.4rem;
-
-        @media @tablet {
-        font-size: 2.2rem;
+        &:first-child {
+            margin-top: 0;
         }
-    
-        @media @phone {
-            font-size: 2rem;
+
+        &:hover {
+            border: 1px solid purple;
+            padding: 9px;
         }
     }
 
     .expand-btn {
+        display: none;
         padding-left: 10px;
+
+        @media @tablet {
+            display: block;
+        }
     }
 
     .collapse-btn {
@@ -59,11 +55,14 @@
     padding: 9px;
 }
 
-.accordion-content {
-    display:none;
-    padding: 10px;
-    margin: 0 2%;
-    border: .5px solid purple;
-    border-radius: 0 0 15px 15px;
-    border-top: none;
+.prayer-each-day-content, .pope-st-gregory-content {
+
+    @media @tablet {
+        display:none;
+        padding: 10px;
+        margin: 0 2%;
+        border: .5px solid purple;
+        border-radius: 0 0 15px 15px;
+        border-top: none;
+    }
 }
