@@ -1,8 +1,8 @@
 .rosary-prayers, .prayer-each-day, .pope-st-gregory {
-    max-width: 800px;
+    max-width: 900px;
 
     @media @tablet {
-        margin: 0 10%;
+        margin: 0 8%;
     }
 
     @media @phone {
@@ -11,6 +11,8 @@
 }
 
 .rosary-prayers-header, .prayer-each-day-header, .pope-st-gregory-header {
+    margin-top: 2rem;
+    border-bottom: solid black 1px;
 
     @media @tablet {
         display: flex;
@@ -20,11 +22,7 @@
         background: rgba(118, 54, 148, 0.2);
         padding: 10px;
         border-radius: 15px;
-        margin-top: 2rem;
-
-        // &:first-child {
-        //     margin-top: 0;
-        // }
+        border-bottom: 0;
 
         &:hover {
             border: 1px solid purple;

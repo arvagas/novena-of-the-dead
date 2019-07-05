@@ -1,6 +1,6 @@
 // @@@@@@@@@@@@@@@@@@@@ Length Selection @@@@@@@@@@@@@@@@@@@@
 $(document).ready(function(){
-    $('.novena-length').on('change', function() {
+    $('.novena-length-options').on('change', function() {
         let currValue = this.value
         switch (currValue) {
             case "novena-length-extended":
@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 // @@@@@@@@@@@@@@@@@@@@ Day Selection @@@@@@@@@@@@@@@@@@@@
 $(document).ready(function(){
-    $('.novena-day').on('change', function() {
+    $('.novena-day-options').on('change', function() {
         let currValue = this.value
         switch (currValue) {
             case "novena-day-all":

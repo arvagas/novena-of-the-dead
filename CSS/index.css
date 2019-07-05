@@ -143,13 +143,13 @@ html {
 h1 {
   font-size: 2.4rem;
 }
-h2 {
+h2,
+tr {
   font-size: 2rem;
 }
 p,
 a,
-td,
-tr {
+td {
   font-size: 1.6rem;
 }
 i {
@@ -242,13 +242,13 @@ footer {
 .rosary-prayers,
 .prayer-each-day,
 .pope-st-gregory {
-  max-width: 800px;
+  max-width: 900px;
 }
 @media (max-width: 800px) {
   .rosary-prayers,
   .prayer-each-day,
   .pope-st-gregory {
-    margin: 0 10%;
+    margin: 0 8%;
   }
 }
 @media (max-width: 500px) {
@@ -257,6 +257,12 @@ footer {
   .pope-st-gregory {
     margin: 0 5%;
   }
+}
+.rosary-prayers-header,
+.prayer-each-day-header,
+.pope-st-gregory-header {
+  margin-top: 2rem;
+  border-bottom: solid black 1px;
 }
 @media (max-width: 800px) {
   .rosary-prayers-header,
@@ -269,7 +275,7 @@ footer {
     background: rgba(118, 54, 148, 0.2);
     padding: 10px;
     border-radius: 15px;
-    margin-top: 2rem;
+    border-bottom: 0;
   }
   .rosary-prayers-header:hover,
   .prayer-each-day-header:hover,
@@ -322,13 +328,30 @@ footer {
     border-top: none;
   }
 }
+.novena-container h1 {
+  background-color: rgba(115, 30, 194, 0.4);
+  padding: 5px 0;
+}
+@media (max-width: 800px) {
+  .novena-container h1 {
+    text-align: center;
+  }
+}
+.novena-container section {
+  margin-bottom: 2rem;
+}
 .novena-container table {
   border-collapse: collapse;
-  width: 100%;
+  width: 900px;
   text-align: left;
 }
+@media (max-width: 800px) {
+  .novena-container table {
+    width: 100%;
+  }
+}
 .novena-container tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: rgba(115, 30, 194, 0.05);
 }
 .novena-container td {
   padding-left: 1.5em;
@@ -336,10 +359,49 @@ footer {
 }
 .novena-container .novena-options {
   display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 2rem;
 }
-.novena-container .novena-options p {
-  padding: 0 20px;
+@media (max-width: 425px) {
+  .novena-container .novena-options {
+    flex-direction: column;
+  }
 }
-.novena-container .novena-options p:first-child {
-  padding-left: 0px;
+.novena-container .novena-options .novena-day {
+  display: flex;
+  margin-right: 20px;
+}
+@media (max-width: 425px) {
+  .novena-container .novena-options .novena-day {
+    align-self: center;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+.novena-container .novena-options .novena-length {
+  display: flex;
+}
+@media (max-width: 425px) {
+  .novena-container .novena-options .novena-length {
+    align-self: center;
+  }
+}
+.novena-container .prayer-text {
+  max-width: 900px;
+}
+@media (max-width: 800px) {
+  .novena-container .prayer-text {
+    margin: 0 8%;
+  }
+}
+@media (max-width: 500px) {
+  .novena-container .prayer-text {
+    margin: 0 5%;
+  }
+}
+@media (max-width: 800px) {
+  .novena-container .ofhm {
+    text-align: center;
+  }
 }

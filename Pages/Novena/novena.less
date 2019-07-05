@@ -1,15 +1,32 @@
 .novena-container {
 
+    h1 {
+        background-color: rgba(115, 30, 194, 0.4);
+        padding: 5px 0;
+        
+        @media @tablet {
+            text-align:center;
+        }
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
     table {
         border-collapse: collapse;
-        width: 100%;
+        width: 900px;
         text-align: left;
+
+        @media @tablet {
+            width: 100%;
+        }
     }
     
     tr {
     
         &:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: rgba(115, 30, 194, 0.05);
         } 
     }
     
@@ -20,14 +37,50 @@
 
     .novena-options {
         display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        margin-bottom: 2rem;
 
-        p {
-            padding: 0 20px;
+        @media (max-width: 425px) {
+            flex-direction:column;
+        }
 
-            &:first-child {
-                padding-left: 0px;
+        .novena-day {
+            display:flex;
+            margin-right: 20px;
+
+            @media (max-width: 425px) {
+                align-self: center;
+                margin-right: 0;
+                margin-bottom: 2rem;
             }
+        }
 
+        .novena-length {
+            display:flex;
+
+            @media (max-width: 425px) {
+                align-self: center;
+            }
+        }
+    }
+
+    .prayer-text {
+        max-width: 900px;
+
+        @media @tablet {
+            margin: 0 8%;
+        }
+
+        @media @phone {
+            margin: 0 5%;
+        }
+    }
+
+    .ofhm {
+
+        @media @tablet {
+            text-align: center;
         }
     }
 }
