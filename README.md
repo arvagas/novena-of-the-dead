@@ -4,12 +4,8 @@ Coming from a Filipino, Catholic household, it's not unusual that I attend noven
 
 **This project has two main goals:**
 
-1. Recreate the format of a long structure, then make an abridged version of it. Check.
+1. Recreate the format of a long structure, then make an abridged version of it.
 
 I did a bit of research, and I didn't really see any responsive sites/apps that were related to this project so..
 
 2. Make a responsive site that fits on all screens (save the trees!)
-
-Click on the following link to be taken to the project:
-
-[Link to Project](https://htmlpreview.github.io/?https://github.com/arvagas/novena-of-the-dead/blob/master/novena.html)
