@@ -335,6 +335,7 @@ footer {
   margin-bottom: 2rem;
 }
 .novena-container table {
+  margin-top: 2rem;
   border-collapse: collapse;
   width: 900px;
   text-align: left;
