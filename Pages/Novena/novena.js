@@ -36,8 +36,8 @@ $(document).ready(function(){
                 break;
 
             case "novena-day-one":
-                    dayOption(accPrayerEachDayHeader, currValue)
-                    dayOption(accPopeStGregoryHeader, currValue)
+                dayOption(accPrayerEachDayHeader, currValue)
+                dayOption(accPopeStGregoryHeader, currValue)
                 break;
 
             case "novena-day-two":
