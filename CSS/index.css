@@ -143,20 +143,13 @@ html {
 h1 {
   font-size: 2.4rem;
 }
-h2,
-tr {
+h2 {
   font-size: 2rem;
 }
 p,
 a,
 td {
   font-size: 1.6rem;
-}
-i {
-  font-style: italic;
-}
-b {
-  font-weight: bold;
 }
 .container {
   margin: 0 auto;
@@ -331,6 +324,7 @@ footer {
 .novena-container h1 {
   background-color: rgba(115, 30, 194, 0.4);
   padding: 5px 0;
+  font-weight: bold;
 }
 @media (max-width: 800px) {
   .novena-container h1 {
@@ -387,18 +381,28 @@ footer {
     align-self: center;
   }
 }
+.novena-container .verse {
+  font-weight: bold;
+}
+.novena-container .resp {
+  font-style: italic;
+}
 .novena-container .prayer-text {
   max-width: 900px;
+  margin-top: 2rem;
 }
 @media (max-width: 800px) {
   .novena-container .prayer-text {
-    margin: 0 8%;
+    margin: 2rem 8% 0;
   }
 }
 @media (max-width: 500px) {
   .novena-container .prayer-text {
-    margin: 0 5%;
+    margin: 2rem 5% 0;
   }
+}
+.novena-container .ofhm {
+  font-style: italic;
 }
 @media (max-width: 800px) {
   .novena-container .ofhm {
