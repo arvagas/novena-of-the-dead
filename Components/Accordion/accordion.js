@@ -2,17 +2,14 @@ function Accordion(headerName, reset) {
     // if border is highlighted when clicked, close the panel and do nothing else
     if ($(headerName).hasClass('active-header')) {
         $(headerName).toggleClass('active-header').next().slideToggle()
-        $(headerName).find('.expand-btn').toggleClass('hidden-btn')
-        $(headerName).find('.collapse-btn').toggleClass('hidden-btn')
+        $(headerName).find('.expand-icon').toggleClass('flip')
     } else { // otherwise, reset the other panels (collapse all) and then open clicked panel
         // resets all panels
         $(reset).removeClass('active-header').next().slideUp()
-        $(reset).find('.expand-btn').removeClass('hidden-btn')
-        $(reset).find('.collapse-btn').addClass('hidden-btn')
+        $(reset).find('.expand-icon').removeClass('flip')
         // turn on panel
         $(headerName).toggleClass('active-header').next().slideToggle()
-        $(headerName).find('.expand-btn').toggleClass('hidden-btn')
-        $(headerName).find('.collapse-btn').toggleClass('hidden-btn')
+        $(headerName).find('.expand-icon').toggleClass('flip')
     }
 }
 

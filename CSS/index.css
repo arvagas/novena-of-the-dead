@@ -277,28 +277,27 @@ footer {
     padding: 9px;
   }
 }
-.rosary-prayers-header .expand-btn,
-.prayer-each-day-header .expand-btn,
-.pope-st-gregory-header .expand-btn {
+.rosary-prayers-header .expand-icon,
+.prayer-each-day-header .expand-icon,
+.pope-st-gregory-header .expand-icon {
   display: none;
   padding-left: 10px;
+  transition: 0.5s;
 }
 @media (max-width: 800px) {
-  .rosary-prayers-header .expand-btn,
-  .prayer-each-day-header .expand-btn,
-  .pope-st-gregory-header .expand-btn {
+  .rosary-prayers-header .expand-icon,
+  .prayer-each-day-header .expand-icon,
+  .pope-st-gregory-header .expand-icon {
     display: block;
   }
 }
-.rosary-prayers-header .collapse-btn,
-.prayer-each-day-header .collapse-btn,
-.pope-st-gregory-header .collapse-btn {
-  padding-left: 10px;
-}
-.rosary-prayers-header .hidden-btn,
-.prayer-each-day-header .hidden-btn,
-.pope-st-gregory-header .hidden-btn {
-  display: none;
+.rosary-prayers-header .flip,
+.prayer-each-day-header .flip,
+.pope-st-gregory-header .flip {
+  transition: 0.5s;
+  transform: rotate(180deg);
+  padding-left: 0px;
+  padding-right: 10px;
 }
 .active-header {
   border: 1px solid purple;

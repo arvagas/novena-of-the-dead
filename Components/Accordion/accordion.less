@@ -30,21 +30,21 @@
         }
     }
 
-    .expand-btn {
+    .expand-icon {
         display: none;
         padding-left: 10px;
+        transition: 0.5s;
 
         @media @tablet {
             display: block;
         }
     }
 
-    .collapse-btn {
-        padding-left: 10px;
-    }
-
-    .hidden-btn {
-        display: none;
+    .flip {
+        transition: 0.5s;
+        transform: rotate(180deg);
+        padding-left: 0px;
+        padding-right: 10px;
     }
 }
 
