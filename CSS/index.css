@@ -373,6 +373,7 @@ footer {
   justify-content: center;
   padding-top: 20px;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 @media (max-width: 425px) {
   .novena-container .novena-options {
@@ -396,11 +397,35 @@ footer {
 @media (max-width: 425px) {
   .novena-container .novena-options .novena-length {
     align-self: center;
+    margin-bottom: 2rem;
   }
+}
+.novena-container .novena-options .section-jump-drop {
+  display: none;
+}
+@media (max-width: 500px) {
+  .novena-container .novena-options .section-jump-drop {
+    display: block;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 425px) {
+  .novena-container .novena-options .section-jump-drop {
+    margin-top: 0;
+    align-self: center;
+  }
+}
+.novena-container .novena-options .section-jump-drop p {
+  text-align: center;
 }
 .novena-container .section-jump {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .novena-container .section-jump {
+    display: none;
+  }
 }
 .novena-container .section-jump p {
   text-align: center;
