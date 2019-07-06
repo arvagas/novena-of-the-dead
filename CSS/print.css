@@ -1,0 +1,21 @@
+header {
+    display: none;
+}
+
+br {
+    display: none;
+}
+
+.novena-options {
+    display: none;
+}
+
+.rosary-prayers-header .expand-icon,
+.prayer-each-day-header .expand-icon,
+.pope-st-gregory-header .expand-icon {
+  display: none;
+}
+
+footer {
+    display: none;
+}
