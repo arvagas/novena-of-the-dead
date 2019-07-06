@@ -398,14 +398,52 @@ footer {
     align-self: center;
   }
 }
+.novena-container .rosary-mysteries {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  .novena-container .rosary-mysteries {
+    justify-content: center;
+  }
+}
+.novena-container .rosary-mysteries h2 {
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  .novena-container .rosary-mysteries h2 {
+    align-self: center;
+  }
+}
+.novena-container .joyful-mystery,
+.novena-container .sorrowful-mystery,
+.novena-container .glorious-mystery,
+.novena-container .luminous-mystery {
+  display: none;
+}
 .novena-container .joyful-mystery .mystery-header,
 .novena-container .sorrowful-mystery .mystery-header,
 .novena-container .glorious-mystery .mystery-header,
 .novena-container .luminous-mystery .mystery-header {
   text-decoration: underline;
 }
+@media (max-width: 800px) {
+  .novena-container .joyful-mystery .mystery-header,
+  .novena-container .sorrowful-mystery .mystery-header,
+  .novena-container .glorious-mystery .mystery-header,
+  .novena-container .luminous-mystery .mystery-header {
+    text-align: center;
+  }
+}
 .novena-container .selected-mystery {
+  margin-top: 2rem;
   display: block;
+}
+@media (max-width: 800px) {
+  .novena-container .selected-mystery {
+    align-self: center;
+  }
 }
 .novena-container .verse {
   font-weight: bold;

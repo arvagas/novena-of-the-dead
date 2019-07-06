@@ -72,16 +72,43 @@
         }
     }
 
+    .rosary-mysteries {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        @media @tablet {
+            justify-content: center;
+        }
+
+        h2 {
+            font-weight: bold;
+
+            @media @tablet {
+                align-self: center;
+            }
+        }
+    }
+
     .joyful-mystery,.sorrowful-mystery,.glorious-mystery,.luminous-mystery {
-        // display: none;
+        display: none;
 
         .mystery-header {
             text-decoration: underline;
+
+            @media @tablet {
+                text-align: center;
+            }
         }
     }
 
     .selected-mystery {
+        margin-top: 2rem;
         display: block;
+        
+        @media @tablet {
+            align-self: center;
+        }
     }
 
     .verse {

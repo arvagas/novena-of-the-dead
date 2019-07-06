@@ -33,7 +33,7 @@ class Mobile{
 }
 
 let mobileButton = document.querySelectorAll('.button-mobile').forEach(event => new Mobile(event));
-console.log(mobileButton)
+
 // jQuery Test
 // $('.button-mobile').on('click', function(){
 //     $(this).next().slideToggle()

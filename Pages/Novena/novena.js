@@ -108,3 +108,29 @@ let accPrayerEachDayHeader = document.querySelectorAll('.prayer-each-day-header'
 let accPopeStGregoryHeader = document.querySelectorAll('.pope-st-gregory-header')
 
 // @@@@@@@@@@@@@@@@@@@@ Glorious Mysteries @@@@@@@@@@@@@@@@@@@@
+$(document).ready(function(){
+    let day = new Date()
+    switch (day.getDay()) {
+        case 0:
+            $('.glorious-mystery').addClass('selected-mystery')
+            break;
+        case 1:
+            $('.joyful-mystery').addClass('selected-mystery')
+            break;
+        case 2:
+            $('.sorrowful-mystery').addClass('selected-mystery')
+            break;
+        case 3:
+            $('.glorious-mystery').addClass('selected-mystery')
+            break;
+        case 4:
+            $('.luminous-mystery').addClass('selected-mystery')
+            break;
+        case 5:
+            $('.sorrowful-mystery').addClass('selected-mystery')
+            break;
+        case 6:
+            $('.joyful-mystery').addClass('selected-mystery')
+            break;
+    }
+})

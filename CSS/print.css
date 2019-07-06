@@ -22,6 +22,10 @@ h1 {
     display: none;
 }
 
+.rosary-mysteries {
+    display: none;
+}
+
 .rosary-prayers-header .expand-icon,
 .prayer-each-day-header .expand-icon,
 .pope-st-gregory-header .expand-icon {
