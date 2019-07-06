@@ -148,7 +148,8 @@ h2 {
 }
 p,
 a,
-td {
+td,
+li {
   font-size: 1.6rem;
 }
 .container {
@@ -363,6 +364,10 @@ footer {
   padding-left: 1.5em;
   text-indent: -1.5em;
 }
+.novena-container ol {
+  list-style-type: upper-roman;
+  padding-left: 30px;
+}
 .novena-container .novena-options {
   display: flex;
   justify-content: center;
@@ -392,6 +397,15 @@ footer {
   .novena-container .novena-options .novena-length {
     align-self: center;
   }
+}
+.novena-container .joyful-mystery .mystery-header,
+.novena-container .sorrowful-mystery .mystery-header,
+.novena-container .glorious-mystery .mystery-header,
+.novena-container .luminous-mystery .mystery-header {
+  text-decoration: underline;
+}
+.novena-container .selected-mystery {
+  display: block;
 }
 .novena-container .verse {
   font-weight: bold;

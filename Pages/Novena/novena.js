@@ -106,3 +106,5 @@ function dayOption(selection, value){
 
 let accPrayerEachDayHeader = document.querySelectorAll('.prayer-each-day-header')
 let accPopeStGregoryHeader = document.querySelectorAll('.pope-st-gregory-header')
+
+// @@@@@@@@@@@@@@@@@@@@ Glorious Mysteries @@@@@@@@@@@@@@@@@@@@
