@@ -398,6 +398,26 @@ footer {
     align-self: center;
   }
 }
+.novena-container .section-jump {
+  display: flex;
+  flex-direction: column;
+}
+.novena-container .section-jump p {
+  text-align: center;
+}
+.novena-container .section-jump div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.novena-container .section-jump div a {
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .novena-container .section-jump div a {
+    padding: 5px;
+  }
+}
 .novena-container .rosary-mysteries {
   margin-top: 2rem;
   display: flex;

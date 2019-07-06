@@ -72,6 +72,29 @@
         }
     }
 
+    .section-jump {
+        display:flex;
+        flex-direction: column;
+        
+            p {
+                text-align:center
+            }
+
+            div {
+                display:flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                a {
+                    padding: 10px;
+
+                    @media @phone {
+                        padding: 5px;
+                    }
+                }
+            }
+       }
+
     .rosary-mysteries {
         margin-top: 2rem;
         display: flex;
