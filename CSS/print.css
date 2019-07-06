@@ -6,6 +6,18 @@ br {
     display: none;
 }
 
+h1 {
+    text-decoration: underline;
+}
+
+.verse {
+    font-weight: bold;
+}
+
+.resp {
+    font-style: italic;
+}
+
 .novena-options {
     display: none;
 }
