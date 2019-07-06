@@ -2,8 +2,61 @@
     display:flex;
     flex-direction:column;
 
-    img {
-        max-width:30%;
+    .cta-header {
+        font-size: 3.2rem;
+        text-align: center;
+        margin-top: 2rem;
+
+        @media @tablet {
+            font-size: 2.8rem;
+        }
+
+        @media @phone {
+            font-size: 2.4rem;
+        }
+    }
+
+    .cta-img {
+        max-width:35%;
         border-radius: 50%;
+        align-self: center;
+        margin: 2rem 0;
+
+        @media @phone {
+            max-width:45%;
+        }
+    }
+
+    .home-header {
+        max-width: 900px;
+        font-size: 2.4rem;
+
+        @media @tablet {
+            font-size: 2.2rem;
+            margin: 0 8%;
+        }
+
+        @media @phone {
+            font-size: 2.0rem;
+            margin: 0 5%;
+        }
+    }
+
+    .text-content {
+        max-width: 900px;
+        margin-bottom: 1.6rem;
+
+        @media @tablet {
+            margin: 0 8% 1.6rem;
+        }
+
+        @media @phone {
+            margin: 0 5% 1.6rem;
+        }
+    }
+
+    .novena-link {
+        text-decoration: none;
+        text-align: center;
     }
 }

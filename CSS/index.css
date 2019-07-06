@@ -329,9 +329,65 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.home-container img {
-  max-width: 30%;
+.home-container .cta-header {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+@media (max-width: 800px) {
+  .home-container .cta-header {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .home-container .cta-header {
+    font-size: 2.4rem;
+  }
+}
+.home-container .cta-img {
+  max-width: 35%;
   border-radius: 50%;
+  align-self: center;
+  margin: 2rem 0;
+}
+@media (max-width: 500px) {
+  .home-container .cta-img {
+    max-width: 45%;
+  }
+}
+.home-container .home-header {
+  max-width: 900px;
+  font-size: 2.4rem;
+}
+@media (max-width: 800px) {
+  .home-container .home-header {
+    font-size: 2.2rem;
+    margin: 0 8%;
+  }
+}
+@media (max-width: 500px) {
+  .home-container .home-header {
+    font-size: 2rem;
+    margin: 0 5%;
+  }
+}
+.home-container .text-content {
+  max-width: 900px;
+  margin-bottom: 1.6rem;
+}
+@media (max-width: 800px) {
+  .home-container .text-content {
+    margin: 0 8% 1.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .home-container .text-content {
+    margin: 0 5% 1.6rem;
+  }
+}
+.home-container .novena-link {
+  text-decoration: none;
+  text-align: center;
 }
 .novena-container h1 {
   background-color: rgba(115, 30, 194, 0.4);
@@ -365,8 +421,9 @@ footer {
   text-indent: -1.5em;
 }
 .novena-container ol {
+  margin-top: 1rem;
   list-style-type: upper-roman;
-  padding-left: 30px;
+  padding: 0 20px;
 }
 .novena-container .novena-options {
   display: flex;
