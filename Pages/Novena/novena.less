@@ -2,11 +2,20 @@
 
     h1 {
         background-color: rgba(115, 30, 194, 0.4);
-        padding: 5px 0;
-        font-weight:bold;
+        padding: 5px 0 5px 2%;
+        font-weight: bold;
         
         @media @tablet {
-            text-align:center;
+            padding: 5px 0;
+            text-align: center;
+        }
+    }
+
+    p {
+        margin: 0 0 0 2%;
+
+        @media @tablet {
+            margin: 0;
         }
     }
 
@@ -19,9 +28,11 @@
         border-collapse: collapse;
         width: 900px;
         text-align: left;
+        margin-left: 2%;
 
         @media @tablet {
             width: 100%;
+            margin-left: 0;
         }
     }
     
@@ -41,6 +52,7 @@
         margin-top: 1rem;
         list-style-type: upper-roman;
         padding: 0 30px;
+        margin-left: 2%;
 
         @media @phone {
             margin: 1rem 5% 0;
@@ -135,9 +147,11 @@
 
         h2 {
             font-weight: bold;
+            margin: 0 0 0 2%;
 
             @media @tablet {
                 align-self: center;
+                margin: 0;
             }
         }
     }

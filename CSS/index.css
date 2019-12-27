@@ -261,6 +261,7 @@ footer {
 .pope-st-gregory-header {
   margin-top: 2rem;
   border-bottom: solid black 1px;
+  margin-left: 2%;
 }
 @media (max-width: 800px) {
   .rosary-prayers-header,
@@ -274,6 +275,7 @@ footer {
     padding: 10px;
     border-radius: 15px;
     border-bottom: 0;
+    margin-left: 0;
   }
   .rosary-prayers-header:hover,
   .prayer-each-day-header:hover,
@@ -303,6 +305,11 @@ footer {
   transform: rotate(180deg);
   padding-left: 0px;
   padding-right: 10px;
+}
+.rosary-prayers-header .prayer-each-day-header-text p,
+.prayer-each-day-header .prayer-each-day-header-text p,
+.pope-st-gregory-header .prayer-each-day-header-text p {
+  margin: 0;
 }
 .active-header {
   border: 1px solid purple;
@@ -394,12 +401,21 @@ footer {
 }
 .novena-container h1 {
   background-color: rgba(115, 30, 194, 0.4);
-  padding: 5px 0;
+  padding: 5px 0 5px 2%;
   font-weight: bold;
 }
 @media (max-width: 800px) {
   .novena-container h1 {
+    padding: 5px 0;
     text-align: center;
+  }
+}
+.novena-container p {
+  margin: 0 0 0 2%;
+}
+@media (max-width: 800px) {
+  .novena-container p {
+    margin: 0;
   }
 }
 .novena-container section {
@@ -410,10 +426,12 @@ footer {
   border-collapse: collapse;
   width: 900px;
   text-align: left;
+  margin-left: 2%;
 }
 @media (max-width: 800px) {
   .novena-container table {
     width: 100%;
+    margin-left: 0;
   }
 }
 .novena-container tr:nth-child(even) {
@@ -427,6 +445,7 @@ footer {
   margin-top: 1rem;
   list-style-type: upper-roman;
   padding: 0 30px;
+  margin-left: 2%;
 }
 @media (max-width: 500px) {
   .novena-container ol {
@@ -520,10 +539,12 @@ footer {
 }
 .novena-container .rosary-mysteries h2 {
   font-weight: bold;
+  margin: 0 0 0 2%;
 }
 @media (max-width: 800px) {
   .novena-container .rosary-mysteries h2 {
     align-self: center;
+    margin: 0;
   }
 }
 .novena-container .joyful-mystery,
