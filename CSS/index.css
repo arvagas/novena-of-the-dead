@@ -174,7 +174,7 @@ header {
   border-bottom: solid black 1px;
   justify-content: flex-end;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   header {
     justify-content: center;
   }
@@ -242,7 +242,7 @@ footer {
 .pope-st-gregory {
   max-width: 900px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .rosary-prayers,
   .prayer-each-day,
   .pope-st-gregory {
@@ -262,7 +262,7 @@ footer {
   margin-top: 2rem;
   border-bottom: solid black 1px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .rosary-prayers-header,
   .prayer-each-day-header,
   .pope-st-gregory-header {
@@ -289,7 +289,7 @@ footer {
   padding-left: 10px;
   transition: 0.5s;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .rosary-prayers-header .expand-icon,
   .prayer-each-day-header .expand-icon,
   .pope-st-gregory-header .expand-icon {
@@ -313,7 +313,7 @@ footer {
 .pope-st-gregory-content {
   display: block;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .rosary-prayers-content,
   .prayer-each-day-content,
   .pope-st-gregory-content {
@@ -335,7 +335,7 @@ footer {
   font-weight: bold;
   margin-top: 2rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .home-container .cta-header {
     font-size: 2.8rem;
   }
@@ -362,7 +362,7 @@ footer {
   font-size: 2.4rem;
   font-weight: bold;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .home-container .home-header {
     font-size: 2.2rem;
     margin: 0 8%;
@@ -378,7 +378,7 @@ footer {
   max-width: 900px;
   margin-bottom: 1.6rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .home-container .text-content {
     margin: 0 8% 1.6rem;
   }
@@ -397,7 +397,7 @@ footer {
   padding: 5px 0;
   font-weight: bold;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .novena-container h1 {
     text-align: center;
   }
@@ -411,7 +411,7 @@ footer {
   width: 900px;
   text-align: left;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .novena-container table {
     width: 100%;
   }
@@ -513,7 +513,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .novena-container .rosary-mysteries {
     justify-content: center;
   }
@@ -521,7 +521,7 @@ footer {
 .novena-container .rosary-mysteries h2 {
   font-weight: bold;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .novena-container .rosary-mysteries h2 {
     align-self: center;
   }
@@ -538,7 +538,7 @@ footer {
 .novena-container .luminous-mystery .mystery-header {
   text-decoration: underline;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .novena-container .joyful-mystery .mystery-header,
   .novena-container .sorrowful-mystery .mystery-header,
   .novena-container .glorious-mystery .mystery-header,
@@ -550,7 +550,7 @@ footer {
   margin-top: 2rem;
   display: block;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .novena-container .selected-mystery {
     align-self: center;
   }
@@ -565,7 +565,7 @@ footer {
   max-width: 900px;
   margin-top: 2rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .novena-container .prayer-text {
     margin: 2rem 8% 0;
   }
@@ -578,7 +578,7 @@ footer {
 .novena-container .ofhm {
   font-style: italic;
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .novena-container .ofhm {
     text-align: center;
   }
