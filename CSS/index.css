@@ -241,6 +241,7 @@ footer {
 .prayer-each-day,
 .pope-st-gregory {
   max-width: 900px;
+  margin-left: 2%;
 }
 @media (max-width: 800px) {
   .rosary-prayers,
@@ -261,7 +262,6 @@ footer {
 .pope-st-gregory-header {
   margin-top: 2rem;
   border-bottom: solid black 1px;
-  margin-left: 2%;
 }
 @media (max-width: 800px) {
   .rosary-prayers-header,
@@ -275,7 +275,6 @@ footer {
     padding: 10px;
     border-radius: 15px;
     border-bottom: 0;
-    margin-left: 0;
   }
   .rosary-prayers-header:hover,
   .prayer-each-day-header:hover,
@@ -305,11 +304,6 @@ footer {
   transform: rotate(180deg);
   padding-left: 0px;
   padding-right: 10px;
-}
-.rosary-prayers-header .prayer-each-day-header-text p,
-.prayer-each-day-header .prayer-each-day-header-text p,
-.pope-st-gregory-header .prayer-each-day-header-text p {
-  margin: 0;
 }
 .active-header {
   border: 1px solid purple;
@@ -408,14 +402,6 @@ footer {
   .novena-container h1 {
     padding: 5px 0;
     text-align: center;
-  }
-}
-.novena-container p {
-  margin: 0 0 0 2%;
-}
-@media (max-width: 800px) {
-  .novena-container p {
-    margin: 0;
   }
 }
 .novena-container section {
@@ -551,6 +537,7 @@ footer {
 .novena-container .sorrowful-mystery,
 .novena-container .glorious-mystery,
 .novena-container .luminous-mystery {
+  margin-top: 2rem;
   display: none;
 }
 .novena-container .joyful-mystery .mystery-header,
@@ -558,6 +545,7 @@ footer {
 .novena-container .glorious-mystery .mystery-header,
 .novena-container .luminous-mystery .mystery-header {
   text-decoration: underline;
+  margin-left: 2%;
 }
 @media (max-width: 800px) {
   .novena-container .joyful-mystery .mystery-header,
@@ -565,10 +553,10 @@ footer {
   .novena-container .glorious-mystery .mystery-header,
   .novena-container .luminous-mystery .mystery-header {
     text-align: center;
+    margin-left: 0;
   }
 }
 .novena-container .selected-mystery {
-  margin-top: 2rem;
   display: block;
 }
 @media (max-width: 800px) {
@@ -584,7 +572,7 @@ footer {
 }
 .novena-container .prayer-text {
   max-width: 900px;
-  margin-top: 2rem;
+  margin: 2rem 0 0 2%;
 }
 @media (max-width: 800px) {
   .novena-container .prayer-text {

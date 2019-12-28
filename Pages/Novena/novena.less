@@ -11,13 +11,13 @@
         }
     }
 
-    p {
-        margin: 0 0 0 2%;
+    // p {
+    //     margin: 0 0 0 2%;
 
-        @media @tablet {
-            margin: 0;
-        }
-    }
+    //     @media @tablet {
+    //         margin: 0;
+    //     }
+    // }
 
     section {
         margin-bottom: 2rem;
@@ -157,19 +157,21 @@
     }
 
     .joyful-mystery,.sorrowful-mystery,.glorious-mystery,.luminous-mystery {
+        margin-top: 2rem;
         display: none;
 
         .mystery-header {
             text-decoration: underline;
+            margin-left: 2%;
 
             @media @tablet {
                 text-align: center;
+                margin-left: 0;
             }
         }
     }
 
     .selected-mystery {
-        margin-top: 2rem;
         display: block;
         
         @media @tablet {
@@ -187,7 +189,7 @@
 
     .prayer-text {
         max-width: 900px;
-        margin-top: 2rem;
+        margin: 2rem 0 0 2%;
 
         @media @tablet {
             margin: 2rem 8% 0;
