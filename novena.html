@@ -15,1091 +15,1092 @@
     <script type="text/javascript" src="./Pages/Novena/novena.js" async></script>
 </head>
 
-<header>
-    <i class="fas fa-bars fa-3x button-mobile"></i>
-    <nav>
-        <a class='page-links' href='index.html'>Home</a>
-        <a class='page-links' href='novena.html'>Novena</a>
-    </nav>
-</header>
-
 <body class='container novena-container'>
+    <header>
+        <i class="fas fa-bars fa-3x button-mobile"></i>
+        <nav>
+            <a class='page-links' href='index.html'>Home</a>
+            <a class='page-links' href='novena.html'>Novena</a>
+        </nav>
+    </header>
 
-    <div class='novena-options'>
-        <div class='novena-day'>
-            <p>Novena Day:</p>
-            <select class='novena-day-options'>
-                <option value="novena-day-all">All</option>
-                <option value="novena-day-one">One</option>
-                <option value="novena-day-two">Two</option>
-                <option value="novena-day-three">Three</option>
-                <option value="novena-day-four">Four</option>
-                <option value="novena-day-five">Five</option>
-                <option value="novena-day-six">Six</option>
-                <option value="novena-day-seven">Seven</option>
-                <option value="novena-day-eight">Eight</option>
-                <option value="novena-day-nine">Nine</option>
-            </select>
-        </div>
-        
-        <div class='novena-length'>
-            <p>Novena Length:</p>
-            <select class='novena-length-options'>
-                <option value="novena-length-extended">Extended</option>
-                <option value="novena-length-abridged">Abridged</option>
-            </select>
+    <main class='site-content'>
+        <div class='novena-options'>
+            <div class='novena-day'>
+                <p>Novena Day:</p>
+                <select class='novena-day-options'>
+                    <option value="novena-day-all">All</option>
+                    <option value="novena-day-one">One</option>
+                    <option value="novena-day-two">Two</option>
+                    <option value="novena-day-three">Three</option>
+                    <option value="novena-day-four">Four</option>
+                    <option value="novena-day-five">Five</option>
+                    <option value="novena-day-six">Six</option>
+                    <option value="novena-day-seven">Seven</option>
+                    <option value="novena-day-eight">Eight</option>
+                    <option value="novena-day-nine">Nine</option>
+                </select>
+            </div>
+            
+            <div class='novena-length'>
+                <p>Novena Length:</p>
+                <select class='novena-length-options'>
+                    <option value="novena-length-extended">Extended</option>
+                    <option value="novena-length-abridged">Abridged</option>
+                </select>
+            </div>
+
+            <div class='section-jump-drop'>
+                <p>Jump to:</p>
+                <select class='section-jump-options' onChange="window.location.href=this.value">
+                    <option value='#novena-section-one'>Rosary of the Blessed Virgin</option>
+                    <option value='#novena-section-two' class='novena-length-extended'>The Litany of Loreto</option>
+                    <option value='#novena-section-three' class='novena-length-extended'>Act of Contrition</option>
+                    <option value='#novena-section-four' class='novena-length-extended'>Prayer</option>
+                    <option value='#novena-section-five'>Prayer for Each Day</option>
+                    <option value='#novena-section-six'>Decade of the Passion</option>
+                    <option value='#novena-section-seven' class='novena-length-extended'>Offering</option>
+                    <option value='#novena-section-eight'>Litany for the Faithful Departed</option>
+                    <option value='#novena-section-nine' class='novena-length-extended'>Words of Pope Saint Gregory</option>
+                    <option value='#novena-section-ten'>Final Prayer</option>
+                </select>
+            </div>
         </div>
 
-        <div class='section-jump-drop'>
+        <div class='section-jump'>
             <p>Jump to:</p>
-            <select class='section-jump-options' onChange="window.location.href=this.value">
-                <option value='#novena-section-one'>Rosary of the Blessed Virgin</option>
-                <option value='#novena-section-two' class='novena-length-extended'>The Litany of Loreto</option>
-                <option value='#novena-section-three' class='novena-length-extended'>Act of Contrition</option>
-                <option value='#novena-section-four' class='novena-length-extended'>Prayer</option>
-                <option value='#novena-section-five'>Prayer for Each Day</option>
-                <option value='#novena-section-six'>Decade of the Passion</option>
-                <option value='#novena-section-seven' class='novena-length-extended'>Offering</option>
-                <option value='#novena-section-eight'>Litany for the Faithful Departed</option>
-                <option value='#novena-section-nine' class='novena-length-extended'>Words of Pope Saint Gregory</option>
-                <option value='#novena-section-ten'>Final Prayer</option>
-            </select>
+            <div>
+                <a href='#novena-section-one'>Rosary of the Blessed Virgin</a>
+                <a href='#novena-section-two' class='novena-length-extended'>The Litany of Loreto</a>
+                <a href='#novena-section-three' class='novena-length-extended'>Act of Contrition</a>
+                <a href='#novena-section-four' class='novena-length-extended'>Prayer</a>
+                <a href='#novena-section-five'>Prayer for Each Day</a>
+                <a href='#novena-section-six'>Decade of the Passion</a>
+                <a href='#novena-section-seven' class='novena-length-extended'>Offering</a>
+                <a href='#novena-section-eight'>Litany for the Faithful Departed</a>
+                <a href='#novena-section-nine' class='novena-length-extended'>Words of Pope Saint Gregory</a>
+                <a href='#novena-section-ten'>Final Prayer</a>
+            </div>
         </div>
-    </div>
 
-    <div class='section-jump'>
-        <p>Jump to:</p>
-        <div>
-            <a href='#novena-section-one'>Rosary of the Blessed Virgin</a>
-            <a href='#novena-section-two' class='novena-length-extended'>The Litany of Loreto</a>
-            <a href='#novena-section-three' class='novena-length-extended'>Act of Contrition</a>
-            <a href='#novena-section-four' class='novena-length-extended'>Prayer</a>
-            <a href='#novena-section-five'>Prayer for Each Day</a>
-            <a href='#novena-section-six'>Decade of the Passion</a>
-            <a href='#novena-section-seven' class='novena-length-extended'>Offering</a>
-            <a href='#novena-section-eight'>Litany for the Faithful Departed</a>
-            <a href='#novena-section-nine' class='novena-length-extended'>Words of Pope Saint Gregory</a>
-            <a href='#novena-section-ten'>Final Prayer</a>
-        </div>
-    </div>
+        <section class='novena-section-one' id='novena-section-one'>
+            <h1>Rosary of the Blessed Virgin</h1>
+            
+            <div class='rosary-mysteries'>
+                <h2>Today's Mystery of the Rosary:</h2>
+                <div class='joyful-mystery'>
+                    <p class=mystery-header>Joyful Mystery of the Rosary</p>
+                    <ol>
+                        <li>The Annunciation of the Lord to Mary</li>
+                        <li>The Visitation of Mary to Elizabeth</li>
+                        <li>The Nativity of our Lord Jesus Christ</li>
+                        <li>The Presentation of our Lord</li>
+                        <li>Finding Jesus in the Temple at age 12</li>
+                    </ol>
+                </div>
 
-    <section class='novena-section-one' id='novena-section-one'>
-        <h1>Rosary of the Blessed Virgin</h1>
+                <div class='sorrowful-mystery'>
+                    <p class=mystery-header>Sorrowful Mystery of the Rosary</p>
+                    <ol>
+                        <li>The Agony of Jesus in the Garden</li>
+                        <li>The Scourging at the Pillar</li>
+                        <li>Jesus is Crowned with Thorns</li>
+                        <li>Jesus Carried the Cross</li>
+                        <li>The Crucifixion of our Lord</li>
+                    </ol>
+                </div>
+
+                <div class='glorious-mystery'>
+                    <p class=mystery-header>Glorious Mystery of the Rosary</p>
+                    <ol>
+                        <li>The Resurrection of Jesus Christ</li>
+                        <li>The Ascension of Jesus to Heaven</li>
+                        <li>The Descent of the Holy Ghost</li>
+                        <li>The Assumption of Mary into Heaven</li>
+                        <li>Mary is Crowned as Queen of Heaven and Earth</li>
+                    </ol>
+                </div>
+
+                <div class='luminous-mystery'>
+                    <p class=mystery-header>Luminous Mystery of the Rosary</p>
+                    <ol>
+                        <li>The Baptism in the Jordan</li>
+                        <li>The Wedding at Cana</li>
+                        <li>The Proclamation of the Kingdom</li>
+                        <li>The Transfiguration</li>
+                        <li>The Institution of the Eucharist</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="rosary-prayers">
+                <div class="rosary-prayers-header">
+                    <h2 class="rosary-prayers-title">The Sign of the Cross</h2>
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class="rosary-prayers-content">In the name of the Father, and of the Son, and of the Holy Spirit. Amen.</p>
+
+                <div class="rosary-prayers-header">
+                    <h2 class="rosary-prayers-title">The Apostles' Creed</h2>
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class="rosary-prayers-content">I believe in God, the Father almighty, Creator of heaven and earth, and in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried; he descended into hell; on the third day he rose again from the dead; he ascended into heaven, and is seated at the right hand of God the Father almighty; from there he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.</p>
+
+                <div class="rosary-prayers-header">
+                    <h2 class="rosary-prayers-title">The Our Father</h2>
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class="rosary-prayers-content"><span class='verse'>Our Father, who art in heaven, Hallowed be Thy name; Thy kingdom come; Thy will be done, on earth as it is in heaven: </span><span class='resp'>Give us this day our daily bread; and forgive us our trespasses, as we forgive those that trespass against us; And lead us not into temptation, but deliver us from evil. Amen.</span></p>
+
+                <div class="rosary-prayers-header">
+                    <h2 class="rosary-prayers-title">The Hail Mary</h2>
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class="rosary-prayers-content"><span class='verse'>Hail Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. </span><span class='resp'>Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.</span></p>
+
+                <div class="rosary-prayers-header">
+                    <h2 class="rosary-prayers-title">Glory Be to the Father</h2>
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class="rosary-prayers-content"><span class='verse'>Glory be to the Father, and to the Son, and to the Holy Spirit; </span><span class='resp'>as it was in the beginning, is now, and ever shall be, world without end. Amen.</span></p>
+
+                <div class="rosary-prayers-header">
+                    <h2 class="rosary-prayers-title">Fatima Prayer</h2>
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class="rosary-prayers-content">O my Jesus, forgive us our sins, save us from the fires of hell and lead all souls to heaven, especially those most in need of Thy mercy.</p>
+
+                <div class="rosary-prayers-header">
+                    <h2 class="rosary-prayers-title">Prayer for the Eternal Rest</h2>
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class="rosary-prayers-content">Eternal rest grant unto them, O Lord, and let perpetual light shine upon them. May the souls of N. —, through the mercy of God, rest in peace. Amen.</p>
+
+                <div class="rosary-prayers-header">
+                    <h2 class="rosary-prayers-title">The Hail, Holy Queen</h2>
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <div class="rosary-prayers-content">
+                    <p>Hail, holy Queen, Mother of mercy, our life, our sweetness and our hope. To thee do we cry, poor banished children of Eve. To thee do we send up our sighs, mourning and weeping in this valley of tears. Turn, then, most gracious advocate, thine eyes of mercy toward us, and after this, our exile, show unto us the blessed fruit of thy womb, Jesus. O clement, O loving, O sweet Virgin Mary.</p>
+                </div>
+
+                <br><br>
+                <p class='verse'>V: Pray for us, O holy Mother of God.</p>
+                <p class='resp'>R: That we may be made worthy of the promises of Christ.</p><br>
+                <p class='verse'>LET US PRAY</p><br>
+                <p>O God, whose only begotten Son, by His life, death, and resurrection has purchased for us the rewards of eternal life, grant, we beseech Thee, that meditating upon these mysteries in the most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain, and obtain what they promise: through the same Christ our Lord. Amen.</p>
+                
+            </div>
+        </section>
+
+        <section class='novena-section-two novena-length-extended' id='novena-section-two'>
+            <h1>The Litany of Loreto</h1>
+            <table class='litany-of-loreto'>
+                <tr>
+                    <td class='verse' width='60%'>Lord,</td>
+                    <td class='resp' width='40%'>have mercy on us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Christ,</td>
+                    <td class='resp'>have mercy on us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Lord,</td>
+                    <td class='resp'>have mercy on us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Christ,</td>
+                    <td class='resp'>have mercy on us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Christ,</td>
+                    <td class='resp'>have mercy on us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>God the Son, Redeemer of the world,</td>
+                    <td class='resp'>have mercy on us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>God the Holy Spirit,</td>
+                    <td class='resp'>have mercy on us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Holy Trinity, one God,</td>
+                    <td class='resp'>have mercy on us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Holy Mary,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Holy Mother of God,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Holy Virgin of virgins,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Mother of Christ,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Mother of divine grace,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Mother most pure,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Mother most chaste,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Mother inviolate,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Mother undefiled,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Mother most amiable,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Mother most admirable,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Mother of good counsel,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Mother of our Creator,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Mother of our Savior,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Virgin most prudent,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Virgin most renouned,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Virgin most powerful,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Virgin most merciful,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Virgin most faithful,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Mirror of justice,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Seat of wisdom,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Cause of our joy,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Spiritual vessel,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Vessel of honor,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Singular vessel of devotion,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Mystical rose,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Tower of David,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Tower of ivory,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>House of gold,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Ark of the Covenant,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Gate of heaven,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Morning star,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Health of the sick,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Refuge of sinners,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Comforter of the afflicted,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Help of Christians,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Queen of Angels,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Queen of Patriarchs,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Queen of Apostles,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Queen of Martyrs,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Queen of Confessors,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Queen of all Saints,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Queen conceived without original sin,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Queen assumed into heaven,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Queen of the most Holy Rosary,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Queen of peace,</td>
+                    <td class='resp'>pray for us</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Lamb of God, who takes away the sins of the world,</td>
+                    <td class='resp'>spare us, O Lord.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Lamb of God, who takes away the sins of the world,</td>
+                    <td class='resp'>graciously hear us, O Lord.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Lamb of God, who takes away the sins of the world,</td>
+                    <td class='resp'>have mercy on us.</td>
+                </tr>
+            </table>
+            <div class='prayer-text'>
+                <p class='verse'>V: Pray for us, O holy Mother of God.</p>
+                <p class='resp'>R: That we be made worthy of the promises of Christ.</p><br>
+                <p class='verse'>LET US PRAY</p><br>
+                <p>Grant, we beseech you, O Lord God, unto us Your servants, that we may rejoice in continual health of mind and body; and by the glorious intercession of blessed Mary ever Virgin, may be delivered from present sadness, and enter into the joy of Your eternal gladness, Through Christ our Lord. Amen.</p><br>
+            </div>
+        </section>
+
+        <section class='novena-section-three novena-length-extended' id='novena-section-three'>
+            <h1>Act of Contrition</h1>
+            <div class='prayer-text'>
+                <p>O my God, I am heartily sorry for having offended you. I detest all my sins because of your just punishments. But most of all because they offend you, my God, who are all good and deserving of all my love. I firmly resolve, with the help of your grace to sin no more and to avoid the near occasions of sin. Amen.</p>
+            </div>
+        </section>
+
+        <section class='novena-section-four novena-length-extended' id='novena-section-four'>
+            <h1>Prayer</h1>
+            <div class='prayer-text'>
+                <p>Most powerful and merciful Lord Jesus, lover of souls, most admirable in Thy saints; listen to the sighs and pleas of the souls in Purgatory who are desirous of Thy mercy and to the prayers of those who are making this novena for them, so that they may obtain Thy mercy and deign to rescue them from that prison of their great suffering. I beseech Thee to relieve first those who are suffering there through my fault, my close relatives, the abandoned, and those who are about to be released from Purgatory. I beseech Thee also, to free above all, those who injured me most and deliver from their sins those who are in the bondage of mortal sin and bring them to a sincere repentance of their sins, and become worthy of Heaven. Amen.</p>
+            </div>
+        </section>
+
+        <section class='novena-section-five' id='novena-section-five'>
+            <h1>Prayer for Each Day</h1>
+
+            <div class='prayer-each-day'>
+                <div class='prayer-each-day-header' value="novena-day-one">
+                    <div class='prayer-each-day-header-text'>
+                        <h2>First Day</h2><br class="novena-length-extended">
+                        <p class="resp novena-length-extended">Pray three Hail Holy Queen's to the Blessed Virgin, then say the prayer for this day.</p>
+                    </div>
         
-        <div class='rosary-mysteries'>
-            <h2>Today's Mystery of the Rosary:</h2>
-            <div class='joyful-mystery'>
-                <p class=mystery-header>Joyful Mystery of the Rosary</p>
-                <ol>
-                    <li>The Annunciation of the Lord to Mary</li>
-                    <li>The Visitation of Mary to Elizabeth</li>
-                    <li>The Nativity of our Lord Jesus Christ</li>
-                    <li>The Presentation of our Lord</li>
-                    <li>Finding Jesus in the Temple at age 12</li>
-                </ol>
-            </div>
-
-            <div class='sorrowful-mystery'>
-                <p class=mystery-header>Sorrowful Mystery of the Rosary</p>
-                <ol>
-                    <li>The Agony of Jesus in the Garden</li>
-                    <li>The Scourging at the Pillar</li>
-                    <li>Jesus is Crowned with Thorns</li>
-                    <li>Jesus Carried the Cross</li>
-                    <li>The Crucifixion of our Lord</li>
-                </ol>
-            </div>
-
-            <div class='glorious-mystery'>
-                <p class=mystery-header>Glorious Mystery of the Rosary</p>
-                <ol>
-                    <li>The Resurrection of Jesus Christ</li>
-                    <li>The Ascension of Jesus to Heaven</li>
-                    <li>The Descent of the Holy Ghost</li>
-                    <li>The Assumption of Mary into Heaven</li>
-                    <li>Mary is Crowned as Queen of Heaven and Earth</li>
-                </ol>
-            </div>
-
-            <div class='luminous-mystery'>
-                <p class=mystery-header>Luminous Mystery of the Rosary</p>
-                <ol>
-                    <li>The Baptism in the Jordan</li>
-                    <li>The Wedding at Cana</li>
-                    <li>The Proclamation of the Kingdom</li>
-                    <li>The Transfiguration</li>
-                    <li>The Institution of the Eucharist</li>
-                </ol>
-            </div>
-        </div>
-
-        <div class="rosary-prayers">
-            <div class="rosary-prayers-header">
-                <h2 class="rosary-prayers-title">The Sign of the Cross</h2>
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class="rosary-prayers-content">In the name of the Father, and of the Son, and of the Holy Spirit. Amen.</p>
-
-            <div class="rosary-prayers-header">
-                <h2 class="rosary-prayers-title">The Apostles' Creed</h2>
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class="rosary-prayers-content">I believe in God, the Father almighty, Creator of heaven and earth, and in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried; he descended into hell; on the third day he rose again from the dead; he ascended into heaven, and is seated at the right hand of God the Father almighty; from there he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.</p>
-
-            <div class="rosary-prayers-header">
-                <h2 class="rosary-prayers-title">The Our Father</h2>
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class="rosary-prayers-content"><span class='verse'>Our Father, who art in heaven, Hallowed be Thy name; Thy kingdom come; Thy will be done, on earth as it is in heaven: </span><span class='resp'>Give us this day our daily bread; and forgive us our trespasses, as we forgive those that trespass against us; And lead us not into temptation, but deliver us from evil. Amen.</span></p>
-
-            <div class="rosary-prayers-header">
-                <h2 class="rosary-prayers-title">The Hail Mary</h2>
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class="rosary-prayers-content"><span class='verse'>Hail Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. </span><span class='resp'>Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.</span></p>
-
-            <div class="rosary-prayers-header">
-                <h2 class="rosary-prayers-title">Glory Be to the Father</h2>
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class="rosary-prayers-content"><span class='verse'>Glory be to the Father, and to the Son, and to the Holy Spirit; </span><span class='resp'>as it was in the beginning, is now, and ever shall be, world without end. Amen.</span></p>
-
-            <div class="rosary-prayers-header">
-                <h2 class="rosary-prayers-title">Fatima Prayer</h2>
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class="rosary-prayers-content">O my Jesus, forgive us our sins, save us from the fires of hell and lead all souls to heaven, especially those most in need of Thy mercy.</p>
-
-            <div class="rosary-prayers-header">
-                <h2 class="rosary-prayers-title">Prayer for the Eternal Rest</h2>
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class="rosary-prayers-content">Eternal rest grant unto them, O Lord, and let perpetual light shine upon them. May the souls of N. —, through the mercy of God, rest in peace. Amen.</p>
-
-            <div class="rosary-prayers-header">
-                <h2 class="rosary-prayers-title">The Hail, Holy Queen</h2>
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <div class="rosary-prayers-content">
-                <p>Hail, holy Queen, Mother of mercy, our life, our sweetness and our hope. To thee do we cry, poor banished children of Eve. To thee do we send up our sighs, mourning and weeping in this valley of tears. Turn, then, most gracious advocate, thine eyes of mercy toward us, and after this, our exile, show unto us the blessed fruit of thy womb, Jesus. O clement, O loving, O sweet Virgin Mary.</p>
-            </div>
-
-            <br><br>
-            <p class='verse'>V: Pray for us, O holy Mother of God.</p>
-            <p class='resp'>R: That we may be made worthy of the promises of Christ.</p><br>
-            <p class='verse'>LET US PRAY</p><br>
-            <p>O God, whose only begotten Son, by His life, death, and resurrection has purchased for us the rewards of eternal life, grant, we beseech Thee, that meditating upon these mysteries in the most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain, and obtain what they promise: through the same Christ our Lord. Amen.</p>
-            
-        </div>
-    </section>
-
-    <section class='novena-section-two novena-length-extended' id='novena-section-two'>
-        <h1>The Litany of Loreto</h1>
-        <table class='litany-of-loreto'>
-            <tr>
-                <td class='verse' width='60%'>Lord,</td>
-                <td class='resp' width='40%'>have mercy on us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Christ,</td>
-                <td class='resp'>have mercy on us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Lord,</td>
-                <td class='resp'>have mercy on us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Christ,</td>
-                <td class='resp'>have mercy on us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Christ,</td>
-                <td class='resp'>have mercy on us</td>
-            </tr>
-            <tr>
-                <td class='verse'>God the Son, Redeemer of the world,</td>
-                <td class='resp'>have mercy on us</td>
-            </tr>
-            <tr>
-                <td class='verse'>God the Holy Spirit,</td>
-                <td class='resp'>have mercy on us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Holy Trinity, one God,</td>
-                <td class='resp'>have mercy on us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Holy Mary,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Holy Mother of God,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Holy Virgin of virgins,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Mother of Christ,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Mother of divine grace,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Mother most pure,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Mother most chaste,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Mother inviolate,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Mother undefiled,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Mother most amiable,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Mother most admirable,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Mother of good counsel,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Mother of our Creator,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Mother of our Savior,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Virgin most prudent,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Virgin most renouned,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Virgin most powerful,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Virgin most merciful,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Virgin most faithful,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Mirror of justice,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Seat of wisdom,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Cause of our joy,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Spiritual vessel,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Vessel of honor,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Singular vessel of devotion,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Mystical rose,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Tower of David,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Tower of ivory,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>House of gold,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Ark of the Covenant,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Gate of heaven,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Morning star,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Health of the sick,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Refuge of sinners,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Comforter of the afflicted,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Help of Christians,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Queen of Angels,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Queen of Patriarchs,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Queen of Apostles,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Queen of Martyrs,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Queen of Confessors,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Queen of all Saints,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Queen conceived without original sin,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Queen assumed into heaven,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Queen of the most Holy Rosary,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Queen of peace,</td>
-                <td class='resp'>pray for us</td>
-            </tr>
-            <tr>
-                <td class='verse'>Lamb of God, who takes away the sins of the world,</td>
-                <td class='resp'>spare us, O Lord.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Lamb of God, who takes away the sins of the world,</td>
-                <td class='resp'>graciously hear us, O Lord.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Lamb of God, who takes away the sins of the world,</td>
-                <td class='resp'>have mercy on us.</td>
-            </tr>
-        </table>
-        <div class='prayer-text'>
-            <p class='verse'>V: Pray for us, O holy Mother of God.</p>
-            <p class='resp'>R: That we be made worthy of the promises of Christ.</p><br>
-            <p class='verse'>LET US PRAY</p><br>
-            <p>Grant, we beseech you, O Lord God, unto us Your servants, that we may rejoice in continual health of mind and body; and by the glorious intercession of blessed Mary ever Virgin, may be delivered from present sadness, and enter into the joy of Your eternal gladness, Through Christ our Lord. Amen.</p><br>
-        </div>
-    </section>
-
-    <section class='novena-section-three novena-length-extended' id='novena-section-three'>
-        <h1>Act of Contrition</h1>
-        <div class='prayer-text'>
-            <p>O my God, I am heartily sorry for having offended you. I detest all my sins because of your just punishments. But most of all because they offend you, my God, who are all good and deserving of all my love. I firmly resolve, with the help of your grace to sin no more and to avoid the near occasions of sin. Amen.</p>
-        </div>
-    </section>
-
-    <section class='novena-section-four novena-length-extended' id='novena-section-four'>
-        <h1>Prayer</h1>
-        <div class='prayer-text'>
-            <p>Most powerful and merciful Lord Jesus, lover of souls, most admirable in Thy saints; listen to the sighs and pleas of the souls in Purgatory who are desirous of Thy mercy and to the prayers of those who are making this novena for them, so that they may obtain Thy mercy and deign to rescue them from that prison of their great suffering. I beseech Thee to relieve first those who are suffering there through my fault, my close relatives, the abandoned, and those who are about to be released from Purgatory. I beseech Thee also, to free above all, those who injured me most and deliver from their sins those who are in the bondage of mortal sin and bring them to a sincere repentance of their sins, and become worthy of Heaven. Amen.</p>
-        </div>
-    </section>
-
-    <section class='novena-section-five' id='novena-section-five'>
-        <h1>Prayer for Each Day</h1>
-
-        <div class='prayer-each-day'>
-            <div class='prayer-each-day-header' value="novena-day-one">
-                <div class='prayer-each-day-header-text'>
-                    <h2>First Day</h2><br class="novena-length-extended">
-                    <p class="resp novena-length-extended">Pray three Hail Holy Queen's to the Blessed Virgin, then say the prayer for this day.</p>
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
                 </div>
-    
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                <p class='prayer-each-day-content'>My Lord, receive my supplications, prayers, mortifications and sighs in suffrage for the blessed souls for whom I make this novena; and I pray that by the motherly love bestowed on Thee by the Blessed Virgin, Thou mayest grant tht they may arise and be happy in the realm if the living; bestow upon me Thy grace by those sorrows endured by Thy most Holy Mother, when She followed Thee on the Street of Sorrow up to Mt. Calvary, and grant what I ask of Thee in this novena for Thy greater honor and glory. Amen.</p>
+                
+                <div class='prayer-each-day-header' value="novena-day-two">
+                    <div class='prayer-each-day-header-text'>
+                        <h2>Second Day</h2><br class="novena-length-extended">
+                        <p class="resp novena-length-extended">Pray five Our Father's and Hail Mary's in honor of the five Wounds of Jesus and the great sorrows of Mary, then say the prayer for this day.</p>
+                    </div>
+                    
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class='prayer-each-day-content'>Most merciful Lord, I beseech Thee, by that pain with which Thy Holy Mother saw Thee suffer and agonize on the Sacred Tree of the Cross, that the holy souls be freed from those pains in Purgatory; especially those souls for whom I am praying in this novena, applying the indulgence granted by the Supreme Pontiffs for their relief to all Religious, Fraternities and Congregations. Bring those who are submerged in their sins to a true knowledge of their guilt and grant what I ask of Thee in this novena for Thy greater honor and glory. Amen.</p>
+                
+
+                <div class='prayer-each-day-header' value="novena-day-three">
+                    <div class='prayer-each-day-header-text'>
+                        <h2>Third Day</h2><br class="novena-length-extended">
+                        <p class="resp novena-length-extended">Pray three Our Father's, Hail Mary's, and Glory's in honor of Saint Joseph, then say the prayer for this day.</p>
+                    </div>
+                    
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class='prayer-each-day-content'>Almighty God and Lord, to whom nobody asks without hope of receiving, by the intercession of that glorious Patriarch Saint Joseph, and by the patronage of Thy beloved Mother, particularly by that sorrow She experienced when She saw Thee expire on the Cross, enable the suffering souls in Purgatory to be able to leave that place. Deign to return to Thy grace those who are without it because of sin, and grant me what I ask of Thee in this novena for Thy greater honor and glory. Amen.</p>
+                
+
+                <div class='prayer-each-day-header' value="novena-day-four">
+                    <div class='prayer-each-day-header-text'>
+                        <h2>Fourth Day</h2><br class="novena-length-extended">
+                        <p class="resp novena-length-extended">Pray four Our Father's, Hail Mary's, and Glory's in honor of St. Joachim and St. Anne, then say the prayer for this day.</p>
+                    </div>
+                    
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class='prayer-each-day-content'>O great God, through Whose mercy the saints rest in glory, I beg Thee to set free those blessed souls for whom I am specially praying, through the intercessions of St. Joachim and St. Anne. Hear me Lord, by that bitter pain of Thy afflicted Mother when She heard those outrageous blasphemies and offensive words with which Thy enemies were insulting Thy Divine Innocence. I beg Thee, Lord, to have mercy on those who follow the path of perdition by making them return to Thy grace; and please grant me what I ask in this novena for Thy greater honor and glory. Amen.</p>
+                
+
+                <div class='prayer-each-day-header' value="novena-day-five">
+                    <div class='prayer-each-day-header-text'>
+                        <h2>Fifth Day</h2><br class="novena-length-extended">
+                        <p class="resp novena-length-extended">Pray four Our Father's and Hail Mary's in honor of St. Michael, the Archangel, then say the prayer for this day.</p>
+                    </div>
+                    
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class='prayer-each-day-content'>Sovereign Lord, in Whom it is prosper to be merciful, through the intercession of the Archangel St. Michael and by the sorrow of Thy Blessed Mother suffered when that soldier cruelly pierced Thy side with a lance, have pity on those souls for whom I am offering this novena and bring them to Thy eternal rest. Have mercy on those who are in the state of mortal sin and grant me what I ask of Thee in this novena for Thy greater honor and glory. Amen.</p>
+                
+
+                <div class='prayer-each-day-header' value="novena-day-six">
+                    <div class='prayer-each-day-header-text'>
+                        <h2>Sixth Day</h2><br class="novena-length-extended">
+                        <p class="resp novena-length-extended">Pray five Our Father's, Hail Mary's, and Glory's in reverence of the glorious St. Lawrence, special advocate of the souls, then say the prayer for this day.</p>
+                    </div>
+                    
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class='prayer-each-day-content'>Sweetest Jesus, incline Thine ears to my petitions for Thy mercy on the blessed souls in Purgatory, especially on those for whom I am making this novena, through the torments suffered by the glorious St. Lawrence in the fire of his martyrdom. I am also begging Thy mercy for the blessed souls in Purgatory by the pains suffered by Thy loving Mother when She saw Thee being taken down from the Cross and when She received in Her Sacred Hands the Crown and Nails bathed in Thy Precious Blood. Have pity on those who are not in Thy grace by taking them out of their unhappy state and grant me what I ask of Thee in this novena for Thy greater honor and glory. Amen.</p>
+                
+
+                <div class='prayer-each-day-header' value="novena-day-seven">
+                    <div class='prayer-each-day-header-text'>
+                        <h2>Seventh Day</h2><br class="novena-length-extended">
+                        <p class="resp novena-length-extended">Pray nine Our Father's and Hail Mary's in honor of the nine choirs of Angels, then say the prayer for this day.</p>
+                    </div>
+                    
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class='prayer-each-day-content'>Merciful Lord, through the intercession of the Angels, especially of those who are the guardians of those afflicted souls for whom I make this novena; and by that sorrow of Thy Blessed Mother when, after having kissed and adored Thy Crown and Nails, She received Thee in Her virginal and maternal arms and gazed on Thy mangled and lacerated Body, I humbly beeech Thee to set them free and bring them to the happiness of Heaven. Lead those who are in mortal sin to a true knowledge of their guilt and grant me the grace I ask of Thee in this novena for Thy greater honor and glory. Amen.</p>
+                
+
+                <div class='prayer-each-day-header' value="novena-day-eight">
+                    <div class='prayer-each-day-header-text'>
+                        <h2>Eighth Day</h2><br class="novena-length-extended">
+                        <p class="resp novena-length-extended">Pray five Our Father's and Hail Mary's in honor of the Seraphic Father St. Francis and St. Nicolas of Tolentino, special patrons of the Blessed souls, then say the prayer for this day.</p>
+                    </div>
+                    
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class='prayer-each-day-content'>My Sweet and beloved Jesus, through the intercession of Thy beloved seraphim, St. Francis, and of the glorious and charitable St. Nicolas of Tolentino, I beg of Thee to shower the immense treasures of Thy clemency on those blessed souls whose torments so touched the charity of these two Servants of Thine. But I beg this grace especially through that bleeding Heart of Thy Blessed Mother when She wrapped and clothed Thy Sacred Body for burial and accompanied It to the Sepulchre. Reduce those who are in sin to a true repentance of them and grant me what I ask in this novena for Thy greater honor and glory. Amen.</p>
+                
+
+                <div class='prayer-each-day-header' value="novena-day-nine">
+                    <div class='prayer-each-day-header-text'>
+                        <h2>Ninth Day</h2><br class="novena-length-extended">
+                        <p class="resp novena-length-extended">Pray five time the Apostles' Creed in honor of the Passion of Our Lord Jesus Christ, then say the prayer for this day.</p>
+                    </div>
+                
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <p class='prayer-each-day-content'>Creator and Redeemer of all mankind, through the infinite merits of Thy Life, Passion, and Death, I beg of Thee to bestow on all souls, particularly those for hom I am making this novena, the pardon and indulgences they always desired. Through the intercession and merits of Thy afflicted Mother, especially by that sorrow of sorrows with which She left Thee buried in the tomb and returned home without the light of Her eyes and the life of Her heart, which is Thou, my Jesus, have mercy on the blessed souls so that they may enjoy Thee eternally in Heaven. Turn Thine eyes of mercy, too, on those who are in the miserable state of slavery of the devil, so that they may be restored to Thy grace, and grant me what I ask of Thee in this novena for Thy greater honor and glory. Amen.</p>
+                
             </div>
-            <p class='prayer-each-day-content'>My Lord, receive my supplications, prayers, mortifications and sighs in suffrage for the blessed souls for whom I make this novena; and I pray that by the motherly love bestowed on Thee by the Blessed Virgin, Thou mayest grant tht they may arise and be happy in the realm if the living; bestow upon me Thy grace by those sorrows endured by Thy most Holy Mother, when She followed Thee on the Street of Sorrow up to Mt. Calvary, and grant what I ask of Thee in this novena for Thy greater honor and glory. Amen.</p>
-            
-            <div class='prayer-each-day-header' value="novena-day-two">
-                <div class='prayer-each-day-header-text'>
-                    <h2>Second Day</h2><br class="novena-length-extended">
-                    <p class="resp novena-length-extended">Pray five Our Father's and Hail Mary's in honor of the five Wounds of Jesus and the great sorrows of Mary, then say the prayer for this day.</p>
+
+        </section>
+
+        <section class='novena-section-six' id='novena-section-six'>
+            <h1>Decade of the Passion</h1>
+            <div class='prayer-text'>
+                <p>Lord, open our lips and inflame our hearts and cleanse them of useless and evil thoughts. Enlighten our minds, that we may seriously meditate on Thy sufferings and death and the pains endured by Thy most glorious Mother; and deign to hear and receive us before Thy great Majesty, Thou who liveth and reignest forever. Amen.</p><br>
+                <p class='resp'>{ On the beads for the Our Father, say the following: }</p><br>
+                <p class='verse'>My most merciful Jesus, look down with eyes of pity on the faithful souls for whom Thou suffered and died on the Cross.</p><br>
+                <p class='resp'>{ On the beads for the Hail Mary, say the following: }</p><br>
+                <p class='verse'>V: My Jesus, through Thy bloody sweat in the Garden,</p>
+                <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
+                <p class='verse'>V: My Jesus, through the blow Thou received on Thy Sacred Face,</p>
+                <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
+                <p class='verse'>V: My Jesus, through the cruel scourging Thou endured,</p>
+                <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
+                <p class='verse'>V: My Jesus, through the crown of thorns that pierced Thy Head,</p>
+                <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
+                <p class='verse'>V: My Jesus, through Thy carrying of the Cross on the path of bitterness,</p>
+                <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
+                <p class='verse'>V: My Jesus, through Thy face covered with blood which Thou allowed to be imprinted on the veil of Veronica,</p>
+                <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
+                <p class='verse'>V: My Jesus, through Thy bloody garments which were cruelly removed from Thy wounded Body,</p>
+                <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
+                <p class='verse'>V: My Jesus, through Thy Holy Body nailed on the Cross,</p>
+                <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
+                <p class='verse'>V: My Jesus, through Thy Hands and Feet pierced with cruel nails,</p>
+                <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
+                <p class='verse'>V: My Jesus, through Thy Sacred Side pierced with a lance and from which flowed blood and water.</p>
+                <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
+            </div>
+        </section>
+
+        <section class='novena-section-seven novena-length-extended' id='novena-section-seven'>
+            <h1>Offering</h1>
+            <div class='prayer-text'>
+                <p class='resp'>{ Excerpt from a prayer of St. Augustine }</p><br>
+                <p>Most sweet Jesus, Who in Thy desire to redeem the world, deigned to be born, circumcised, mocked by the Jews, to fall into the hands of Thy enemies through the treacherous kiss of Judas, to be bound and brought to the place of sacrifice like a meek Lamb, brought before Caiphas, Pilate, and Herod, spat on, accused and condemned with false witnesses, to be slapped and have Thy Sacred Body covered with wounds from the cruel scourging, to be covered with thorns, Thy Face covered with a purple cloth in mockery, stripped of Thy garments, nailed and elevated on the Cross between two thieves as if Thou wert one of them, offered gall and vinegar to drink, and to be pierced in Thy Side with a lance, deliver, O Lord, the souls in Purgatory from their great sufferings through Thy most bitter Passion; bring them to Thy Glory and deliver us from the pains of hell, through the merits of Thy Holy Passion and Death on the Cross, so that we may be worthy to enter that Kingdom where Thou brought the good thief, who was crucified with Thee, who liveth and reigneth with that Father and the Holy Ghost forever. Amen.</p>
+            </div>
+        </section>
+
+        <section class='novena-section-eight' id='novena-section-eight'>
+            <h1>Litany for the Faithful Departed</h1>
+
+            <table class='litany-faithful-departed'>
+                <tr>
+                    <td class='verse' width="60%">Lord, have mercy on us.</td>
+                    <td class='resp' width="40%">Lord, have mercy on us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Christ, have mercy on us.</td>
+                    <td class='resp'>Christ, have mercy on us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Lord, have mercy on us.</td>
+                    <td class='resp'>Lord, have mercy on us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Christ, hear us.</td>
+                    <td class='resp'>Christ, graciously hear us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>God, the Father of Heaven,</td>
+                    <td class='resp'>Have mercy on the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>God the Son, Redeemer of the world,</td>
+                    <td class='resp'>Have mercy on the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>God the Holy Ghost,</td>
+                    <td class='resp'>Have mercy on the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Holy Trinity, one God,</td>
+                    <td class='resp'>Have mercy on the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Holy Mary,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Holy Mother of God,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Holy Virgin of virgins,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>St. Michael,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>All ye angels and archangels,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>All ye orders of blessed spirits,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>St. John the Baptist,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>St. Joseph,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>All ye holy patriarchs and prophets,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>St. Peter,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>St. Paul,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>St. John,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>All ye holy Apostles and Evangelists,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>St. Stephen,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>St. Lawrence,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>All ye holy martyrs,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>St. Gregory,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>St. Ambrose,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>St. Augustine,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>St. Jerome,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>All ye holy bishops and confessors,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>All ye holy doctors,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>All ye holy priests and levites,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>All ye holy monks and hermits,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>St. Mary Magdelene,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>St. Barbara,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>All ye holy virgins and widows,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>All ye saints of God,</td>
+                    <td class='resp'>Pray for the souls of the faithful departed.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Be merciful,</td>
+                    <td class='resp'>Spare them, O Lord.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Be merciful,</td>
+                    <td class='resp'>Graciously hear us, O Lord.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>From all evil,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>From Thy wrath,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>From the rigor of Thy justice,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>From the power of the devil,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>From the gnawing worm of conscience,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>From the long-enduring sorrow,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>From eternal flames,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>From intolerable cold,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>From horrible darkness,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>From dreadful weeping and wailing,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thine admirable conception,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy Holy Nativity,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy most sweet Name,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy baptism and holy fasting,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy most profound humiliation,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy prompt obedience,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thine infinite love,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy bloody sweat,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy sorrow and anguish,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy bonds,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy scourging,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy crowning with thorns,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy carrying of the Cross,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy most cruel death,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy most holy wounds,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy most bitter Cross and Passion,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thy holy Resurrection,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through Thine admirable Ascension,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Through the coming of the Holy Ghost, the Paraclete,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>In the day of judgement,</td>
+                    <td class='resp'>O Lord, deliver them.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>We sinners,</td>
+                    <td class='resp'>We beseech Thee, hear us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Thou Who forgavest Magdelene and didst hearken to the prayer of the thief,</td>
+                    <td class='resp'>We beseech Thee, hear us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Thou Who savest freely Thine elect,</td>
+                    <td class='resp'>We beseech Thee, hear us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Thou Who hast the key of heaven and hell,</td>
+                    <td class='resp'>We beseech Thee, hear us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>That Thou wouldst be pleased to deliver the souls of our parents, relations, friends, and benefactors, from the pains of hell,</td>
+                    <td class='resp'>We beseech Thee, hear us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>That Thou wouldst be pleased to have mercy on those of whom no special rememberances is made on earth,</td>
+                    <td class='resp'>We beseech Thee, hear us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>That Thou wouldst be pleased to grant them all the pardon and remission of all their sins,</td>
+                    <td class='resp'>We beseech Thee, hear us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>That Thou wouldst be pleased to fulfill all their desires,</td>
+                    <td class='resp'>We beseech Thee, hear us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>That Thou wouldst be pleased to receive them into the company of the blessed,</td>
+                    <td class='resp'>We beseech Thee, hear us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>King of awful Majesty,</td>
+                    <td class='resp'>We beseech Thee, hear us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Son of God,</td>
+                    <td class='resp'>We beseech Thee, hear us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Lamb of God, who takest away the sins of the world,</td>
+                    <td class='resp'>Grant unto them rest.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Lamb of God, who takest away the sins of the world,</td>
+                    <td class='resp'>Grant unto them rest.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Lamb of God, who takest away the sins of the world,</td>
+                    <td class='resp'>Grant unto them rest everlasting.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Christ, hear us.</td>
+                    <td class='resp'>Christ, graciously hear us.</td>
+                </tr>
+                <tr>
+                    <td class='verse'>Lord, have mercy.</td>
+                    <td class='resp'>Christ, have mercy</td>
+                </tr>
+                <tr>
+                    <td class='verse'>From the gates of hell.</td>
+                    <td class='resp'>Deliver their souls, O Lord</td>
+                </tr>
+                <tr>
+                    <td class='verse'>O Lord, hear my prayer.</td>
+                    <td class='resp'>And let my cry come unto Thee.</td>
+                </tr>
+            </table>
+            <div class='prayer-text novena-length-extended'>
+                <p class='verse'>LET US PRAY</p><br>
+                <p>O God, the Creator and Redeemer of all the faithful, grant unto the souls of Thy servant(s) departed the remission of their sins; that by pious supplications, they may obtain that pardon which they have always desired. Grant this, O God, Who livest and reignest forever and ever. Amen.</p><br>
+                <p>O Eternal God, Who besides the general precept of charity, hast commanded a particular respect to parents, kindred, and benefactors; grant we beseech Thee, that as they were the instruments by which Thy Providence bestowed on us our birth, education, and innumerable other blessings, so our prayers may be the means to obtain for them a speedy release from their excessive sufferings, and free admittance to Thine infinite joys. Through Jesus Christ, our Lord. Amen.</p><br>
+                <p class='verse'>LET US PRAY</p><br>
+                <p>O God, Whose property is ever to have mercy and to spare, we humbly beseech Thee in behalf of Thy servant(s), N. —, whom Thou hast this day called out of this world, that Thou wouldst not deliver [him/her/them] into the hands of the enemy nor forget [him/her/them] forever, but bid the holy angels, lead [him/her/them] into Paradise, [his/her/their] true country, that for as much as in Thee [he/she/they] put [his/her/their] hope and trust, [he/she/they] may not endure the pains of hell, but may come to the possession of eternal joys. Through our Lord Jesus Christ, Thy Son, Who with Thee liveth and reigneth in the unity of the Holy Ghost, God, world without end. Amen.</p><br>
+                <p>Be merciful, we beesech Thee O Lord, to the soul of Thy servant(s), N. —, for whom we offer to Thee the sacrifice of praise, humbly beseeching Thy Majesty that, by those holy and propitiatory offerings, [he/she/they] may be found worthy to win everlasting rest. Through our Lord Jesus Christ, Thy Son, Who with Thee liveth and reigneth in the unity of the Holy Ghost, God, world without end. Amen.</p><br>
+                <p>Grant, we beeech Thee, Almighty God, that the soul of Thy servant(s), N. —, which has this day departed out of this world, may be cleansed by this sacrifice, and delivered from sins, and may receive forgiveness and everlasting rest. Through our Lord Jesus Christ, Thy Son, Who with Thee liveth and reigneth in the unity of the Holy Ghost, God, world without end. Amen.</p><br>
+                <p>Absolve, O Lord, the soul of Thy servant(s), N. —, from every bond of sin, so that by Thy aid [he/she/they] may deserve to escape the judgement of wrath, and come to the enjoyment of beatitude in eternal light.</p><br>
+                <p class='verse'>V: Eternal rest give unto [him/her/them], O Lord.</p>
+                <p class='resp'>R: And let perpetual light shine upon [him/her/them].</p><br>
+                <p class='verse'>V: From the gates of hell.</p>
+                <p class='resp'>R: Deliver [his/her/their] soul, O Lord.</p><br>
+                <p class='verse'>V: May [he/she/they] rest in peace.</p>
+                <p class='resp'>R: Amen.</p><br>
+                <p class='verse'>V: O Lord, hear my prayer.</p>
+                <p class='resp'>R: And let my cry come unto Thee.</p><br>
+                <p class='verse'>V: The Lord be with you.</p>
+                <p class='resp'>R: And with Thy Spirit.</p><br>
+                <p class='verse'>LET US PRAY</p><br>
+                <p>O God, the Creator and Redeemer of all the faithful, grant to the soul(s) of Thy servant(s), N. —, the remission of all [his/her/their] sins, that through pious supplications [he/she/they] may obtain the pardon [he/she/they] has/have always desired Who livest and reignest world without end. Amen.</p><br>
+                <p class='verse'>V: Eternal rest grant unto [him/her/them], O Lord.</p>
+                <p class='resp'>R: And let perpetual light shine upon [him/her/them].</p><br>
+                <p class='verse'>V: May [he/she/they] rest in peace.</p>
+                <p class='resp'>R: Amen.</p>
+            </div>
+        </section>
+
+        <section class='novena-section-nine novena-length-extended' id='novena-section-nine'>
+            <h1>Words of Pope Saint Gregory</h1>
+            <div class='pope-st-gregory'>
+                <div class='pope-st-gregory-header' value="novena-day-one">
+                    <div class='pope-st-gregory-header-text'>
+                        <h2>First Day</h2>
+                    </div>
+        
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <div class='pope-st-gregory-content'>
+                    <p>O Jesus Christ, my Lord, Who to redeem me was crowned with thorns and was crucified, I adore and beseech Thee that Thy Cross be my defense against my evil enemies.</p>
+                    <p class='ofhm'>Our Father and Hail Mary.</p>
                 </div>
                 
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class='prayer-each-day-content'>Most merciful Lord, I beseech Thee, by that pain with which Thy Holy Mother saw Thee suffer and agonize on the Sacred Tree of the Cross, that the holy souls be freed from those pains in Purgatory; especially those souls for whom I am praying in this novena, applying the indulgence granted by the Supreme Pontiffs for their relief to all Religious, Fraternities and Congregations. Bring those who are submerged in their sins to a true knowledge of their guilt and grant what I ask of Thee in this novena for Thy greater honor and glory. Amen.</p>
-            
-
-            <div class='prayer-each-day-header' value="novena-day-three">
-                <div class='prayer-each-day-header-text'>
-                    <h2>Third Day</h2><br class="novena-length-extended">
-                    <p class="resp novena-length-extended">Pray three Our Father's, Hail Mary's, and Glory's in honor of Saint Joseph, then say the prayer for this day.</p>
+                <div class='pope-st-gregory-header' value="novena-day-two">
+                    <div class='pope-st-gregory-header-text'>
+                        <h2>Second Day</h2>
+                    </div>
+        
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
                 </div>
-                
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class='prayer-each-day-content'>Almighty God and Lord, to whom nobody asks without hope of receiving, by the intercession of that glorious Patriarch Saint Joseph, and by the patronage of Thy beloved Mother, particularly by that sorrow She experienced when She saw Thee expire on the Cross, enable the suffering souls in Purgatory to be able to leave that place. Deign to return to Thy grace those who are without it because of sin, and grant me what I ask of Thee in this novena for Thy greater honor and glory. Amen.</p>
-            
-
-            <div class='prayer-each-day-header' value="novena-day-four">
-                <div class='prayer-each-day-header-text'>
-                    <h2>Fourth Day</h2><br class="novena-length-extended">
-                    <p class="resp novena-length-extended">Pray four Our Father's, Hail Mary's, and Glory's in honor of St. Joachim and St. Anne, then say the prayer for this day.</p>
+                <div class='pope-st-gregory-content'>
+                    <p>O Jesus Christ, my Lord, Who to redeem me, endured so much sufferings and drank gall and vinegar, I adore and beseech Thee that Thy sufferings be the cure of my soul.</p>
+                    <p class='ofhm'>Our Father and Hail Mary.</p>
                 </div>
-                
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class='prayer-each-day-content'>O great God, through Whose mercy the saints rest in glory, I beg Thee to set free those blessed souls for whom I am specially praying, through the intercessions of St. Joachim and St. Anne. Hear me Lord, by that bitter pain of Thy afflicted Mother when She heard those outrageous blasphemies and offensive words with which Thy enemies were insulting Thy Divine Innocence. I beg Thee, Lord, to have mercy on those who follow the path of perdition by making them return to Thy grace; and please grant me what I ask in this novena for Thy greater honor and glory. Amen.</p>
-            
 
-            <div class='prayer-each-day-header' value="novena-day-five">
-                <div class='prayer-each-day-header-text'>
-                    <h2>Fifth Day</h2><br class="novena-length-extended">
-                    <p class="resp novena-length-extended">Pray four Our Father's and Hail Mary's in honor of St. Michael, the Archangel, then say the prayer for this day.</p>
+                <div class='pope-st-gregory-header' value="novena-day-three">
+                    <div class='pope-st-gregory-header-text'>
+                        <h2>Third Day</h2>
+                    </div>
+        
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
                 </div>
-                
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class='prayer-each-day-content'>Sovereign Lord, in Whom it is prosper to be merciful, through the intercession of the Archangel St. Michael and by the sorrow of Thy Blessed Mother suffered when that soldier cruelly pierced Thy side with a lance, have pity on those souls for whom I am offering this novena and bring them to Thy eternal rest. Have mercy on those who are in the state of mortal sin and grant me what I ask of Thee in this novena for Thy greater honor and glory. Amen.</p>
-            
-
-            <div class='prayer-each-day-header' value="novena-day-six">
-                <div class='prayer-each-day-header-text'>
-                    <h2>Sixth Day</h2><br class="novena-length-extended">
-                    <p class="resp novena-length-extended">Pray five Our Father's, Hail Mary's, and Glory's in reverence of the glorious St. Lawrence, special advocate of the souls, then say the prayer for this day.</p>
+                <div class='pope-st-gregory-content'>
+                    <p>O Jesus Christ, my lord, by the bitterness Thou suffered on the Cross because of my sins, particularly when Thy Soul parted from Thy Body, I beseech Thee to have mercy on my soul on the day of its departure from this world.</p>
+                    <p class='ofhm'>Our Father and Hail Mary.</p>
                 </div>
-                
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class='prayer-each-day-content'>Sweetest Jesus, incline Thine ears to my petitions for Thy mercy on the blessed souls in Purgatory, especially on those for whom I am making this novena, through the torments suffered by the glorious St. Lawrence in the fire of his martyrdom. I am also begging Thy mercy for the blessed souls in Purgatory by the pains suffered by Thy loving Mother when She saw Thee being taken down from the Cross and when She received in Her Sacred Hands the Crown and Nails bathed in Thy Precious Blood. Have pity on those who are not in Thy grace by taking them out of their unhappy state and grant me what I ask of Thee in this novena for Thy greater honor and glory. Amen.</p>
-            
 
-            <div class='prayer-each-day-header' value="novena-day-seven">
-                <div class='prayer-each-day-header-text'>
-                    <h2>Seventh Day</h2><br class="novena-length-extended">
-                    <p class="resp novena-length-extended">Pray nine Our Father's and Hail Mary's in honor of the nine choirs of Angels, then say the prayer for this day.</p>
+                <div class='pope-st-gregory-header' value="novena-day-four">
+                    <div class='pope-st-gregory-header-text'>
+                        <h2>Fourth Day</h2>
+                    </div>
+        
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
                 </div>
-                
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class='prayer-each-day-content'>Merciful Lord, through the intercession of the Angels, especially of those who are the guardians of those afflicted souls for whom I make this novena; and by that sorrow of Thy Blessed Mother when, after having kissed and adored Thy Crown and Nails, She received Thee in Her virginal and maternal arms and gazed on Thy mangled and lacerated Body, I humbly beeech Thee to set them free and bring them to the happiness of Heaven. Lead those who are in mortal sin to a true knowledge of their guilt and grant me the grace I ask of Thee in this novena for Thy greater honor and glory. Amen.</p>
-            
-
-            <div class='prayer-each-day-header' value="novena-day-eight">
-                <div class='prayer-each-day-header-text'>
-                    <h2>Eighth Day</h2><br class="novena-length-extended">
-                    <p class="resp novena-length-extended">Pray five Our Father's and Hail Mary's in honor of the Seraphic Father St. Francis and St. Nicolas of Tolentino, special patrons of the Blessed souls, then say the prayer for this day.</p>
+                <div class='pope-st-gregory-content'>
+                    <p>O Jesus Christ, my Lord, Who to redeem me, Thy Sacred Body was annointed and buried, I adore and beseech Thee that Thy death be my life.</p>
+                    <p class='ofhm'>Our Father and Hail Mary.</p>
                 </div>
-                
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class='prayer-each-day-content'>My Sweet and beloved Jesus, through the intercession of Thy beloved seraphim, St. Francis, and of the glorious and charitable St. Nicolas of Tolentino, I beg of Thee to shower the immense treasures of Thy clemency on those blessed souls whose torments so touched the charity of these two Servants of Thine. But I beg this grace especially through that bleeding Heart of Thy Blessed Mother when She wrapped and clothed Thy Sacred Body for burial and accompanied It to the Sepulchre. Reduce those who are in sin to a true repentance of them and grant me what I ask in this novena for Thy greater honor and glory. Amen.</p>
-            
 
-            <div class='prayer-each-day-header' value="novena-day-nine">
-                <div class='prayer-each-day-header-text'>
-                    <h2>Ninth Day</h2><br class="novena-length-extended">
-                    <p class="resp novena-length-extended">Pray five time the Apostles' Creed in honor of the Passion of Our Lord Jesus Christ, then say the prayer for this day.</p>
+                <div class='pope-st-gregory-header' value="novena-day-five">
+                    <div class='pope-st-gregory-header-text'>
+                        <h2>Fifth Day</h2>
+                    </div>
+        
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
                 </div>
-              
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <p class='prayer-each-day-content'>Creator and Redeemer of all mankind, through the infinite merits of Thy Life, Passion, and Death, I beg of Thee to bestow on all souls, particularly those for hom I am making this novena, the pardon and indulgences they always desired. Through the intercession and merits of Thy afflicted Mother, especially by that sorrow of sorrows with which She left Thee buried in the tomb and returned home without the light of Her eyes and the life of Her heart, which is Thou, my Jesus, have mercy on the blessed souls so that they may enjoy Thee eternally in Heaven. Turn Thine eyes of mercy, too, on those who are in the miserable state of slavery of the devil, so that they may be restored to Thy grace, and grant me what I ask of Thee in this novena for Thy greater honor and glory. Amen.</p>
-            
-        </div>
-
-    </section>
-
-    <section class='novena-section-six' id='novena-section-six'>
-        <h1>Decade of the Passion</h1>
-        <div class='prayer-text'>
-            <p>Lord, open our lips and inflame our hearts and cleanse them of useless and evil thoughts. Enlighten our minds, that we may seriously meditate on Thy sufferings and death and the pains endured by Thy most glorious Mother; and deign to hear and receive us before Thy great Majesty, Thou who liveth and reignest forever. Amen.</p><br>
-            <p class='resp'>{ On the beads for the Our Father, say the following: }</p><br>
-            <p class='verse'>My most merciful Jesus, look down with eyes of pity on the faithful souls for whom Thou suffered and died on the Cross.</p><br>
-            <p class='resp'>{ On the beads for the Hail Mary, say the following: }</p><br>
-            <p class='verse'>V: My Jesus, through Thy bloody sweat in the Garden,</p>
-            <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
-            <p class='verse'>V: My Jesus, through the blow Thou received on Thy Sacred Face,</p>
-            <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
-            <p class='verse'>V: My Jesus, through the cruel scourging Thou endured,</p>
-            <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
-            <p class='verse'>V: My Jesus, through the crown of thorns that pierced Thy Head,</p>
-            <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
-            <p class='verse'>V: My Jesus, through Thy carrying of the Cross on the path of bitterness,</p>
-            <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
-            <p class='verse'>V: My Jesus, through Thy face covered with blood which Thou allowed to be imprinted on the veil of Veronica,</p>
-            <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
-            <p class='verse'>V: My Jesus, through Thy bloody garments which were cruelly removed from Thy wounded Body,</p>
-            <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
-            <p class='verse'>V: My Jesus, through Thy Holy Body nailed on the Cross,</p>
-            <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
-            <p class='verse'>V: My Jesus, through Thy Hands and Feet pierced with cruel nails,</p>
-            <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
-            <p class='verse'>V: My Jesus, through Thy Sacred Side pierced with a lance and from which flowed blood and water.</p>
-            <p class='resp'>R: Have mercy on the souls in Purgatory.</p><br>
-        </div>
-    </section>
-
-    <section class='novena-section-seven novena-length-extended' id='novena-section-seven'>
-        <h1>Offering</h1>
-        <div class='prayer-text'>
-            <p class='resp'>{ Excerpt from a prayer of St. Augustine }</p><br>
-            <p>Most sweet Jesus, Who in Thy desire to redeem the world, deigned to be born, circumcised, mocked by the Jews, to fall into the hands of Thy enemies through the treacherous kiss of Judas, to be bound and brought to the place of sacrifice like a meek Lamb, brought before Caiphas, Pilate, and Herod, spat on, accused and condemned with false witnesses, to be slapped and have Thy Sacred Body covered with wounds from the cruel scourging, to be covered with thorns, Thy Face covered with a purple cloth in mockery, stripped of Thy garments, nailed and elevated on the Cross between two thieves as if Thou wert one of them, offered gall and vinegar to drink, and to be pierced in Thy Side with a lance, deliver, O Lord, the souls in Purgatory from their great sufferings through Thy most bitter Passion; bring them to Thy Glory and deliver us from the pains of hell, through the merits of Thy Holy Passion and Death on the Cross, so that we may be worthy to enter that Kingdom where Thou brought the good thief, who was crucified with Thee, who liveth and reigneth with that Father and the Holy Ghost forever. Amen.</p>
-        </div>
-    </section>
-
-    <section class='novena-section-eight' id='novena-section-eight'>
-        <h1>Litany for the Faithful Departed</h1>
-
-        <table class='litany-faithful-departed'>
-            <tr>
-                <td class='verse' width="60%">Lord, have mercy on us.</td>
-                <td class='resp' width="40%">Lord, have mercy on us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Christ, have mercy on us.</td>
-                <td class='resp'>Christ, have mercy on us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Lord, have mercy on us.</td>
-                <td class='resp'>Lord, have mercy on us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Christ, hear us.</td>
-                <td class='resp'>Christ, graciously hear us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>God, the Father of Heaven,</td>
-                <td class='resp'>Have mercy on the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>God the Son, Redeemer of the world,</td>
-                <td class='resp'>Have mercy on the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>God the Holy Ghost,</td>
-                <td class='resp'>Have mercy on the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Holy Trinity, one God,</td>
-                <td class='resp'>Have mercy on the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Holy Mary,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Holy Mother of God,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Holy Virgin of virgins,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>St. Michael,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>All ye angels and archangels,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>All ye orders of blessed spirits,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>St. John the Baptist,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>St. Joseph,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>All ye holy patriarchs and prophets,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>St. Peter,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>St. Paul,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>St. John,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>All ye holy Apostles and Evangelists,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>St. Stephen,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>St. Lawrence,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>All ye holy martyrs,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>St. Gregory,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>St. Ambrose,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>St. Augustine,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>St. Jerome,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>All ye holy bishops and confessors,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>All ye holy doctors,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>All ye holy priests and levites,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>All ye holy monks and hermits,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>St. Mary Magdelene,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>St. Barbara,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>All ye holy virgins and widows,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>All ye saints of God,</td>
-                <td class='resp'>Pray for the souls of the faithful departed.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Be merciful,</td>
-                <td class='resp'>Spare them, O Lord.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Be merciful,</td>
-                <td class='resp'>Graciously hear us, O Lord.</td>
-            </tr>
-            <tr>
-                <td class='verse'>From all evil,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>From Thy wrath,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>From the rigor of Thy justice,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>From the power of the devil,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>From the gnawing worm of conscience,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>From the long-enduring sorrow,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>From eternal flames,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>From intolerable cold,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>From horrible darkness,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>From dreadful weeping and wailing,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thine admirable conception,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy Holy Nativity,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy most sweet Name,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy baptism and holy fasting,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy most profound humiliation,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy prompt obedience,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thine infinite love,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy bloody sweat,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy sorrow and anguish,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy bonds,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy scourging,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy crowning with thorns,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy carrying of the Cross,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy most cruel death,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy most holy wounds,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy most bitter Cross and Passion,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thy holy Resurrection,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through Thine admirable Ascension,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Through the coming of the Holy Ghost, the Paraclete,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>In the day of judgement,</td>
-                <td class='resp'>O Lord, deliver them.</td>
-            </tr>
-            <tr>
-                <td class='verse'>We sinners,</td>
-                <td class='resp'>We beseech Thee, hear us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Thou Who forgavest Magdelene and didst hearken to the prayer of the thief,</td>
-                <td class='resp'>We beseech Thee, hear us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Thou Who savest freely Thine elect,</td>
-                <td class='resp'>We beseech Thee, hear us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Thou Who hast the key of heaven and hell,</td>
-                <td class='resp'>We beseech Thee, hear us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>That Thou wouldst be pleased to deliver the souls of our parents, relations, friends, and benefactors, from the pains of hell,</td>
-                <td class='resp'>We beseech Thee, hear us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>That Thou wouldst be pleased to have mercy on those of whom no special rememberances is made on earth,</td>
-                <td class='resp'>We beseech Thee, hear us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>That Thou wouldst be pleased to grant them all the pardon and remission of all their sins,</td>
-                <td class='resp'>We beseech Thee, hear us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>That Thou wouldst be pleased to fulfill all their desires,</td>
-                <td class='resp'>We beseech Thee, hear us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>That Thou wouldst be pleased to receive them into the company of the blessed,</td>
-                <td class='resp'>We beseech Thee, hear us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>King of awful Majesty,</td>
-                <td class='resp'>We beseech Thee, hear us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Son of God,</td>
-                <td class='resp'>We beseech Thee, hear us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Lamb of God, who takest away the sins of the world,</td>
-                <td class='resp'>Grant unto them rest.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Lamb of God, who takest away the sins of the world,</td>
-                <td class='resp'>Grant unto them rest.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Lamb of God, who takest away the sins of the world,</td>
-                <td class='resp'>Grant unto them rest everlasting.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Christ, hear us.</td>
-                <td class='resp'>Christ, graciously hear us.</td>
-            </tr>
-            <tr>
-                <td class='verse'>Lord, have mercy.</td>
-                <td class='resp'>Christ, have mercy</td>
-            </tr>
-            <tr>
-                <td class='verse'>From the gates of hell.</td>
-                <td class='resp'>Deliver their souls, O Lord</td>
-            </tr>
-            <tr>
-                <td class='verse'>O Lord, hear my prayer.</td>
-                <td class='resp'>And let my cry come unto Thee.</td>
-            </tr>
-        </table>
-        <div class='prayer-text novena-length-extended'>
-            <p class='verse'>LET US PRAY</p><br>
-            <p>O God, the Creator and Redeemer of all the faithful, grant unto the souls of Thy servant(s) departed the remission of their sins; that by pious supplications, they may obtain that pardon which they have always desired. Grant this, O God, Who livest and reignest forever and ever. Amen.</p><br>
-            <p>O Eternal God, Who besides the general precept of charity, hast commanded a particular respect to parents, kindred, and benefactors; grant we beseech Thee, that as they were the instruments by which Thy Providence bestowed on us our birth, education, and innumerable other blessings, so our prayers may be the means to obtain for them a speedy release from their excessive sufferings, and free admittance to Thine infinite joys. Through Jesus Christ, our Lord. Amen.</p><br>
-            <p class='verse'>LET US PRAY</p><br>
-            <p>O God, Whose property is ever to have mercy and to spare, we humbly beseech Thee in behalf of Thy servant(s), N. —, whom Thou hast this day called out of this world, that Thou wouldst not deliver [him/her/them] into the hands of the enemy nor forget [him/her/them] forever, but bid the holy angels, lead [him/her/them] into Paradise, [his/her/their] true country, that for as much as in Thee [he/she/they] put [his/her/their] hope and trust, [he/she/they] may not endure the pains of hell, but may come to the possession of eternal joys. Through our Lord Jesus Christ, Thy Son, Who with Thee liveth and reigneth in the unity of the Holy Ghost, God, world without end. Amen.</p><br>
-            <p>Be merciful, we beesech Thee O Lord, to the soul of Thy servant(s), N. —, for whom we offer to Thee the sacrifice of praise, humbly beseeching Thy Majesty that, by those holy and propitiatory offerings, [he/she/they] may be found worthy to win everlasting rest. Through our Lord Jesus Christ, Thy Son, Who with Thee liveth and reigneth in the unity of the Holy Ghost, God, world without end. Amen.</p><br>
-            <p>Grant, we beeech Thee, Almighty God, that the soul of Thy servant(s), N. —, which has this day departed out of this world, may be cleansed by this sacrifice, and delivered from sins, and may receive forgiveness and everlasting rest. Through our Lord Jesus Christ, Thy Son, Who with Thee liveth and reigneth in the unity of the Holy Ghost, God, world without end. Amen.</p><br>
-            <p>Absolve, O Lord, the soul of Thy servant(s), N. —, from every bond of sin, so that by Thy aid [he/she/they] may deserve to escape the judgement of wrath, and come to the enjoyment of beatitude in eternal light.</p><br>
-            <p class='verse'>V: Eternal rest give unto [him/her/them], O Lord.</p>
-            <p class='resp'>R: And let perpetual light shine upon [him/her/them].</p><br>
-            <p class='verse'>V: From the gates of hell.</p>
-            <p class='resp'>R: Deliver [his/her/their] soul, O Lord.</p><br>
-            <p class='verse'>V: May [he/she/they] rest in peace.</p>
-            <p class='resp'>R: Amen.</p><br>
-            <p class='verse'>V: O Lord, hear my prayer.</p>
-            <p class='resp'>R: And let my cry come unto Thee.</p><br>
-            <p class='verse'>V: The Lord be with you.</p>
-            <p class='resp'>R: And with Thy Spirit.</p><br>
-            <p class='verse'>LET US PRAY</p><br>
-            <p>O God, the Creator and Redeemer of all the faithful, grant to the soul(s) of Thy servant(s), N. —, the remission of all [his/her/their] sins, that through pious supplications [he/she/they] may obtain the pardon [he/she/they] has/have always desired Who livest and reignest world without end. Amen.</p><br>
-            <p class='verse'>V: Eternal rest grant unto [him/her/them], O Lord.</p>
-            <p class='resp'>R: And let perpetual light shine upon [him/her/them].</p><br>
-            <p class='verse'>V: May [he/she/they] rest in peace.</p>
-            <p class='resp'>R: Amen.</p>
-        </div>
-    </section>
-
-    <section class='novena-section-nine novena-length-extended' id='novena-section-nine'>
-        <h1>Words of Pope Saint Gregory</h1>
-        <div class='pope-st-gregory'>
-            <div class='pope-st-gregory-header' value="novena-day-one">
-                <div class='pope-st-gregory-header-text'>
-                    <h2>First Day</h2>
+                <div class='pope-st-gregory-content'>
+                    <p>O Jesus Christ, my Lord, Who descended to the limbo of the Holy Fathers and freed those who were imprisoned there, I adore and beseech Thee not to permit my soul to be imprisoned in hell.</p>
+                    <p class='ofhm'>Our Father and Hail Mary.</p>
                 </div>
+
+                <div class='pope-st-gregory-header' value="novena-day-six">
+                    <div class='pope-st-gregory-header-text'>
+                        <h2>Sixth Day</h2>
+                    </div>
+        
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <div class='pope-st-gregory-content'>
+                    <p>O Jesus Christ, my Lord, Who with great power resurrected Thyself and ascended to Heaven, where Thou sitteth at the right of God the Father, I pray Thee to have mercy on us.</p>
+                    <p class='ofhm'>Our Father and Hail Mary.</p>
+                </div>
+
+                <div class='pope-st-gregory-header' value="novena-day-seven">
+                    <div class='pope-st-gregory-header-text'>
+                        <h2>Seventh Day</h2>
+                    </div>
+        
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <div class='pope-st-gregory-content'>
+                    <p>O Jesus Christ, my Lord, the Good Shepherd, defend the just, enlighten the sinners, have mercy on the faithful departed, and on me, great sinner.</p>
+                    <p class='ofhm'>Our Father and Hail Mary.</p>
+                </div>
+
+                <div class='pope-st-gregory-header' value="novena-day-eight">
+                    <div class='pope-st-gregory-header-text'>
+                        <h2>Eighth Day</h2>
+                    </div>
+        
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>     
+                </div>
+                <div class='pope-st-gregory-content'>
+                    <p>O Jesus Christ, my Lord, Who will come to judge us, to bring the just to Thy glory and the sinners to eternal punishment, I adore and beseech Thee that Thy Passion may free me from all pains and bring me to eternal life.</p>
+                    <p class='ofhm'>Our Father and Hail Mary.</p>
+                </div>
+
+                <div class='pope-st-gregory-header' value="novena-day-nine">
+                    <div class='pope-st-gregory-header-text'>
+                        <h2>Ninth Day</h2>
+                    </div>
+        
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+                <div class='pope-st-gregory-content'>
+                    <p>O most loving Father, I offer Thee the innocent death of Thy Son and the loves of His Divine Heart for the pains that I, a poor sinner, above all other sinners, deserve; I also offer this Passion and cordial love for all my relatives and friends. I beseech Thee to have mercy on us.</p>
+                    <p class='ofhm'>Our Father and Hail Mary.</p>
+                </div>
+
+                <div class='pope-st-gregory-header' value="novena-day-all">
+                    <div class='pope-st-gregory-header-text'>
+                        <h2>Every Day</h2>
+                    </div>
+        
+                    <i class="fas fa-chevron-down fa-2x expand-icon"></i>
+                </div>
+
+                <div class='pope-st-gregory-content' value="novena-day-all">
+                    <p>O Jesus Christ, my Lord, I humbly beseech Thee to grant me the pardon and graces that are accorded by St. Gregory to those who, through these holy prayers revere the mysteries of Thy great Passion, Who liveth and reigneth for ever and ever.</p>
+                    <p class='ofhm'>Our Father and Hail Mary.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class='novena-section-ten' id='novena-section-ten'>
+            <h1>Final Prayer</h1>
+            <div class='prayer-text'>
+                <p>O Lord God, Who left us the marks of Thy Passion on the Holy Sheet, in which Thy Sacred Body was wrapped when It was taken down from the Cross by Joseph, grant us, Lord, that by Thy death and burial, we may be brought to the glory of the Resurrection, where Thou liveth and reigneth with the Father and the Holy Ghost, God for ever and ever. Amen.</p>
+            </div>
+        </section>
+    </main>
     
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <div class='pope-st-gregory-content'>
-                <p>O Jesus Christ, my Lord, Who to redeem me was crowned with thorns and was crucified, I adore and beseech Thee that Thy Cross be my defense against my evil enemies.</p>
-                <p class='ofhm'>Our Father and Hail Mary.</p>
-            </div>
-            
-            <div class='pope-st-gregory-header' value="novena-day-two">
-                <div class='pope-st-gregory-header-text'>
-                    <h2>Second Day</h2>
-                </div>
-    
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <div class='pope-st-gregory-content'>
-                <p>O Jesus Christ, my Lord, Who to redeem me, endured so much sufferings and drank gall and vinegar, I adore and beseech Thee that Thy sufferings be the cure of my soul.</p>
-                <p class='ofhm'>Our Father and Hail Mary.</p>
-            </div>
-
-            <div class='pope-st-gregory-header' value="novena-day-three">
-                <div class='pope-st-gregory-header-text'>
-                    <h2>Third Day</h2>
-                </div>
-    
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <div class='pope-st-gregory-content'>
-                <p>O Jesus Christ, my lord, by the bitterness Thou suffered on the Cross because of my sins, particularly when Thy Soul parted from Thy Body, I beseech Thee to have mercy on my soul on the day of its departure from this world.</p>
-                <p class='ofhm'>Our Father and Hail Mary.</p>
-            </div>
-
-            <div class='pope-st-gregory-header' value="novena-day-four">
-                <div class='pope-st-gregory-header-text'>
-                    <h2>Fourth Day</h2>
-                </div>
-    
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <div class='pope-st-gregory-content'>
-                <p>O Jesus Christ, my Lord, Who to redeem me, Thy Sacred Body was annointed and buried, I adore and beseech Thee that Thy death be my life.</p>
-                <p class='ofhm'>Our Father and Hail Mary.</p>
-            </div>
-
-            <div class='pope-st-gregory-header' value="novena-day-five">
-                <div class='pope-st-gregory-header-text'>
-                    <h2>Fifth Day</h2>
-                </div>
-    
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <div class='pope-st-gregory-content'>
-                <p>O Jesus Christ, my Lord, Who descended to the limbo of the Holy Fathers and freed those who were imprisoned there, I adore and beseech Thee not to permit my soul to be imprisoned in hell.</p>
-                <p class='ofhm'>Our Father and Hail Mary.</p>
-            </div>
-
-            <div class='pope-st-gregory-header' value="novena-day-six">
-                <div class='pope-st-gregory-header-text'>
-                    <h2>Sixth Day</h2>
-                </div>
-    
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <div class='pope-st-gregory-content'>
-                <p>O Jesus Christ, my Lord, Who with great power resurrected Thyself and ascended to Heaven, where Thou sitteth at the right of God the Father, I pray Thee to have mercy on us.</p>
-                <p class='ofhm'>Our Father and Hail Mary.</p>
-            </div>
-
-            <div class='pope-st-gregory-header' value="novena-day-seven">
-                <div class='pope-st-gregory-header-text'>
-                    <h2>Seventh Day</h2>
-                </div>
-    
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <div class='pope-st-gregory-content'>
-                <p>O Jesus Christ, my Lord, the Good Shepherd, defend the just, enlighten the sinners, have mercy on the faithful departed, and on me, great sinner.</p>
-                <p class='ofhm'>Our Father and Hail Mary.</p>
-            </div>
-
-            <div class='pope-st-gregory-header' value="novena-day-eight">
-                <div class='pope-st-gregory-header-text'>
-                    <h2>Eighth Day</h2>
-                </div>
-    
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>     
-            </div>
-            <div class='pope-st-gregory-content'>
-                <p>O Jesus Christ, my Lord, Who will come to judge us, to bring the just to Thy glory and the sinners to eternal punishment, I adore and beseech Thee that Thy Passion may free me from all pains and bring me to eternal life.</p>
-                <p class='ofhm'>Our Father and Hail Mary.</p>
-            </div>
-
-            <div class='pope-st-gregory-header' value="novena-day-nine">
-                <div class='pope-st-gregory-header-text'>
-                    <h2>Ninth Day</h2>
-                </div>
-    
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-            <div class='pope-st-gregory-content'>
-                <p>O most loving Father, I offer Thee the innocent death of Thy Son and the loves of His Divine Heart for the pains that I, a poor sinner, above all other sinners, deserve; I also offer this Passion and cordial love for all my relatives and friends. I beseech Thee to have mercy on us.</p>
-                <p class='ofhm'>Our Father and Hail Mary.</p>
-            </div>
-
-            <div class='pope-st-gregory-header' value="novena-day-all">
-                <div class='pope-st-gregory-header-text'>
-                    <h2>Every Day</h2>
-                </div>
-    
-                <i class="fas fa-chevron-down fa-2x expand-icon"></i>
-            </div>
-
-            <div class='pope-st-gregory-content' value="novena-day-all">
-                <p>O Jesus Christ, my Lord, I humbly beseech Thee to grant me the pardon and graces that are accorded by St. Gregory to those who, through these holy prayers revere the mysteries of Thy great Passion, Who liveth and reigneth for ever and ever.</p>
-                <p class='ofhm'>Our Father and Hail Mary.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class='novena-section-ten' id='novena-section-ten'>
-        <h1>Final Prayer</h1>
-        <div class='prayer-text'>
-            <p>O Lord God, Who left us the marks of Thy Passion on the Holy Sheet, in which Thy Sacred Body was wrapped when It was taken down from the Cross by Joseph, grant us, Lord, that by Thy death and burial, we may be brought to the glory of the Resurrection, where Thou liveth and reigneth with the Father and the Holy Ghost, God for ever and ever. Amen.</p>
-        </div>
-    </section>
-
     <footer>
         <p>Copyright &copy; Arvin Agas 2019</p>
     </footer>

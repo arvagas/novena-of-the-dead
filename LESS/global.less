@@ -1,18 +1,18 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 62.5%;
 	// remove highlight that appears when element is clicked
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 h1 {
@@ -28,12 +28,20 @@ p,a,td,li {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
 	margin: 0 auto;
 	max-width: 100vw;
-	height: 100vh;
-	margin-top: 46px;
+	min-height: 100vh;
+	padding-top: 46px;
 
 	@media @phone {
-		margin-top: 40px;
+		padding-top: 40px;
+	}
+
+	.site-content {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
 	}
 }   
