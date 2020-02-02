@@ -4,11 +4,19 @@ $(document).ready(function(){
         let currValue = this.value
         switch (currValue) {
             case "novena-length-extended":
-                document.querySelectorAll('.novena-length-extended').forEach(item => item.style.display = 'block')
+                document.querySelectorAll('section').forEach(item => item.style.display = 'block')
                 break;
 
             case "novena-length-abridged":
+                // Reset sections to show, then apply hide to specified sections
+                document.querySelectorAll('section').forEach(item => item.style.display = 'block')
                 document.querySelectorAll('.novena-length-extended').forEach(item => item.style.display = 'none')
+                break;
+
+            case "novena-length-fortieth":
+                // Reset sections to show, then apply hide to specified sections
+                document.querySelectorAll('section').forEach(item => item.style.display = 'block')
+                document.querySelectorAll('.novena-length-notforty').forEach(item => item.style.display = 'none')
                 break;
         }
     })
