@@ -32,7 +32,8 @@ h1 {
 
 .rosary-prayers-header .expand-icon,
 .prayer-each-day-header .expand-icon,
-.pope-st-gregory-header .expand-icon {
+.pope-st-gregory-header .expand-icon,
+.legacy-link {
   display: none;
 }
 
