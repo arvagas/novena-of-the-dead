@@ -320,6 +320,7 @@ footer {
 .prayer-each-day-content,
 .pope-st-gregory-content {
   display: block;
+  margin-top: 5px;
 }
 @media (max-width: 800px) {
   .rosary-prayers-content,
@@ -445,6 +446,7 @@ footer {
 .novena-container .legacy-link {
   align-self: center;
   margin-top: 2rem;
+  text-decoration: none;
 }
 .novena-container .novena-options {
   display: flex;
