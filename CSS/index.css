@@ -602,3 +602,20 @@ footer {
     text-align: center;
   }
 }
+.novena-container .pope-st-gregory-everyday-header {
+  margin-top: 2rem;
+  border-bottom: solid black 1px;
+}
+@media (max-width: 800px) {
+  .novena-container .pope-st-gregory-everyday-header {
+    display: none;
+  }
+}
+.novena-container .pope-st-gregory-everyday {
+  margin-top: 5px;
+}
+@media (max-width: 800px) {
+  .novena-container .pope-st-gregory-everyday {
+    margin-top: 2rem;
+  }
+}
