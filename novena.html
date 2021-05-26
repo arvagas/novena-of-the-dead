@@ -35,7 +35,47 @@
     </header>
 
     <main class='site-content'>
-        <a class='page-links' href='novena-legacy.html'>Click here to see the legacy version of this novena.</a>
+        <a class='legacy-link' href='novena-legacy.html'>Click here for the legacy version.</a>
+
+        <div class='novena-options'>
+
+            <div class='novena-day'>
+                <p>Novena Day:</p>
+                <select class='novena-day-options'>
+                    <option value="novena-day-all">All</option>
+                    <option value="novena-day-one">One</option>
+                    <option value="novena-day-two">Two</option>
+                    <option value="novena-day-three">Three</option>
+                    <option value="novena-day-four">Four</option>
+                    <option value="novena-day-five">Five</option>
+                    <option value="novena-day-six">Six</option>
+                    <option value="novena-day-seven">Seven</option>
+                    <option value="novena-day-eight">Eight</option>
+                    <option value="novena-day-nine">Nine</option>
+                </select>
+            </div>
+
+            <div class='section-jump-drop'>
+                <p>Jump to:</p>
+                <select class='section-jump-options' onChange="window.location.href=this.value">
+                    <option value='#novena-section-one'>Rosary of the Blessed Virgin</option>
+                    <option value='#novena-section-two'>Memorare</option>
+                    <option value='#novena-section-three'>Prayer for Each Day</option>
+                    <option value='#novena-section-four'>Final Prayer</option>
+                </select>
+            </div>
+        </div>
+
+        <div class='section-jump'>
+            <p>Jump to:</p>
+            <div>
+                <a value='#novena-section-one'>Rosary of the Blessed Virgin</a>
+                <a value='#novena-section-two'>Memorare</a>
+                <a value='#novena-section-three'>Prayer for Each Day</a>
+                <a value='#novena-section-four'>Final Prayer</a>
+            </div>
+        </div>
+    
     </main>
     
     <footer>

@@ -442,6 +442,10 @@ footer {
     margin: 1rem 5% 0;
   }
 }
+.novena-container .legacy-link {
+  align-self: center;
+  margin-top: 2rem;
+}
 .novena-container .novena-options {
   display: flex;
   justify-content: center;
