@@ -30,11 +30,18 @@ h1 {
     display: none;
 }
 
+.legacy-link {
+    display: none;
+}
+
+.novena-honor {
+    display: none;
+}
+
 .rosary-prayers-header .expand-icon,
 .prayer-each-day-header .expand-icon,
-.pope-st-gregory-header .expand-icon,
-.legacy-link {
-  display: none;
+.pope-st-gregory-header .expand-icon{
+    display: none;
 }
 
 footer {
