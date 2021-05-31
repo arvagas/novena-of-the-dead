@@ -140,3 +140,37 @@ $(document).ready(function(){
             break;
     }
 })
+
+// @@@@@@@@@@@@@@@@@@@@ Name Insertion @@@@@@@@@@@@@@@@@@@@
+$(document).ready(function(){
+    $('#honor-of').on('change', function() {
+        let currValue = this.value
+
+        if (currValue.trim() === '' && document.querySelector('.name-change').textContent === 'N. —') return
+        else if (currValue.trim() === '') {
+            nameChangeSelector.forEach(item => {
+                item.textContent = 'N. —'
+            })
+            return
+        }
+
+        let names = currValue.split(' ')
+        let namesToHonor = ''
+
+        if (names.length === 1) namesToHonor = names
+        else if (names.length === 2) namesToHonor = names.join(' and ')
+        else {
+            namesToHonor = names[0]
+            for (let i=1; i < names.length; i++){
+                if (i === names.length-1) namesToHonor += `, and ${names[i]}`
+                else namesToHonor += `, ${names[i]}`
+            }
+        }
+
+        nameChangeSelector.forEach(item => {
+            item.textContent = namesToHonor
+        })
+    })
+})
+
+let nameChangeSelector = document.querySelectorAll('.name-change')
