@@ -62,19 +62,25 @@
         justify-content: center;
         padding-top: 20px;
         margin-bottom: 2rem;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
 
-        @media (max-width: 425px) {
-            flex-direction:column;
+        @media @phone {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-size: 1.6rem;
+            margin-right: 5px;
         }
 
         .novena-day {
             display:flex;
+            align-items: center;
             margin-right: 20px;
 
-            @media (max-width: 425px) {
+            @media @phone {
                 align-self: center;
-                margin-right: 0;
                 margin-bottom: 2rem;
             }
         }
@@ -82,7 +88,7 @@
         .novena-length {
             display:flex;
 
-            @media (max-width: 425px) {
+            @media @phone {
                 align-self: center;
                 margin-bottom: 2rem;
             }
@@ -92,17 +98,12 @@
             display:none;
 
             @media @phone {
-                display:block;
-                margin-top: 2rem;
+                display:flex;
             }
 
             @media (max-width: 425px) {
-                margin-top: 0;
-                align-self: center;
-            }
-
-            p {
-                text-align:center;
+                flex-direction: column;
+                align-items: center;
             }
         }
     }
@@ -115,24 +116,24 @@
             display: none;
         }
         
-            p {
-                text-align:center
-            }
+        p {
+            text-align:center
+        }
 
-            div {
-                display:flex;
-                justify-content: center;
-                flex-wrap: wrap;
+        div {
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
 
-                a {
-                    padding: 10px;
+            a {
+                padding: 10px;
 
-                    @media @phone {
-                        padding: 5px;
-                    }
+                @media @phone {
+                    padding: 5px;
                 }
             }
-       }
+        }
+    }
 
     .rosary-mysteries {
         margin-top: 2rem;

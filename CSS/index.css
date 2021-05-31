@@ -455,26 +455,31 @@ footer {
   margin-bottom: 2rem;
   flex-wrap: wrap;
 }
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .novena-container .novena-options {
     flex-direction: column;
+    align-items: center;
   }
+}
+.novena-container .novena-options label {
+  font-size: 1.6rem;
+  margin-right: 5px;
 }
 .novena-container .novena-options .novena-day {
   display: flex;
+  align-items: center;
   margin-right: 20px;
 }
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .novena-container .novena-options .novena-day {
     align-self: center;
-    margin-right: 0;
     margin-bottom: 2rem;
   }
 }
 .novena-container .novena-options .novena-length {
   display: flex;
 }
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .novena-container .novena-options .novena-length {
     align-self: center;
     margin-bottom: 2rem;
@@ -485,18 +490,14 @@ footer {
 }
 @media (max-width: 500px) {
   .novena-container .novena-options .section-jump-drop {
-    display: block;
-    margin-top: 2rem;
+    display: flex;
   }
 }
 @media (max-width: 425px) {
   .novena-container .novena-options .section-jump-drop {
-    margin-top: 0;
-    align-self: center;
+    flex-direction: column;
+    align-items: center;
   }
-}
-.novena-container .novena-options .section-jump-drop p {
-  text-align: center;
 }
 .novena-container .section-jump {
   display: flex;

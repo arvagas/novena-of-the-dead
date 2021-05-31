@@ -37,8 +37,8 @@
     <main class='site-content'>
         <div class='novena-options'>
             <div class='novena-day'>
-                <p>Novena Day:</p>
-                <select class='novena-day-options'>
+                <label for='novena-days'>Novena Day:</label>
+                <select name='novena-days' id='novena-days' class='novena-day-options'>
                     <option value="novena-day-all">All</option>
                     <option value="novena-day-one">One</option>
                     <option value="novena-day-two">Two</option>
@@ -53,8 +53,8 @@
             </div>
             
             <div class='novena-length'>
-                <p>Novena Length:</p>
-                <select class='novena-length-options'>
+                <label for='novena-lengths'>Novena Length:</label>
+                <select name='novena-lengths' id='novena-lengths' class='novena-length-options'>
                     <option value="novena-length-extended">Extended</option>
                     <option value="novena-length-abridged">Abridged</option>
                     <option value="novena-length-fortieth">40th Day</option>
@@ -62,8 +62,8 @@
             </div>
 
             <div class='section-jump-drop'>
-                <p>Jump to:</p>
-                <select class='section-jump-options' onChange="window.location.href=this.value">
+                <label for='section-jump-mobile'>Jump to:</label>
+                <select for='section-jump-mobile' id='section-jump-mobile' class='section-jump-options' onChange="window.location.href=this.value">
                     <option value='#novena-section-one'>Rosary of the Blessed Virgin</option>
                     <option value='#novena-section-two' class='novena-length-extended novena-length-notforty'>The Litany of Loreto</option>
                     <option value='#novena-section-three' class='novena-length-extended novena-length-notforty'>Act of Contrition</option>
