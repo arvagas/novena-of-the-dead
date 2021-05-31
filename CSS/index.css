@@ -443,10 +443,28 @@ footer {
     margin: 1rem 5% 0;
   }
 }
+.novena-container label {
+  font-size: 1.6rem;
+  margin-right: 5px;
+}
 .novena-container .legacy-link {
   align-self: center;
   margin-top: 2rem;
   text-decoration: none;
+}
+.novena-container .novena-honor {
+  align-self: center;
+  margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  .novena-container .novena-honor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.novena-container .novena-honor #honor-of {
+  width: 200px;
 }
 .novena-container .novena-options {
   display: flex;
@@ -460,10 +478,6 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-}
-.novena-container .novena-options label {
-  font-size: 1.6rem;
-  margin-right: 5px;
 }
 .novena-container .novena-options .novena-day {
   display: flex;
