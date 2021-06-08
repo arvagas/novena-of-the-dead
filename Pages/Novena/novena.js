@@ -154,7 +154,15 @@ $(document).ready(function(){
             return
         }
 
-        let names = currValue.split(' ')
+        // chop off beginning and ending extra spaces
+        let tempNames = currValue.trim().split(' ')
+        let names = []
+        // chop off extra spaces within middle
+        for (let i=0; i < tempNames.length; i++) {
+            if (tempNames[i] !== '') names.push(tempNames[i])
+        }
+
+        // for complete names to input
         let namesToHonor = ''
 
         if (names.length === 1) namesToHonor = names
