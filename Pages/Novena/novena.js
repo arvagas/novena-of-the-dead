@@ -157,6 +157,10 @@ $(document).ready(function(){
                 decadeNameChangeSelector.forEach(item => {
                     item.textContent = 'souls in purgatory'
                 })
+
+                faithfulNameChangeSelector.forEach(item => {
+                    item.textContent = 'souls of the faithful departed'
+                })
             }
 
             return
@@ -190,20 +194,24 @@ $(document).ready(function(){
         
         // change words within decade if novena-legacy is selected
         if (decadeNameChangeSelector.length > 0) {
-            let decadeNamesToHonor = ''
+            let soulNamesToHonor = ''
 
-            if (names.length === 1) decadeNamesToHonor = `soul of ${names}`
-            else if (names.length === 2) decadeNamesToHonor = `soul of ${names.join(' and ')}`
+            if (names.length === 1) soulNamesToHonor = `soul of ${names}`
+            else if (names.length === 2) soulNamesToHonor = `souls of ${names.join(' and ')}`
             else {
-                decadeNamesToHonor = `soul of ${names[0]}`
+                soulNamesToHonor = `souls of ${names[0]}`
                 for (let i=1; i < names.length; i++){
-                    if (i === names.length-1) decadeNamesToHonor += `, and ${names[i]}`
-                    else decadeNamesToHonor += `, ${names[i]}`
+                    if (i === names.length-1) soulNamesToHonor += `, and ${names[i]}`
+                    else soulNamesToHonor += `, ${names[i]}`
                 }
             }
 
             decadeNameChangeSelector.forEach(item => {
-                item.textContent = decadeNamesToHonor
+                item.textContent = soulNamesToHonor
+            })
+
+            faithfulNameChangeSelector.forEach(item => {
+                item.textContent = soulNamesToHonor
             })
         }
     })
@@ -211,3 +219,4 @@ $(document).ready(function(){
 
 let nameChangeSelector = document.querySelectorAll('.name-change')
 let decadeNameChangeSelector = document.querySelectorAll('.decade-name-change')
+let faithfulNameChangeSelector = document.querySelectorAll('.faithful-name-change')
