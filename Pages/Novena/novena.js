@@ -152,6 +152,10 @@ $(document).ready(function(){
                 item.textContent = 'N. —'
             })
 
+            trailingSSelector.forEach(item => {
+                item.textContent = '(s)'
+            })
+
             // change words within decade if novena-legacy is selected
             if (decadeNameChangeSelector.length > 0) {
                 decadeNameChangeSelector.forEach(item => {
@@ -195,6 +199,16 @@ $(document).ready(function(){
             item.textContent = namesToHonor
         })
 
+        if (names.length === 1) {
+            trailingSSelector.forEach(item => {
+                item.textContent = ''
+            })
+        } else {
+            trailingSSelector.forEach(item => {
+                item.textContent = 's'
+            })
+        }
+
         
         // change words within decade and litany if novena-legacy is selected
         if (decadeNameChangeSelector.length > 0) {
@@ -226,6 +240,7 @@ $(document).ready(function(){
 })
 
 let nameChangeSelector = document.querySelectorAll('.name-change')
+let trailingSSelector = document.querySelectorAll('.trailing-s')
 let decadeNameChangeSelector = document.querySelectorAll('.decade-name-change')
 let faithfulNameChangeSelector = document.querySelectorAll('.faithful-name-change')
 let deliverNameChangeSelector = document.querySelectorAll('.deliver-name-change')
