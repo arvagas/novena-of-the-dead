@@ -161,6 +161,10 @@ $(document).ready(function(){
                 faithfulNameChangeSelector.forEach(item => {
                     item.textContent = 'souls of the faithful departed'
                 })
+
+                deliverNameChangeSelector.forEach(item => {
+                    item.textContent = `them`
+                })
             }
 
             return
@@ -192,7 +196,7 @@ $(document).ready(function(){
         })
 
         
-        // change words within decade if novena-legacy is selected
+        // change words within decade and litany if novena-legacy is selected
         if (decadeNameChangeSelector.length > 0) {
             let soulNamesToHonor = ''
 
@@ -213,6 +217,10 @@ $(document).ready(function(){
             faithfulNameChangeSelector.forEach(item => {
                 item.textContent = soulNamesToHonor
             })
+
+            deliverNameChangeSelector.forEach(item => {
+                item.textContent = `the ${soulNamesToHonor}`
+            })
         }
     })
 })
@@ -220,3 +228,4 @@ $(document).ready(function(){
 let nameChangeSelector = document.querySelectorAll('.name-change')
 let decadeNameChangeSelector = document.querySelectorAll('.decade-name-change')
 let faithfulNameChangeSelector = document.querySelectorAll('.faithful-name-change')
+let deliverNameChangeSelector = document.querySelectorAll('.deliver-name-change')
