@@ -151,6 +151,14 @@ $(document).ready(function(){
             nameChangeSelector.forEach(item => {
                 item.textContent = 'N. —'
             })
+
+            // change words within decade if novena-legacy is selected
+            if (decadeNameChangeSelector.length > 0) {
+                decadeNameChangeSelector.forEach(item => {
+                    item.textContent = 'souls in purgatory'
+                })
+            }
+
             return
         }
 
@@ -178,7 +186,28 @@ $(document).ready(function(){
         nameChangeSelector.forEach(item => {
             item.textContent = namesToHonor
         })
+
+        
+        // change words within decade if novena-legacy is selected
+        if (decadeNameChangeSelector.length > 0) {
+            let decadeNamesToHonor = ''
+
+            if (names.length === 1) decadeNamesToHonor = `soul of ${names}`
+            else if (names.length === 2) decadeNamesToHonor = `soul of ${names.join(' and ')}`
+            else {
+                decadeNamesToHonor = `soul of ${names[0]}`
+                for (let i=1; i < names.length; i++){
+                    if (i === names.length-1) decadeNamesToHonor += `, and ${names[i]}`
+                    else decadeNamesToHonor += `, ${names[i]}`
+                }
+            }
+
+            decadeNameChangeSelector.forEach(item => {
+                item.textContent = decadeNamesToHonor
+            })
+        }
     })
 })
 
 let nameChangeSelector = document.querySelectorAll('.name-change')
+let decadeNameChangeSelector = document.querySelectorAll('.decade-name-change')
