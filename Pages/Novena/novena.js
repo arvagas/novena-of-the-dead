@@ -244,3 +244,5 @@ let trailingSSelector = document.querySelectorAll('.trailing-s')
 let decadeNameChangeSelector = document.querySelectorAll('.decade-name-change')
 let faithfulNameChangeSelector = document.querySelectorAll('.faithful-name-change')
 let deliverNameChangeSelector = document.querySelectorAll('.deliver-name-change')
+
+// @@@@@@@@@@@@@@@@@@@@ Rosary Helper @@@@@@@@@@@@@@@@@@@@
