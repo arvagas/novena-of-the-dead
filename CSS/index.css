@@ -244,6 +244,17 @@ footer {
   margin-top: 2rem;
   width: 100%;
 }
+footer a:link {
+  color: white;
+  text-decoration: none;
+}
+footer a:visited {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
 .rosary-prayers,
 .prayer-each-day,
 .pope-st-gregory {
