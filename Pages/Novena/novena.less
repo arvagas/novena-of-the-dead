@@ -109,6 +109,22 @@
             }
         }
 
+        .rosary-help-option-mobile {
+            display: none;
+            
+            @media @phone {
+                display: flex;
+                align-items: center;
+                align-self: center;
+                flex-direction: column;
+                margin-bottom: 2rem;
+            }
+    
+            .rosary-help-option-buttons {
+                margin-top: 0.5rem;
+            }
+        }
+
         .section-jump-drop {
             display:none;
 
@@ -120,6 +136,22 @@
                 flex-direction: column;
                 align-items: center;
             }
+        }
+    }
+
+    .rosary-help-option {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        
+        @media @phone {
+            display: none;
+        }
+
+        .rosary-help-option-buttons {
+            margin-top: 0.5rem;
         }
     }
 
