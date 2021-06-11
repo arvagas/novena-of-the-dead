@@ -169,6 +169,12 @@ $(document).ready(function(){
                 deliverNameChangeSelector.forEach(item => {
                     item.textContent = `them`
                 })
+
+                themNameChangeSelector.forEach(item => {
+                    item.textContent = `them`
+                })
+
+                theirSoulsNameChangeSelector.textContent = 'their souls'
             }
 
             return
@@ -214,15 +220,8 @@ $(document).ready(function(){
         if (decadeNameChangeSelector.length > 0) {
             let soulNamesToHonor = ''
 
-            if (names.length === 1) soulNamesToHonor = `soul of ${names}`
-            else if (names.length === 2) soulNamesToHonor = `souls of ${names.join(' and ')}`
-            else {
-                soulNamesToHonor = `souls of ${names[0]}`
-                for (let i=1; i < names.length; i++){
-                    if (i === names.length-1) soulNamesToHonor += `, and ${names[i]}`
-                    else soulNamesToHonor += `, ${names[i]}`
-                }
-            }
+            if (names.length === 1) soulNamesToHonor = `soul of ${namesToHonor}`
+            else soulNamesToHonor = `souls of ${namesToHonor}`
 
             decadeNameChangeSelector.forEach(item => {
                 item.textContent = soulNamesToHonor
@@ -235,6 +234,19 @@ $(document).ready(function(){
             deliverNameChangeSelector.forEach(item => {
                 item.textContent = `the ${soulNamesToHonor}`
             })
+
+            if (names.length < 3) {
+                themNameChangeSelector.forEach(item => {
+                    item.textContent = `${namesToHonor}`
+                })
+            } else {
+                themNameChangeSelector.forEach(item => {
+                    item.textContent = `them`
+                })
+            }
+
+            if (names.length < 3) theirSoulsNameChangeSelector.textContent = namesToHonor
+            else theirSoulsNameChangeSelector.textContent = 'their souls'
         }
     })
 })
@@ -244,5 +256,7 @@ let trailingSSelector = document.querySelectorAll('.trailing-s')
 let decadeNameChangeSelector = document.querySelectorAll('.decade-name-change')
 let faithfulNameChangeSelector = document.querySelectorAll('.faithful-name-change')
 let deliverNameChangeSelector = document.querySelectorAll('.deliver-name-change')
+let themNameChangeSelector = document.querySelectorAll('.them-name-change')
+let theirSoulsNameChangeSelector = document.querySelector('.their-souls-name-change')
 
 // @@@@@@@@@@@@@@@@@@@@ Rosary Helper @@@@@@@@@@@@@@@@@@@@
