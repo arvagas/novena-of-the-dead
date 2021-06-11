@@ -538,6 +538,9 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
   }
+  .novena-container .novena-options .section-jump-drop .section-jump-options {
+    margin-top: 0.5rem;
+  }
 }
 .novena-container .rosary-help-option {
   display: flex;
