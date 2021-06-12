@@ -480,53 +480,58 @@ footer a:hover {
 .novena-container .novena-options {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding-top: 20px;
   margin-bottom: 2rem;
-  flex-wrap: wrap;
+}
+.novena-container .novena-options .novena-options-dropdowns {
+  display: flex;
+  margin-bottom: 2rem;
 }
 @media (max-width: 500px) {
-  .novena-container .novena-options {
+  .novena-container .novena-options .novena-options-dropdowns {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
   }
 }
-.novena-container .novena-options .novena-day {
+.novena-container .novena-options .novena-options-dropdowns .novena-day {
   display: flex;
   align-items: center;
   margin-right: 20px;
 }
 @media (max-width: 500px) {
-  .novena-container .novena-options .novena-day {
+  .novena-container .novena-options .novena-options-dropdowns .novena-day {
     align-self: center;
     margin-bottom: 2rem;
   }
 }
-.novena-container .novena-options .novena-length {
+.novena-container .novena-options .novena-options-dropdowns .novena-length {
   display: flex;
 }
 @media (max-width: 500px) {
-  .novena-container .novena-options .novena-length {
+  .novena-container .novena-options .novena-options-dropdowns .novena-length {
     align-self: center;
     margin-bottom: 2rem;
   }
 }
-.novena-container .novena-options .rosary-help-option-mobile {
-  display: none;
+.novena-container .novena-options .rosary-help-option {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
 }
 @media (max-width: 500px) {
-  .novena-container .novena-options .rosary-help-option-mobile {
-    display: flex;
-    align-items: center;
-    align-self: center;
-    flex-direction: column;
+  .novena-container .novena-options .rosary-help-option {
     margin-bottom: 2rem;
   }
 }
-.novena-container .novena-options .rosary-help-option-mobile .rosary-help-option-buttons {
+.novena-container .novena-options .rosary-help-option .rosary-help-option-buttons {
   display: none;
   margin-top: 0.5rem;
 }
-.novena-container .novena-options .rosary-help-option-mobile .rosary-help-option-buttons-on {
+.novena-container .novena-options .rosary-help-option .rosary-help-option-buttons-on {
   display: block;
 }
 .novena-container .novena-options .section-jump-drop {
@@ -545,25 +550,6 @@ footer a:hover {
   .novena-container .novena-options .section-jump-drop .section-jump-options {
     margin-top: 0.5rem;
   }
-}
-.novena-container .rosary-help-option {
-  display: flex;
-  align-items: center;
-  align-self: center;
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
-@media (max-width: 500px) {
-  .novena-container .rosary-help-option {
-    display: none;
-  }
-}
-.novena-container .rosary-help-option .rosary-help-option-buttons {
-  display: none;
-  margin-top: 0.5rem;
-}
-.novena-container .rosary-help-option .rosary-help-option-buttons-on {
-  display: block;
 }
 .novena-container .section-jump {
   display: flex;

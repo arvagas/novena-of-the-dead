@@ -80,43 +80,50 @@
     .novena-options {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
         padding-top: 20px;
         margin-bottom: 2rem;
-        flex-wrap: wrap;
 
-        @media @phone {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .novena-day {
-            display:flex;
-            align-items: center;
-            margin-right: 20px;
+        
+        .novena-options-dropdowns {
+            display: flex;
+            margin-bottom: 2rem;
 
             @media @phone {
-                align-self: center;
-                margin-bottom: 2rem;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 0;
             }
-        }
 
-        .novena-length {
-            display:flex;
-
-            @media @phone {
-                align-self: center;
-                margin-bottom: 2rem;
-            }
-        }
-
-        .rosary-help-option-mobile {
-            display: none;
-            
-            @media @phone {
+            .novena-day {
                 display: flex;
                 align-items: center;
-                align-self: center;
-                flex-direction: column;
+                margin-right: 20px;
+    
+                @media @phone {
+                    align-self: center;
+                    margin-bottom: 2rem;
+                }
+            }
+    
+            .novena-length {
+                display:flex;
+    
+                @media @phone {
+                    align-self: center;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        .rosary-help-option {
+            display: flex;
+            align-items: center;
+            align-self: center;
+            flex-direction: column;
+            
+            @media @phone {
                 margin-bottom: 2rem;
             }
     
@@ -145,27 +152,6 @@
                     margin-top: 0.5rem;
                 }
             }
-        }
-    }
-
-    .rosary-help-option {
-        display: flex;
-        align-items: center;
-        align-self: center;
-        flex-direction: column;
-        margin-bottom: 2rem;
-        
-        @media @phone {
-            display: none;
-        }
-
-        .rosary-help-option-buttons {
-            display: none;
-            margin-top: 0.5rem;
-        }
-
-        .rosary-help-option-buttons-on {
-            display: block;
         }
     }
 
