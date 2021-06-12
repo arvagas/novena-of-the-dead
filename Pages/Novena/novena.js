@@ -259,13 +259,10 @@ let deliverNameChangeSelector = document.querySelectorAll('.deliver-name-change'
 let themNameChangeSelector = document.querySelectorAll('.them-name-change')
 let theirSoulsNameChangeSelector = document.querySelector('.their-souls-name-change')
 
-// @@@@@@@@@@@@@@@@@@@@ Rosary Helper @@@@@@@@@@@@@@@@@@@@
-
+// @@@@@@@@@@@@@@@@@@@@ Rosary Helper Toggle @@@@@@@@@@@@@@@@@@@@
 $(document).ready(function(){
-    // desktop
     $(rosaryHelpCheck).on('click', function() {
         if (rosaryHelpCheck.checked === true) {
-            rosaryHelpCheckMobile.checked = true
             rosaryHelper.forEach(item => {
                 $(item).addClass('rosary-helper-current')
             })
@@ -273,28 +270,6 @@ $(document).ready(function(){
                 $(item).addClass('rosary-help-option-buttons-on')
             })
         } else {
-            rosaryHelpCheckMobile.checked = false
-            rosaryHelper.forEach(item => {
-                $(item).removeClass('rosary-helper-current')
-            })
-            rosaryHelpOptionButtons.forEach(item => {
-                $(item).removeClass('rosary-help-option-buttons-on')
-            })
-        }
-    })
-
-    // mobile
-    $(rosaryHelpCheckMobile).on('click', function() {
-        if (rosaryHelpCheckMobile.checked === true) {
-            rosaryHelpCheck.checked = true
-            rosaryHelper.forEach(item => {
-                $(item).addClass('rosary-helper-current')
-            })
-            rosaryHelpOptionButtons.forEach(item => {
-                $(item).addClass('rosary-help-option-buttons-on')
-            })
-        } else {
-            rosaryHelpCheck.checked = false
             rosaryHelper.forEach(item => {
                 $(item).removeClass('rosary-helper-current')
             })
