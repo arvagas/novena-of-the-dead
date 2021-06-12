@@ -284,3 +284,28 @@ let rosaryHelpCheck = document.querySelector('#rosary-help-check')
 let rosaryHelpCheckMobile = document.querySelector('#rosary-help-check-mobile')
 let rosaryHelpOptionButtons = document.querySelectorAll('.rosary-help-option-buttons')
 let rosaryHelper = document.querySelectorAll('.rosary-helper')
+
+// @@@@@@@@@@@@@@@@@@@@ Rosary Helper Walkthrough @@@@@@@@@@@@@@@@@@@@
+// Next Step
+$(document).ready(function(){
+    $('.next-button').on('click', function() {
+        switch (stepNumber) {
+            case 1: {
+                let nextPrayer = document.getElementById('sign-of-the-cross')
+                nextPrayer.scrollIntoView({behavior: 'smooth'})
+                Accordion(nextPrayer, '.rosary-prayers-header')
+                break
+            }
+            case 2: {
+                let nextPrayer = document.getElementById('apostles-creed')
+                nextPrayer.scrollIntoView({behavior: 'smooth'})
+                Accordion(nextPrayer, '.rosary-prayers-header')
+                break
+            }
+        }
+
+        stepNumber++
+    })
+})
+
+let stepNumber = 1
