@@ -328,19 +328,20 @@ $(document).ready(function(){
             else eternalRestNextButton.textContent = 'Hail Holy Queen >>'
         } else if ([9, 24, 39, 54, 69].includes(stepNumber)) {
             if (stepNumber === 9) {
-                prayerName = 'first-mystery'
+                prayerName = `${mysteryName.toLowerCase()}-first-mystery`
             } else if (stepNumber === 24) {
-                prayerName = 'second-mystery'
+                prayerName = `${mysteryName.toLowerCase()}-second-mystery`
             } else if (stepNumber === 39) {
-                prayerName = 'third-mystery'
+                prayerName = `${mysteryName.toLowerCase()}-third-mystery`
             } else if (stepNumber === 54) {
-                prayerName = 'fourth-mystery'
+                prayerName = `${mysteryName.toLowerCase()}-fourth-mystery`
             } else if (stepNumber === 69) {
-                prayerName = 'fifth-mystery'
+                prayerName = `${mysteryName.toLowerCase()}-fifth-mystery`
             }
         } else if (stepNumber === 84) {
             prayerName = 'hail-holy-queen'
         }
+
 
         nextPrayer = document.getElementById(prayerName)
         nextPrayerContent = document.getElementById(`${prayerName}-content`)
