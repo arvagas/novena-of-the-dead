@@ -115,31 +115,23 @@ let accPopeStGregoryHeader = document.querySelectorAll('.pope-st-gregory-header'
 
 // @@@@@@@@@@@@@@@@@@@@ Glorious Mysteries @@@@@@@@@@@@@@@@@@@@
 $(document).ready(function(){
-    let day = new Date()
-    switch (day.getDay()) {
-        case 0:
-            $('.glorious-mystery').addClass('selected-mystery')
-            break;
-        case 1:
-            $('.joyful-mystery').addClass('selected-mystery')
-            break;
-        case 2:
-            $('.sorrowful-mystery').addClass('selected-mystery')
-            break;
-        case 3:
-            $('.glorious-mystery').addClass('selected-mystery')
-            break;
-        case 4:
-            $('.luminous-mystery').addClass('selected-mystery')
-            break;
-        case 5:
-            $('.sorrowful-mystery').addClass('selected-mystery')
-            break;
-        case 6:
-            $('.joyful-mystery').addClass('selected-mystery')
-            break;
+    let day = new Date().getDay()
+    if ([0, 3].includes(day)) {
+        $('.glorious-mystery').addClass('selected-mystery')
+        mysteryName = 'Glorious'
+    } else if ([1, 6].includes(day)) {
+        $('.joyful-mystery').addClass('selected-mystery')
+        mysteryName = 'Joyful'
+    } else if ([2, 5].includes(day)) {
+        $('.sorrowful-mystery').addClass('selected-mystery')
+        mysteryName = 'Sorrowful'
+    } else if (day === 4) {
+        $('.luminous-mystery').addClass('selected-mystery')
+        mysteryName = 'Luminous'
     }
 })
+
+let mysteryName = ''
 
 // @@@@@@@@@@@@@@@@@@@@ Name Insertion @@@@@@@@@@@@@@@@@@@@
 $(document).ready(function(){
