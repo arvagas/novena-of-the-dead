@@ -320,11 +320,11 @@ $(document).ready(function(){
         } else if ([8, 23, 38, 53, 68, 83].includes(stepNumber)) {
             prayerName = 'eternal-rest'
 
-            if (stepNumber === 8) eternalRestNextButton.textContent = `1st ${mysteryName} >>`
-            else if (stepNumber === 23) eternalRestNextButton.textContent = `2nd ${mysteryName} >>`
-            else if (stepNumber === 38) eternalRestNextButton.textContent = `3rd ${mysteryName} >>`
-            else if (stepNumber === 53) eternalRestNextButton.textContent = `4th ${mysteryName} >>`
-            else if (stepNumber === 68) eternalRestNextButton.textContent = `5th ${mysteryName} >>`
+            if (stepNumber === 8) eternalRestNextButton.textContent = `1st ${mysteryName} Mystery >>`
+            else if (stepNumber === 23) eternalRestNextButton.textContent = `2nd ${mysteryName} Mystery >>`
+            else if (stepNumber === 38) eternalRestNextButton.textContent = `3rd ${mysteryName} Mystery >>`
+            else if (stepNumber === 53) eternalRestNextButton.textContent = `4th ${mysteryName} Mystery >>`
+            else if (stepNumber === 68) eternalRestNextButton.textContent = `5th ${mysteryName} Mystery >>`
             else eternalRestNextButton.textContent = 'Hail Holy Queen >>'
         } else if ([9, 24, 39, 54, 69].includes(stepNumber)) {
             if (stepNumber === 9) {
