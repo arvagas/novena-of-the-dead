@@ -275,6 +275,17 @@ let rosaryHelpOptionButtons = document.querySelector('.rosary-help-option-button
 let rosaryHelper = document.querySelectorAll('.rosary-helper')
 
 // @@@@@@@@@@@@@@@@@@@@ Rosary Helper Walkthrough @@@@@@@@@@@@@@@@@@@@
+// Reset
+$(document).ready(function(){
+    $('#reset-button').on('click', function() {
+        rosaryHelper.forEach(item => {
+            $(item).removeClass('rosary-helper-current')
+        })
+        $(rosaryHelpOptionButtons).find('.next-button').removeClass('hide-button')
+        stepNumber = 0
+    })
+})
+
 // Next Step
 $(document).ready(function(){
     $('.next-button').on('click', function() {
@@ -304,6 +315,7 @@ $(document).ready(function(){
         nextPrayer = document.getElementById(prayerName)
         nextPrayerContent = document.getElementById(`${prayerName}-content`)
         
+        if (stepNumber > 0) $(document.querySelector('.rosary-helper-current')).removeClass('rosary-helper-current')
         $(nextPrayerContent).find('.rosary-helper').addClass('rosary-helper-current')
         
         y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
