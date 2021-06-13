@@ -129,9 +129,12 @@ $(document).ready(function(){
         $('.luminous-mystery').addClass('selected-mystery')
         mysteryName = 'Luminous'
     }
+
+    setMystery.textContent = mysteryName
 })
 
 let mysteryName = ''
+let setMystery = document.querySelector('#set-mystery')
 
 // @@@@@@@@@@@@@@@@@@@@ Name Insertion @@@@@@@@@@@@@@@@@@@@
 $(document).ready(function(){
@@ -292,23 +295,53 @@ $(document).ready(function(){
             $(rosaryHelpOptionButtons).find('.next-button').addClass('hide-button')
         } else if (stepNumber === 1) {
             prayerName = 'apostles-creed'
-        } else if ([2].includes(stepNumber)) {
+        } else if ([2, 10, 25, 40, 55, 70].includes(stepNumber)) {
             prayerName = 'our-father'
-        } else if ([3, 4, 5].includes(stepNumber)) {
+        } else if ([3, 4, 5, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80].includes(stepNumber)) {
             prayerName = 'hail-mary'
-        } else if ([6].includes(stepNumber)) {
+        } else if ([6, 21, 36, 51, 66, 81].includes(stepNumber)) {
             prayerName = 'glory-be'
-        } else if ([7].includes(stepNumber)) {
+        } else if ([7, 22, 37, 52, 67, 82].includes(stepNumber)) {
             prayerName = 'fatima-prayer'
-        } else if ([8].includes(stepNumber)) {
+        } else if ([8, 23, 38, 53, 68, 83].includes(stepNumber)) {
             prayerName = 'eternal-rest'
+
+            if (stepNumber === 8) {
+                mysteryStep.textContent = '1st'
+            } else if (stepNumber === 23) {
+                mysteryStep.textContent = '2nd'
+            } else if (stepNumber === 38) {
+                mysteryStep.textContent = '3rd'
+            } else if (stepNumber === 53) {
+                mysteryStep.textContent = '4th'
+            } else if (stepNumber === 68) {
+                mysteryStep.textContent = '5th'
+            } else {
+                document.querySelector('#eternal-rest-next-button').textContent = 'Hail Holy Queen >>'
+            }
+        } else if ([9, 24, 39, 54, 69].includes(stepNumber)) {
+            if (stepNumber === 9) {
+                prayerName = 'first-mystery'
+            } else if (stepNumber === 24) {
+                prayerName = 'second-mystery'
+            } else if (stepNumber === 39) {
+                prayerName = 'third-mystery'
+            } else if (stepNumber === 54) {
+                prayerName = 'fourth-mystery'
+            } else if (stepNumber === 69) {
+                prayerName = 'fifth-mystery'
+            }
+        } else if (stepNumber === 84) {
+            prayerName = 'hail-holy-queen'
         }
 
         nextPrayer = document.getElementById(prayerName)
         nextPrayerContent = document.getElementById(`${prayerName}-content`)
         
         if (stepNumber > 0) $(document.querySelector('.rosary-helper-current')).removeClass('rosary-helper-current')
-        $(nextPrayerContent).find('.rosary-helper').addClass('rosary-helper-current')
+
+        if ([9, 24, 39, 54, 69].includes(stepNumber) === true) $(nextPrayerContent).addClass('rosary-helper-current')
+        else $(nextPrayerContent).find('.rosary-helper').addClass('rosary-helper-current')
         
         y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
         
@@ -321,3 +354,4 @@ $(document).ready(function(){
 })
 
 let stepNumber = 0
+let mysteryStep = document.querySelector('#mystery-step')

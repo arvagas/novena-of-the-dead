@@ -193,32 +193,32 @@
                 <div class='glorious-mystery'>
                     <p class=mystery-header>Glorious Mystery of the Rosary</p>
                     <ol>
-                        <li>The Resurrection of Jesus Christ
-                            <div class='rosary-helper'>
+                        <li id='first-mystery'>The Resurrection of Jesus Christ
+                            <div id='first-mystery-content' class='rosary-helper'>
                                 <button><< Eternal Rest</button>
                                 <button class='next-button'>Our Father >></button>
                             </div>
                         </li>
-                        <li>The Ascension of Jesus to Heaven
-                            <div class='rosary-helper'>
+                        <li id='second-mystery'>The Ascension of Jesus to Heaven
+                            <div id='second-mystery-content' class='rosary-helper'>
                                 <button><< Eternal Rest</button>
                                 <button class='next-button'>Our Father >></button>
                             </div>
                         </li>
-                        <li>The Descent of the Holy Ghost
-                            <div class='rosary-helper'>
+                        <li id='third-mystery'>The Descent of the Holy Ghost
+                            <div id='third-mystery-content' class='rosary-helper'>
                                 <button><< Eternal Rest</button>
                                 <button class='next-button'>Our Father >></button>
                             </div>
                         </li>
-                        <li>The Assumption of Mary into Heaven
-                            <div class='rosary-helper'>
+                        <li id='fourth-mystery'>The Assumption of Mary into Heaven
+                            <div id='fourth-mystery-content' class='rosary-helper'>
                                 <button><< Eternal Rest</button>
                                 <button class='next-button'>Our Father >></button>
                             </div>
                         </li>
-                        <li>Mary is Crowned as Queen of Heaven and Earth
-                            <div class='rosary-helper'>
+                        <li id='fifth-mystery'>Mary is Crowned as Queen of Heaven and Earth
+                            <div id='fifth-mystery-content' class='rosary-helper'>
                                 <button><< Eternal Rest</button>
                                 <button class='next-button'>Our Father >></button>
                             </div>
@@ -326,7 +326,7 @@
                     <p><span class='verse'>Glory be to the Father, and to the Son, and to the Holy Spirit; </span><span class='resp'>as it was in the beginning, is now, and ever shall be, world without end. Amen.</span></p>
 
                     <div class='rosary-helper'>
-                        <button><< Hail Mary (x3)</button>
+                        <button><< Hail Mary (x<span id='last-hail-mary'>3</span)</button>
                         <button class='next-button'>Fatima Prayer >></button>
                     </div>
                 </div>
@@ -354,7 +354,7 @@
 
                     <div class='rosary-helper'>
                         <button><< Fatima Prayer</button>
-                        <button class='next-button'>1st BLANK Mystery >></button>
+                        <button id='eternal-rest-next-button' class='next-button'><span id='mystery-step'></span> <span id='set-mystery'></span> Mystery >></button>
                     </div>
                 </div>
 
@@ -367,7 +367,7 @@
 
                     <div class='rosary-helper'>
                         <button><< Eternal Rest</button>
-                        <button disabled>>></button>
+                        <button class='next-button' disabled>>></button>
                     </div>
                 </div>
 
