@@ -293,13 +293,13 @@ $(document).ready(function(){
             case 1: {
                 let nextPrayer = document.getElementById('sign-of-the-cross')
                 nextPrayer.scrollIntoView({behavior: 'smooth'})
-                Accordion(nextPrayer, '.rosary-prayers-header')
+                if (window.innerWidth <= 800) Accordion(nextPrayer, '.rosary-prayers-header')
                 break
             }
             case 2: {
                 let nextPrayer = document.getElementById('apostles-creed')
                 nextPrayer.scrollIntoView({behavior: 'smooth'})
-                Accordion(nextPrayer, '.rosary-prayers-header')
+                if (window.innerWidth <= 800) Accordion(nextPrayer, '.rosary-prayers-header')
                 break
             }
         }
