@@ -289,20 +289,36 @@ let rosaryHelper = document.querySelectorAll('.rosary-helper')
 // Next Step
 $(document).ready(function(){
     $('.next-button').on('click', function() {
-        switch (stepNumber) {
-            case 1: {
-                let nextPrayer = document.getElementById('sign-of-the-cross')
-                nextPrayer.scrollIntoView({behavior: 'smooth'})
-                if (window.innerWidth <= 800) Accordion(nextPrayer, '.rosary-prayers-header')
-                break
-            }
-            case 2: {
-                let nextPrayer = document.getElementById('apostles-creed')
-                nextPrayer.scrollIntoView({behavior: 'smooth'})
-                if (window.innerWidth <= 800) Accordion(nextPrayer, '.rosary-prayers-header')
-                break
-            }
+        const menuOffset = -50;
+        let nextPrayer
+        let y
+
+        if (stepNumber === 1) {
+            nextPrayer = document.getElementById('sign-of-the-cross')
+            y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
+        } else if (stepNumber === 2) {
+            nextPrayer = document.getElementById('apostles-creed')
+            y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
+        } else if (stepNumber === 3) {
+            nextPrayer = document.getElementById('our-father')
+            y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
+        } else if ([4, 5, 6].includes(stepNumber)) {
+            nextPrayer = document.getElementById('hail-mary')
+            y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
+        } else if ([7].includes(stepNumber)) {
+            nextPrayer = document.getElementById('glory-be')
+            y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
+        } else if ([8].includes(stepNumber)) {
+            nextPrayer = document.getElementById('fatima-prayer')
+            y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
+        } else if ([9].includes(stepNumber)) {
+            nextPrayer = document.getElementById('eternal-rest')
+            y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
         }
+        
+        if (window.innerWidth <= 800) Accordion(nextPrayer, '.rosary-prayers-header')
+
+        window.scrollTo({top: y, behavior: 'smooth'})
 
         stepNumber++
     })
