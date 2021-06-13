@@ -263,26 +263,15 @@ let theirSoulsNameChangeSelector = document.querySelector('.their-souls-name-cha
 $(document).ready(function(){
     $(rosaryHelpCheck).on('click', function() {
         if (rosaryHelpCheck.checked === true) {
-            rosaryHelper.forEach(item => {
-                $(item).addClass('rosary-helper-current')
-            })
-            rosaryHelpOptionButtons.forEach(item => {
-                $(item).addClass('rosary-help-option-buttons-on')
-            })
+            $(rosaryHelpOptionButtons).addClass('rosary-help-option-buttons-on')
         } else {
-            rosaryHelper.forEach(item => {
-                $(item).removeClass('rosary-helper-current')
-            })
-            rosaryHelpOptionButtons.forEach(item => {
-                $(item).removeClass('rosary-help-option-buttons-on')
-            })
+            $(rosaryHelpOptionButtons).removeClass('rosary-help-option-buttons-on')
         }
     })
 })
 
 let rosaryHelpCheck = document.querySelector('#rosary-help-check')
-let rosaryHelpCheckMobile = document.querySelector('#rosary-help-check-mobile')
-let rosaryHelpOptionButtons = document.querySelectorAll('.rosary-help-option-buttons')
+let rosaryHelpOptionButtons = document.querySelector('.rosary-help-option-buttons')
 let rosaryHelper = document.querySelectorAll('.rosary-helper')
 
 // @@@@@@@@@@@@@@@@@@@@ Rosary Helper Walkthrough @@@@@@@@@@@@@@@@@@@@
@@ -290,31 +279,34 @@ let rosaryHelper = document.querySelectorAll('.rosary-helper')
 $(document).ready(function(){
     $('.next-button').on('click', function() {
         const menuOffset = -50;
+        let prayerName
         let nextPrayer
+        let nextPrayerContent
         let y
 
-        if (stepNumber === 1) {
-            nextPrayer = document.getElementById('sign-of-the-cross')
-            y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
-        } else if (stepNumber === 2) {
-            nextPrayer = document.getElementById('apostles-creed')
-            y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
-        } else if (stepNumber === 3) {
-            nextPrayer = document.getElementById('our-father')
-            y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
-        } else if ([4, 5, 6].includes(stepNumber)) {
-            nextPrayer = document.getElementById('hail-mary')
-            y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
+        if (stepNumber === 0) {
+            prayerName = 'sign-of-the-cross'
+            $(rosaryHelpOptionButtons).find('.next-button').addClass('hide-button')
+        } else if (stepNumber === 1) {
+            prayerName = 'apostles-creed'
+        } else if ([2].includes(stepNumber)) {
+            prayerName = 'our-father'
+        } else if ([3, 4, 5].includes(stepNumber)) {
+            prayerName = 'hail-mary'
+        } else if ([6].includes(stepNumber)) {
+            prayerName = 'glory-be'
         } else if ([7].includes(stepNumber)) {
-            nextPrayer = document.getElementById('glory-be')
-            y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
+            prayerName = 'fatima-prayer'
         } else if ([8].includes(stepNumber)) {
-            nextPrayer = document.getElementById('fatima-prayer')
-            y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
-        } else if ([9].includes(stepNumber)) {
-            nextPrayer = document.getElementById('eternal-rest')
-            y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
+            prayerName = 'eternal-rest'
         }
+
+        nextPrayer = document.getElementById(prayerName)
+        nextPrayerContent = document.getElementById(`${prayerName}-content`)
+        
+        $(nextPrayerContent).find('.rosary-helper').addClass('rosary-helper-current')
+        
+        y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
         
         if (window.innerWidth <= 800) Accordion(nextPrayer, '.rosary-prayers-header')
 
@@ -324,4 +316,4 @@ $(document).ready(function(){
     })
 })
 
-let stepNumber = 1
+let stepNumber = 0

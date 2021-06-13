@@ -534,6 +534,9 @@ footer a:hover {
 .novena-container .novena-options .rosary-help-option .rosary-help-option-buttons-on {
   display: block;
 }
+.novena-container .novena-options .rosary-help-option .hide-button {
+  display: none;
+}
 .novena-container .novena-options .section-jump-drop {
   display: none;
 }
