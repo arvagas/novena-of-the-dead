@@ -269,7 +269,7 @@ let rosaryHelpOptionButtons = document.querySelector('.rosary-help-option-button
 let rosaryHelper = document.querySelectorAll('.rosary-helper')
 
 // @@@@@@@@@@@@@@@@@@@@ Rosary Helper Walkthrough @@@@@@@@@@@@@@@@@@@@
-// Reset
+// ======================================== Reset ========================================
 $(document).ready(function(){
     $('#reset-button').on('click', function() {
         rosaryHelper.forEach(item => {
@@ -277,14 +277,14 @@ $(document).ready(function(){
         })
         $(rosaryHelpOptionButtons).find('.next-button').removeClass('hide-button')
         stepNumber = 0
-        hailMaryCounter = 1
+        hailMaryCounter = 0
     })
 })
 
-// Next Step
+// ======================================== Next Step ========================================
 $(document).ready(function(){
     $('.next-button').on('click', function() {
-        console.log(`Current step no: ${stepNumber} NEXT`)
+        console.log(`[NEXT] Current step no: ${stepNumber}`)
         let prayerName
         let nextPrayer
         let nextPrayerContent
@@ -307,22 +307,18 @@ $(document).ready(function(){
         } else if ([3, 4, 5, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80].includes(stepNumber)) {
             prayerName = 'hail-mary'
 
-            if (hailMaryCounter === 0) hailMaryCounter++
+            hailMaryCounter++
 
             if (hailMaryCounter === 1) hailMaryPrevButton.textContent = '<< Our Father'
             else hailMaryPrevButton.textContent = `<< Hail Mary (x${hailMaryCounter-1})`
             
-            if ([5, 20, 35, 50, 65, 80].includes(stepNumber)) {
-                hailMaryNextButton.textContent = 'Glory Be >>'
-                hailMaryCounter = 0
-            } else {
-                hailMaryNextButton.textContent = `Hail Mary (x${hailMaryCounter+1}) >>`
-                hailMaryCounter++
-            }
+            if ([5, 20, 35, 50, 65, 80].includes(stepNumber)) hailMaryNextButton.textContent = 'Glory Be >>'
+            else hailMaryNextButton.textContent = `Hail Mary (x${hailMaryCounter+1}) >>`
             
-            console.log(`Counter: ${hailMaryCounter}`)
+            console.log(`Current Counter: ${hailMaryCounter}`)
         } else if ([6, 21, 36, 51, 66, 81].includes(stepNumber)) {
             prayerName = 'glory-be'
+            hailMaryCounter = 0
 
             if (stepNumber === 6) gloryBePrevButton.textContent = '<< Hail Mary (x3)'
             else gloryBePrevButton.textContent = '<< Hail Mary (x10)'
@@ -358,7 +354,11 @@ $(document).ready(function(){
         
         y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
         
-        if (window.innerWidth <= 800) Accordion(nextPrayer, '.rosary-prayers-header')
+        if (window.innerWidth <= 800) {
+            if ($(nextPrayer).hasClass('active-header') === false && prayerName.includes(mysteryName.toLowerCase()) === false) {
+                Accordion(nextPrayer, '.rosary-prayers-header')
+            }
+        }
 
         window.scrollTo({top: y, behavior: 'smooth'})
 
@@ -366,10 +366,11 @@ $(document).ready(function(){
     })
 })
 
-// Previous step
+// ======================================== Previous step ========================================
 $(document).ready(function(){
     $('.prev-button').on('click', function() {
-        console.log(`Current step no: ${stepNumber} PREVIOUS`)
+        console.log(`[PREV] Current step no: ${stepNumber}`)
+        
         let prayerName
         let nextPrayer
         let nextPrayerContent
@@ -381,6 +382,7 @@ $(document).ready(function(){
             prayerName = 'apostles-creed'
         } else if ([4, 12, 27, 42, 57, 72].includes(stepNumber)) {
             prayerName = 'our-father'
+            hailMaryCounter = 0
 
             if (stepNumber === 4) ourFatherPrevButton.textContent = `<< Apostle's Creed`
             else if (stepNumber === 12) ourFatherPrevButton.textContent = `<< 1st ${mysteryName} Mystery`
@@ -390,21 +392,19 @@ $(document).ready(function(){
             else if (stepNumber === 72) ourFatherPrevButton.textContent = `<< 5th ${mysteryName} Mystery`
         } else if ([5, 6, 7, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82].includes(stepNumber)) {
             prayerName = 'hail-mary'
-            
-            console.log(`Counter: ${hailMaryCounter}`)
 
-            if (hailMaryCounter === 0) {
-                if (stepNumber === 7) hailMaryCounter = 3
-                else hailMaryCounter = 10
-            }
+            if (stepNumber === 7) hailMaryCounter = 4
+            else if ([22, 37, 52, 67, 82].includes(stepNumber)) hailMaryCounter = 11
+
+            hailMaryCounter--
+
+            if ([7, 22, 37, 52, 67, 82].includes(stepNumber)) hailMaryNextButton.textContent = 'Glory Be >>'
+            else hailMaryNextButton.textContent = `Hail Mary (x${hailMaryCounter+1}) >>`
 
             if (hailMaryCounter === 1) hailMaryPrevButton.textContent = '<< Our Father'
             else hailMaryPrevButton.textContent = `<< Hail Mary (x${hailMaryCounter-1})`
 
-            if ([7, 22, 37, 52, 67, 82].includes(stepNumber)) hailMaryNextButton.textContent = 'Glory Be >>'
-            else hailMaryNextButton.textContent = `Hail Mary (x${hailMaryCounter+1}) >>`
-            
-            hailMaryCounter--
+            console.log(`Current Counter: ${hailMaryCounter}`)
         } else if ([8, 23, 38, 53, 68, 83].includes(stepNumber)) {
             prayerName = 'glory-be'
 
@@ -439,7 +439,11 @@ $(document).ready(function(){
         
         y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
         
-        if (window.innerWidth <= 800) Accordion(nextPrayer, '.rosary-prayers-header')
+        if (window.innerWidth <= 800) {
+            if ($(nextPrayer).hasClass('active-header') === false && prayerName.includes(mysteryName.toLowerCase()) === false) {
+                Accordion(nextPrayer, '.rosary-prayers-header')
+            }
+        }
 
         window.scrollTo({top: y, behavior: 'smooth'})
 
@@ -449,7 +453,7 @@ $(document).ready(function(){
 
 const menuOffset = -50
 let stepNumber = 0
-let hailMaryCounter = 1
+let hailMaryCounter = 0
 let ourFatherPrevButton = document.querySelector('#our-father-prev-button')
 let hailMaryNextButton = document.querySelector('#hail-mary-next-button')
 let hailMaryPrevButton = document.querySelector('#hail-mary-prev-button')
