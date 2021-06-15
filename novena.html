@@ -43,30 +43,49 @@
         </div>
 
         <div class='novena-options'>
-            <div class='novena-day'>
-                <label for='novena-days'>Novena Day:</label>
-                <select name='novena-days' id='novena-days' class='novena-day-options'>
-                    <option value="novena-day-all">All</option>
-                    <option value="novena-day-one">One</option>
-                    <option value="novena-day-two">Two</option>
-                    <option value="novena-day-three">Three</option>
-                    <option value="novena-day-four">Four</option>
-                    <option value="novena-day-five">Five</option>
-                    <option value="novena-day-six">Six</option>
-                    <option value="novena-day-seven">Seven</option>
-                    <option value="novena-day-eight">Eight</option>
-                    <option value="novena-day-nine">Nine</option>
-                </select>
+            <div class='novena-options-dropdowns'>
+                <div class='novena-day'>
+                    <label for='novena-days'>Novena Day:</label>
+                    <select name='novena-days' id='novena-days' class='novena-day-options'>
+                        <option value="novena-day-all">All</option>
+                        <option value="novena-day-one">One</option>
+                        <option value="novena-day-two">Two</option>
+                        <option value="novena-day-three">Three</option>
+                        <option value="novena-day-four">Four</option>
+                        <option value="novena-day-five">Five</option>
+                        <option value="novena-day-six">Six</option>
+                        <option value="novena-day-seven">Seven</option>
+                        <option value="novena-day-eight">Eight</option>
+                        <option value="novena-day-nine">Nine</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class='rosary-help-option'>
+                <div>
+                    <label id='rosary-counter' for='rosary-help-check'>Rosary Helper:</label>
+                    <input type='checkbox' id='rosary-help-check' name='rosary-help-check'>
+                </div>
+
+                <div class='rosary-help-option-buttons'>
+                    <button id='reset-button'>Reset</button>
+                    <button class='next-button'>Sign of the Cross >></button>
+                </div>
             </div>
 
             <div class='section-jump-drop'>
                 <label for='section-jump-mobile'>Jump to:</label>
                 <select for='section-jump-mobile' id='section-jump-mobile' class='section-jump-options' onChange="window.location.href=this.value">
                     <option value='#novena-section-one'>Rosary of the Blessed Virgin</option>
-                    <option value='#novena-section-two'>Memorare</option>
-                    <option value='#novena-section-three'>Prayer for Each Day</option>
-                    <option value='#novena-section-four'>Decade of the Passion</option>
-                    <option value='#novena-section-five'>Final Prayer</option>
+                    <option value='#novena-section-two' class='novena-length-extended novena-length-notforty'>The Litany of Loreto</option>
+                    <option value='#novena-section-three' class='novena-length-extended novena-length-notforty'>Act of Contrition</option>
+                    <option value='#novena-section-four' class='novena-length-extended novena-length-notforty'>Prayer</option>
+                    <option value='#novena-section-five' class='novena-length-notforty'>Prayer for Each Day</option>
+                    <option value='#novena-section-six' class='novena-length-notforty'>Decade of the Passion</option>
+                    <option value='#novena-section-seven' class='novena-length-extended novena-length-notforty'>Offering</option>
+                    <option value='#novena-section-eight'>Litany for the Faithful Departed</option>
+                    <option value='#novena-section-nine' class='novena-length-extended novena-length-notforty'>Words of Pope Saint Gregory</option>
+                    <option value='#novena-section-ten'>Final Prayer</option>
                 </select>
             </div>
         </div>
@@ -88,99 +107,256 @@
             <div class='rosary-mysteries'>
                 <h2>Today's Mystery of the Rosary:</h2>
                 <div class='joyful-mystery'>
-                    <p class=mystery-header>Joyful Mystery of the Rosary</p>
+                    <p class='mystery-header'>Joyful Mystery of the Rosary</p>
                     <ol>
-                        <li>The Annunciation of the Lord to Mary</li>
-                        <li>The Visitation of Mary to Elizabeth</li>
-                        <li>The Nativity of our Lord Jesus Christ</li>
-                        <li>The Presentation of our Lord</li>
-                        <li>Finding Jesus in the Temple at age 12</li>
+                        <li id='joyful-first-mystery'>The Annunciation of the Lord to Mary
+                            <div id='joyful-first-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='joyful-second-mystery'>The Visitation of Mary to Elizabeth
+                            <div id='joyful-second-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='joyful-third-mystery'>The Nativity of our Lord Jesus Christ
+                            <div id='joyful-third-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='joyful-fourth-mystery'>The Presentation of our Lord
+                            <div id='joyful-fourth-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='joyful-fifth-mystery'>Finding Jesus in the Temple at age 12
+                            <div id='joyful-fifth-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
                     </ol>
                 </div>
 
                 <div class='sorrowful-mystery'>
-                    <p class=mystery-header>Sorrowful Mystery of the Rosary</p>
+                    <p class='mystery-header'>Sorrowful Mystery of the Rosary</p>
                     <ol>
-                        <li>The Agony of Jesus in the Garden</li>
-                        <li>The Scourging at the Pillar</li>
-                        <li>Jesus is Crowned with Thorns</li>
-                        <li>Jesus Carried the Cross</li>
-                        <li>The Crucifixion of our Lord</li>
+                        <li id='sorrowful-first-mystery'>The Agony of Jesus in the Garden
+                            <div id='sorrowful-first-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='sorrowful-second-mystery'>The Scourging at the Pillar
+                            <div id='sorrowful-second-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='sorrowful-third-mystery'>Jesus is Crowned with Thorns
+                            <div id='sorrowful-third-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='sorrowful-fourth-mystery'>Jesus Carried the Cross
+                            <div id='sorrowful-fourth-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='sorrowful-fifth-mystery'>The Crucifixion of our Lord
+                            <div id='sorrowful-fifth-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
                     </ol>
                 </div>
 
                 <div class='glorious-mystery'>
-                    <p class=mystery-header>Glorious Mystery of the Rosary</p>
+                    <p class='mystery-header'>Glorious Mystery of the Rosary</p>
                     <ol>
-                        <li>The Resurrection of Jesus Christ</li>
-                        <li>The Ascension of Jesus to Heaven</li>
-                        <li>The Descent of the Holy Ghost</li>
-                        <li>The Assumption of Mary into Heaven</li>
-                        <li>Mary is Crowned as Queen of Heaven and Earth</li>
+                        <li id='glorious-first-mystery'>The Resurrection of Jesus Christ
+                            <div id='glorious-first-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='glorious-second-mystery'>The Ascension of Jesus to Heaven
+                            <div id='glorious-second-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='glorious-third-mystery'>The Descent of the Holy Ghost
+                            <div id='glorious-third-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='glorious-fourth-mystery'>The Assumption of Mary into Heaven
+                            <div id='glorious-fourth-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='glorious-fifth-mystery'>Mary is Crowned as Queen of Heaven and Earth
+                            <div id='glorious-fifth-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
                     </ol>
                 </div>
 
                 <div class='luminous-mystery'>
-                    <p class=mystery-header>Luminous Mystery of the Rosary</p>
+                    <p id='luminous-first-mystery' class='mystery-header'>Luminous Mystery of the Rosary</p>
                     <ol>
-                        <li>The Baptism in the Jordan</li>
-                        <li>The Wedding at Cana</li>
-                        <li>The Proclamation of the Kingdom</li>
-                        <li>The Transfiguration</li>
-                        <li>The Institution of the Eucharist</li>
+                        <li id='luminous-first-mystery-content'>The Baptism in the Jordan
+                            <div class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='luminous-second-mystery'>The Wedding at Cana
+                            <div id='luminous-second-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='luminous-third-mystery'>The Proclamation of the Kingdom
+                            <div id='luminous-third-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='luminous-fourth-mystery'>The Transfiguration
+                            <div id='luminous-fourth-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
+                        <li id='luminous-fifth-mystery'>The Institution of the Eucharist
+                            <div id='luminous-fifth-mystery-content' class='rosary-helper'>
+                                <button class='prev-button'><< Eternal Rest</button>
+                                <button class='next-button'>Our Father >></button>
+                            </div>
+                        </li>
                     </ol>
                 </div>
             </div>
 
             <div class="rosary-prayers">
-                <div class="rosary-prayers-header">
+                <div id='sign-of-the-cross' class="rosary-prayers-header">
                     <h2 class="rosary-prayers-title">The Sign of the Cross</h2>
                     <i class="fas fa-chevron-down fa-2x expand-icon"></i>
                 </div>
-                <p class="rosary-prayers-content">In the name of the Father, and of the Son, and of the Holy Spirit. Amen.</p>
+                <div id='sign-of-the-cross-content' class="rosary-prayers-content">
+                    <p>In the name of the Father, and of the Son, and of the Holy Spirit. Amen.</p>
 
-                <div class="rosary-prayers-header">
-                    <h2 class="rosary-prayers-title">The Apostles' Creed</h2>
+                    <div class='rosary-helper'>
+                        <button class='prev-button' disabled><<</button>
+                        <button class='next-button'>Apostle's Creed >></button>
+                    </div>
+                </div>
+                
+
+                <div id='apostles-creed' class="rosary-prayers-header">
+                    <h2  class="rosary-prayers-title">The Apostles' Creed</h2>
                     <i class="fas fa-chevron-down fa-2x expand-icon"></i>
                 </div>
-                <p class="rosary-prayers-content">I believe in God, the Father almighty, Creator of heaven and earth, and in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried; he descended into hell; on the third day he rose again from the dead; he ascended into heaven, and is seated at the right hand of God the Father almighty; from there he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.</p>
+                <div id='apostles-creed-content' class="rosary-prayers-content">
+                    <p>I believe in God, the Father almighty, Creator of heaven and earth, and in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried; he descended into hell; on the third day he rose again from the dead; he ascended into heaven, and is seated at the right hand of God the Father almighty; from there he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.</p>
 
-                <div class="rosary-prayers-header">
+                    <div class='rosary-helper'>
+                        <button class='prev-button'><< Sign of the Cross</button>
+                        <button class='next-button'>Our Father >></button>
+                    </div>
+                </div>
+
+                <div id='our-father' class="rosary-prayers-header">
                     <h2 class="rosary-prayers-title">The Our Father</h2>
                     <i class="fas fa-chevron-down fa-2x expand-icon"></i>
                 </div>
-                <p class="rosary-prayers-content"><span class='verse'>Our Father, who art in heaven, Hallowed be Thy name; Thy kingdom come; Thy will be done, on earth as it is in heaven; </span><span class='resp'>Give us this day our daily bread; and forgive us our trespasses, as we forgive those that trespass against us; And lead us not into temptation, but deliver us from evil. Amen.</span></p>
+                <div id='our-father-content' class="rosary-prayers-content">
+                    <p><span class='verse'>Our Father, who art in heaven, Hallowed be Thy name; Thy kingdom come; Thy will be done, on earth as it is in heaven; </span><span class='resp'>Give us this day our daily bread; and forgive us our trespasses, as we forgive those that trespass against us; And lead us not into temptation, but deliver us from evil. Amen.</span></p>
 
-                <div class="rosary-prayers-header">
+                    <div class='rosary-helper'>
+                        <button id='our-father-prev-button' class='prev-button'><< Apostle's Creed</button>
+                        <button class='next-button'>Hail Mary (x1) >></button>
+                    </div>
+                </div>
+                
+
+                <div id='hail-mary' class="rosary-prayers-header">
                     <h2 class="rosary-prayers-title">The Hail Mary</h2>
                     <i class="fas fa-chevron-down fa-2x expand-icon"></i>
                 </div>
-                <p class="rosary-prayers-content"><span class='verse'>Hail Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. </span><span class='resp'>Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.</span></p>
+                <div id='hail-mary-content' class="rosary-prayers-content">
+                    <p><span class='verse'>Hail Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. </span><span class='resp'>Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.</span></p>
 
-                <div class="rosary-prayers-header">
+                    <div class='rosary-helper'>
+                        <button id='hail-mary-prev-button' class='prev-button'><< Our Father</button>
+                        <button id='hail-mary-next-button' class='next-button'>Hail Mary (x2) >></button>
+                    </div>
+                </div>
+                
+                <div id='glory-be' class="rosary-prayers-header">
                     <h2 class="rosary-prayers-title">Glory Be to the Father</h2>
                     <i class="fas fa-chevron-down fa-2x expand-icon"></i>
                 </div>
-                <p class="rosary-prayers-content"><span class='verse'>Glory be to the Father, and to the Son, and to the Holy Spirit; </span><span class='resp'>as it was in the beginning, is now, and ever shall be, world without end. Amen.</span></p>
+                <div id='glory-be-content' class="rosary-prayers-content">
+                    <p><span class='verse'>Glory be to the Father, and to the Son, and to the Holy Spirit; </span><span class='resp'>as it was in the beginning, is now, and ever shall be, world without end. Amen.</span></p>
 
-                <div class="rosary-prayers-header">
+                    <div class='rosary-helper'>
+                        <button id='glory-be-prev-button' class='prev-button'><< Hail Mary (x3)</button>
+                        <button class='next-button'>Fatima Prayer >></button>
+                    </div>
+                </div>
+
+
+                <div id='fatima-prayer' class="rosary-prayers-header">
                     <h2 class="rosary-prayers-title">Fatima Prayer</h2>
                     <i class="fas fa-chevron-down fa-2x expand-icon"></i>
                 </div>
-                <p class="rosary-prayers-content">O my Jesus, forgive us our sins, save us from the fires of hell and lead all souls to heaven, especially those most in need of Thy mercy.</p>
+                <div id='fatima-prayer-content' class="rosary-prayers-content">
+                    <p>O my Jesus, forgive us our sins, save us from the fires of hell and lead all souls to heaven, especially those most in need of Thy mercy.</p>
 
-                <div class="rosary-prayers-header">
+                    <div class='rosary-helper'>
+                        <button class='prev-button'><< Glory Be</button>
+                        <button class='next-button'>Eternal Rest >></button>
+                    </div>
+                </div>
+                
+                <div id='eternal-rest' class="rosary-prayers-header">
                     <h2 class="rosary-prayers-title">Prayer for the Eternal Rest</h2>
                     <i class="fas fa-chevron-down fa-2x expand-icon"></i>
                 </div>
-                <p class="rosary-prayers-content"><span class='verse'>Eternal rest grant unto them, O Lord, </span><span class='resp'>and let perpetual light shine upon them. </span><span class='verse'>May the soul<span class='trailing-s'>(s)</span> of <span class='name-change'>N. —</span>, through the mercy of God, rest in peace. </span><span class='resp'>Amen.</span></p>
+                <div id='eternal-rest-content' class="rosary-prayers-content">
+                    <p><span class='verse'>Eternal rest grant unto them, O Lord, </span><span class='resp'>and let perpetual light shine upon them. </span><span class='verse'>May the soul<span class='trailing-s'>(s)</span> of <span class='name-change'>N. —</span>, through the mercy of God, rest in peace. </span><span class='resp'>Amen.</span></p>
 
-                <div class="rosary-prayers-header">
+                    <div class='rosary-helper'>
+                        <button class='prev-button'><< Fatima Prayer</button>
+                        <button id='eternal-rest-next-button' class='next-button'>nth Blank Mystery >></button>
+                    </div>
+                </div>
+
+                <div id='hail-holy-queen' class="rosary-prayers-header">
                     <h2 class="rosary-prayers-title">The Hail, Holy Queen</h2>
                     <i class="fas fa-chevron-down fa-2x expand-icon"></i>
                 </div>
-                <div class="rosary-prayers-content">
+                <div id='hail-holy-queen-content' class="rosary-prayers-content">
                     <p>Hail, holy Queen, Mother of mercy, our life, our sweetness and our hope. To thee do we cry, poor banished children of Eve. To thee do we send up our sighs, mourning and weeping in this valley of tears. Turn, then, most gracious advocate, thine eyes of mercy toward us, and after this, our exile, show unto us the blessed fruit of thy womb, Jesus. O clement, O loving, O sweet Virgin Mary.</p>
+
+                    <div class='rosary-helper'>
+                        <button class='prev-button'><< Eternal Rest</button>
+                        <button class='next-button' disabled>>></button>
+                    </div>
                 </div>
 
                 <br><br>
