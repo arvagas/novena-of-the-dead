@@ -309,6 +309,8 @@ $(document).ready(function(){
 
             hailMaryCounter++
 
+            hailMaryHelperCounter.textContent = hailMaryCounter
+
             if (hailMaryCounter === 1) hailMaryPrevButton.textContent = '<< Our Father'
             else hailMaryPrevButton.textContent = `<< Hail Mary (x${hailMaryCounter-1})`
             
@@ -410,6 +412,8 @@ $(document).ready(function(){
 
             hailMaryCounter--
 
+            hailMaryHelperCounter.textContent = hailMaryCounter
+
             if ([7, 22, 37, 52, 67, 82].includes(stepNumber)) hailMaryNextButton.textContent = 'Glory Be >>'
             else hailMaryNextButton.textContent = `Hail Mary (x${hailMaryCounter+1}) >>`
 
@@ -467,6 +471,7 @@ const menuOffset = -50
 let currentPrayerContentHeight = 0
 let stepNumber = 0
 let hailMaryCounter = 0
+let hailMaryHelperCounter = document.querySelector('#hail-mary-helper-counter')
 let ourFatherPrevButton = document.querySelector('#our-father-prev-button')
 let hailMaryNextButton = document.querySelector('#hail-mary-next-button')
 let hailMaryPrevButton = document.querySelector('#hail-mary-prev-button')
