@@ -352,13 +352,25 @@ $(document).ready(function(){
         if ([9, 24, 39, 54, 69].includes(stepNumber) === true) $(nextPrayerContent).addClass('rosary-helper-current')
         else $(nextPrayerContent).find('.rosary-helper').addClass('rosary-helper-current')
         
-        y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
-        
         if (window.innerWidth <= 800) {
             if ($(nextPrayer).hasClass('active-header') === false && prayerName.includes(mysteryName.toLowerCase()) === false) {
                 Accordion(nextPrayer, '.rosary-prayers-header')
             }
         }
+
+        // console.log($(nextPrayerContent).height())
+        // if (window.innerWidth <= 800){
+        //     if ($(nextPrayerContent).parent().is('li') === false && !currentPrayerContentHeight) {
+        //         currentPrayerContentHeight = $(nextPrayerContent).height()
+        //         y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
+        //     } else if ($(nextPrayerContent).parent().is('li') === false) {
+        //         y = nextPrayer.getBoundingClientRect().top - currentPrayerContentHeight + window.pageYOffset + menuOffset
+        //         currentPrayerContentHeight = $(nextPrayerContent).height()
+        //     }
+        // } else y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
+        // console.log(nextPrayer.getBoundingClientRect().top)
+
+        y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
 
         window.scrollTo({top: y, behavior: 'smooth'})
 
@@ -436,14 +448,14 @@ $(document).ready(function(){
 
         if ([11, 26, 41, 56, 71].includes(stepNumber) === true) $(nextPrayerContent).addClass('rosary-helper-current')
         else $(nextPrayerContent).find('.rosary-helper').addClass('rosary-helper-current')
-        
-        y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
-        
+
         if (window.innerWidth <= 800) {
             if ($(nextPrayer).hasClass('active-header') === false && prayerName.includes(mysteryName.toLowerCase()) === false) {
                 Accordion(nextPrayer, '.rosary-prayers-header')
             }
         }
+
+        y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
 
         window.scrollTo({top: y, behavior: 'smooth'})
 
@@ -452,6 +464,7 @@ $(document).ready(function(){
 })
 
 const menuOffset = -50
+// let currentPrayerContentHeight = 0
 let stepNumber = 0
 let hailMaryCounter = 0
 let ourFatherPrevButton = document.querySelector('#our-father-prev-button')
