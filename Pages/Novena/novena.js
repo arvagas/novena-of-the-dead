@@ -372,7 +372,7 @@ $(document).ready(function(){
             }
         }
 
-        console.log(currentPrayerContentHeight)
+        // console.log(currentPrayerContentHeight)
 
         window.scrollTo({top: y, behavior: 'smooth'})
 
