@@ -343,7 +343,6 @@ $(document).ready(function(){
             prayerName = 'hail-holy-queen'
         }
 
-
         nextPrayer = document.getElementById(prayerName)
         nextPrayerContent = document.getElementById(`${prayerName}-content`)
         
@@ -357,20 +356,21 @@ $(document).ready(function(){
                 Accordion(nextPrayer, '.rosary-prayers-header')
             }
         }
-
-        // console.log($(nextPrayerContent).height())
-        // if (window.innerWidth <= 800){
-        //     if ($(nextPrayerContent).parent().is('li') === false && !currentPrayerContentHeight) {
-        //         currentPrayerContentHeight = $(nextPrayerContent).height()
-        //         y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
-        //     } else if ($(nextPrayerContent).parent().is('li') === false) {
-        //         y = nextPrayer.getBoundingClientRect().top - currentPrayerContentHeight + window.pageYOffset + menuOffset
-        //         currentPrayerContentHeight = $(nextPrayerContent).height()
-        //     }
-        // } else y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
-        // console.log(nextPrayer.getBoundingClientRect().top)
-
+        
         y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
+
+        if (window.innerWidth <= 800){
+            if ($(nextPrayerContent).parent().is('li') === false && prayerName !== 'hail-mary' && !currentPrayerContentHeight) {
+                currentPrayerContentHeight = $(nextPrayerContent).height()
+            } else if ($(nextPrayerContent).parent().is('li') === false && prayerName !== 'hail-mary') {
+                y -= currentPrayerContentHeight
+                currentPrayerContentHeight = $(nextPrayerContent).height()
+            } else {
+                currentPrayerContentHeight = null
+            }
+        }
+
+        console.log(currentPrayerContentHeight)
 
         window.scrollTo({top: y, behavior: 'smooth'})
 
@@ -464,7 +464,7 @@ $(document).ready(function(){
 })
 
 const menuOffset = -50
-// let currentPrayerContentHeight = 0
+let currentPrayerContentHeight = 0
 let stepNumber = 0
 let hailMaryCounter = 0
 let ourFatherPrevButton = document.querySelector('#our-father-prev-button')
