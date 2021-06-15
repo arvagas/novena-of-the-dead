@@ -284,7 +284,7 @@ $(document).ready(function(){
 // ======================================== Next Step ========================================
 $(document).ready(function(){
     $('.next-button').on('click', function() {
-        console.log(`[NEXT] Current step no: ${stepNumber}`)
+        // console.log(`[NEXT] Current step no: ${stepNumber}`)
         let prayerName
         let nextPrayer
         let nextPrayerContent
@@ -315,7 +315,7 @@ $(document).ready(function(){
             if ([5, 20, 35, 50, 65, 80].includes(stepNumber)) hailMaryNextButton.textContent = 'Glory Be >>'
             else hailMaryNextButton.textContent = `Hail Mary (x${hailMaryCounter+1}) >>`
             
-            console.log(`Current Counter: ${hailMaryCounter}`)
+            // console.log(`Current Counter: ${hailMaryCounter}`)
         } else if ([6, 21, 36, 51, 66, 81].includes(stepNumber)) {
             prayerName = 'glory-be'
             hailMaryCounter = 0
@@ -369,7 +369,7 @@ $(document).ready(function(){
 // ======================================== Previous step ========================================
 $(document).ready(function(){
     $('.prev-button').on('click', function() {
-        console.log(`[PREV] Current step no: ${stepNumber}`)
+        // console.log(`[PREV] Current step no: ${stepNumber}`)
         
         let prayerName
         let nextPrayer
@@ -404,7 +404,7 @@ $(document).ready(function(){
             if (hailMaryCounter === 1) hailMaryPrevButton.textContent = '<< Our Father'
             else hailMaryPrevButton.textContent = `<< Hail Mary (x${hailMaryCounter-1})`
 
-            console.log(`Current Counter: ${hailMaryCounter}`)
+            // console.log(`Current Counter: ${hailMaryCounter}`)
         } else if ([8, 23, 38, 53, 68, 83].includes(stepNumber)) {
             prayerName = 'glory-be'
 
