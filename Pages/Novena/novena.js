@@ -309,6 +309,8 @@ $(document).ready(function(){
 
             hailMaryCounter++
 
+            hailMaryHelperCounter.textContent = hailMaryCounter
+
             if (hailMaryCounter === 1) hailMaryPrevButton.textContent = '<< Our Father'
             else hailMaryPrevButton.textContent = `<< Hail Mary (x${hailMaryCounter-1})`
             
@@ -343,7 +345,6 @@ $(document).ready(function(){
             prayerName = 'hail-holy-queen'
         }
 
-
         nextPrayer = document.getElementById(prayerName)
         nextPrayerContent = document.getElementById(`${prayerName}-content`)
         
@@ -357,20 +358,21 @@ $(document).ready(function(){
                 Accordion(nextPrayer, '.rosary-prayers-header')
             }
         }
-
-        // console.log($(nextPrayerContent).height())
-        // if (window.innerWidth <= 800){
-        //     if ($(nextPrayerContent).parent().is('li') === false && !currentPrayerContentHeight) {
-        //         currentPrayerContentHeight = $(nextPrayerContent).height()
-        //         y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
-        //     } else if ($(nextPrayerContent).parent().is('li') === false) {
-        //         y = nextPrayer.getBoundingClientRect().top - currentPrayerContentHeight + window.pageYOffset + menuOffset
-        //         currentPrayerContentHeight = $(nextPrayerContent).height()
-        //     }
-        // } else y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
-        // console.log(nextPrayer.getBoundingClientRect().top)
-
+        
         y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
+
+        if (window.innerWidth <= 800){
+            if ($(nextPrayerContent).parent().is('li') === false && prayerName !== 'hail-mary' && !currentPrayerContentHeight) {
+                currentPrayerContentHeight = $(nextPrayerContent).height()
+            } else if ($(nextPrayerContent).parent().is('li') === false && prayerName !== 'hail-mary') {
+                y -= currentPrayerContentHeight
+                currentPrayerContentHeight = $(nextPrayerContent).height()
+            } else {
+                currentPrayerContentHeight = null
+            }
+        }
+
+        console.log(currentPrayerContentHeight)
 
         window.scrollTo({top: y, behavior: 'smooth'})
 
@@ -409,6 +411,8 @@ $(document).ready(function(){
             else if ([22, 37, 52, 67, 82].includes(stepNumber)) hailMaryCounter = 11
 
             hailMaryCounter--
+
+            hailMaryHelperCounter.textContent = hailMaryCounter
 
             if ([7, 22, 37, 52, 67, 82].includes(stepNumber)) hailMaryNextButton.textContent = 'Glory Be >>'
             else hailMaryNextButton.textContent = `Hail Mary (x${hailMaryCounter+1}) >>`
@@ -464,9 +468,10 @@ $(document).ready(function(){
 })
 
 const menuOffset = -50
-// let currentPrayerContentHeight = 0
+let currentPrayerContentHeight = 0
 let stepNumber = 0
 let hailMaryCounter = 0
+let hailMaryHelperCounter = document.querySelector('#hail-mary-helper-counter')
 let ourFatherPrevButton = document.querySelector('#our-father-prev-button')
 let hailMaryNextButton = document.querySelector('#hail-mary-next-button')
 let hailMaryPrevButton = document.querySelector('#hail-mary-prev-button')
