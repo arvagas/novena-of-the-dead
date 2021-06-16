@@ -314,8 +314,13 @@ $(document).ready(function(){
             if (hailMaryCounter === 1) hailMaryPrevButton.textContent = '<< Our Father'
             else hailMaryPrevButton.textContent = `<< Hail Mary (x${hailMaryCounter-1})`
             
-            if ([5, 20, 35, 50, 65, 80].includes(stepNumber)) hailMaryNextButton.textContent = 'Glory Be >>'
-            else hailMaryNextButton.textContent = `Hail Mary (x${hailMaryCounter+1}) >>`
+            if ([5, 20, 35, 50, 65, 80].includes(stepNumber)) {
+                hailMaryNextButton.textContent = 'Glory Be >>'
+                gloryHolyMary.textContent = 'Glory '
+            } else {
+                hailMaryNextButton.textContent = `Hail Mary (x${hailMaryCounter+1}) >>`
+                gloryHolyMary.textContent = ''
+            }
             
             // console.log(`Current Counter: ${hailMaryCounter}`)
         } else if ([6, 21, 36, 51, 66, 81].includes(stepNumber)) {
@@ -414,8 +419,14 @@ $(document).ready(function(){
 
             hailMaryHelperCounter.textContent = hailMaryCounter
 
-            if ([7, 22, 37, 52, 67, 82].includes(stepNumber)) hailMaryNextButton.textContent = 'Glory Be >>'
-            else hailMaryNextButton.textContent = `Hail Mary (x${hailMaryCounter+1}) >>`
+            if ([7, 22, 37, 52, 67, 82].includes(stepNumber)) {
+                hailMaryNextButton.textContent = 'Glory Be >>'
+                gloryHolyMary.textContent = 'Glory '
+            }
+            else {
+                hailMaryNextButton.textContent = `Hail Mary (x${hailMaryCounter+1}) >>`
+                gloryHolyMary.textContent = ''
+            }
 
             if (hailMaryCounter === 1) hailMaryPrevButton.textContent = '<< Our Father'
             else hailMaryPrevButton.textContent = `<< Hail Mary (x${hailMaryCounter-1})`
@@ -472,8 +483,9 @@ let currentPrayerContentHeight = 0
 let stepNumber = 0
 let hailMaryCounter = 0
 let hailMaryHelperCounter = document.querySelector('#hail-mary-helper-counter')
-let ourFatherPrevButton = document.querySelector('#our-father-prev-button')
+let gloryHolyMary = document.querySelector('#glory-holy-mary')
 let hailMaryNextButton = document.querySelector('#hail-mary-next-button')
 let hailMaryPrevButton = document.querySelector('#hail-mary-prev-button')
+let ourFatherPrevButton = document.querySelector('#our-father-prev-button')
 let gloryBePrevButton = document.querySelector('#glory-be-prev-button')
 let eternalRestNextButton = document.querySelector('#eternal-rest-next-button')
