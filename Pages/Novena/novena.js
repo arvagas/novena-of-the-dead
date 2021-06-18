@@ -391,8 +391,8 @@ $(document).ready(function(){
         // console.log(`[PREV] Current step no: ${stepNumber}`)
         
         let prayerName
-        let nextPrayer
-        let nextPrayerContent
+        let prevPrayer
+        let prevPrayerContent
         let y
 
         if (stepNumber === 2) {
@@ -456,21 +456,21 @@ $(document).ready(function(){
             else if (stepNumber === 71) prayerName = `${mysteryName.toLowerCase()}-fifth-mystery`
         }
 
-        nextPrayer = document.getElementById(prayerName)
-        nextPrayerContent = document.getElementById(`${prayerName}-content`)
+        prevPrayer = document.getElementById(prayerName)
+        prevPrayerContent = document.getElementById(`${prayerName}-content`)
         
         if (stepNumber > 0) $(document.querySelector('.rosary-helper-current')).removeClass('rosary-helper-current')
 
-        if ([11, 26, 41, 56, 71].includes(stepNumber) === true) $(nextPrayerContent).addClass('rosary-helper-current')
-        else $(nextPrayerContent).find('.rosary-helper').addClass('rosary-helper-current')
+        if ([11, 26, 41, 56, 71].includes(stepNumber) === true) $(prevPrayerContent).addClass('rosary-helper-current')
+        else $(prevPrayerContent).find('.rosary-helper').addClass('rosary-helper-current')
 
         if (window.innerWidth <= 800) {
-            if ($(nextPrayer).hasClass('active-header') === false && prayerName.includes(mysteryName.toLowerCase()) === false) {
-                Accordion(nextPrayer, '.rosary-prayers-header')
+            if ($(prevPrayer).hasClass('active-header') === false && prayerName.includes(mysteryName.toLowerCase()) === false) {
+                Accordion(prevPrayer, '.rosary-prayers-header')
             }
         }
 
-        y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
+        y = prevPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
 
         window.scrollTo({top: y, behavior: 'smooth'})
 
