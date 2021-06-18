@@ -258,8 +258,17 @@ $(document).ready(function(){
     $(rosaryHelpCheck).on('click', function() {
         if (rosaryHelpCheck.checked === true) {
             $(rosaryHelpOptionButtons).addClass('rosary-help-option-buttons-on')
+            if (stepNumber !== 0) {
+                let findPrayerContent = document.getElementById(`${lastRosaryStepName}-content`)
+
+                if ($(findPrayerContent).hasClass('rosary-helper')) $(findPrayerContent).addClass('rosary-helper-current')
+                else $(findPrayerContent).find('.rosary-helper').addClass('rosary-helper-current')
+            }
         } else {
             $(rosaryHelpOptionButtons).removeClass('rosary-help-option-buttons-on')
+            rosaryHelper.forEach(item => {
+                $(item).removeClass('rosary-helper-current')
+            })
         }
     })
 })
@@ -278,6 +287,7 @@ $(document).ready(function(){
         $(rosaryHelpOptionButtons).find('.next-button').removeClass('hide-button')
         stepNumber = 0
         hailMaryCounter = 0
+        currentPrayerContentHeight = 0
     })
 })
 
@@ -349,6 +359,8 @@ $(document).ready(function(){
         } else if (stepNumber === 84) {
             prayerName = 'hail-holy-queen'
         }
+
+        lastRosaryStepName = prayerName
 
         nextPrayer = document.getElementById(prayerName)
         nextPrayerContent = document.getElementById(`${prayerName}-content`)
@@ -455,6 +467,8 @@ $(document).ready(function(){
             else if (stepNumber === 56) prayerName = `${mysteryName.toLowerCase()}-fourth-mystery`
             else if (stepNumber === 71) prayerName = `${mysteryName.toLowerCase()}-fifth-mystery`
         }
+        
+        lastRosaryStepName = prayerName
 
         prevPrayer = document.getElementById(prayerName)
         prevPrayerContent = document.getElementById(`${prayerName}-content`)
@@ -481,6 +495,7 @@ $(document).ready(function(){
 const menuOffset = -50
 let currentPrayerContentHeight = 0
 let stepNumber = 0
+let lastRosaryStepName
 let hailMaryCounter = 0
 let hailMaryHelperCounter = document.querySelector('#hail-mary-helper-counter')
 let gloryHolyMary = document.querySelector('#glory-holy-mary')
