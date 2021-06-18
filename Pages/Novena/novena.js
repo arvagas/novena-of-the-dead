@@ -379,17 +379,18 @@ $(document).ready(function(){
         y = nextPrayer.getBoundingClientRect().top + window.pageYOffset + menuOffset
 
         if (window.innerWidth <= 800){
-            if ($(nextPrayerContent).parent().is('li') === false && prayerName !== 'hail-mary' && !currentPrayerContentHeight) {
+            if (($(nextPrayerContent).parent().is('li') === false && prayerName !== 'hail-mary' && !currentPrayerContentHeight) || [5, 20, 35, 50, 65, 80].includes(stepNumber)) {
                 currentPrayerContentHeight = $(nextPrayerContent).height()
             } else if ($(nextPrayerContent).parent().is('li') === false && prayerName !== 'hail-mary') {
                 y -= currentPrayerContentHeight
                 currentPrayerContentHeight = $(nextPrayerContent).height()
+            } else if ([3, 11, 26, 41, 56, 71].includes(stepNumber)) {
+                y -= currentPrayerContentHeight
+                currentPrayerContentHeight = 0
             } else {
-                currentPrayerContentHeight = null
+                currentPrayerContentHeight = 0
             }
         }
-
-        // console.log(currentPrayerContentHeight)
 
         window.scrollTo({top: y, behavior: 'smooth'})
 
